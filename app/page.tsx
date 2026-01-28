@@ -4,8 +4,10 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import StickyCTA from "./components/StickyCTA";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [formStatus, setFormStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -45,22 +47,22 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <span className="text-4xl md:text-5xl font-[family-name:var(--font-playfair)] italic text-[#FF5722] animate-glow">
-                Why Choose
+                {t.about.why}
               </span>
               <h2 className="text-4xl md:text-6xl font-extrabold uppercase">
-                AI CHATBOTS?
+                {t.about.title}
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
-                AI chatbots revolutionize customer engagement by providing instant, personalized responses 24/7. They handle multiple conversations simultaneously, reduce response times, and never take a break.
+                {t.about.p1}
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Our intelligent chatbots learn from every interaction, becoming smarter over time. They can qualify leads, book appointments, answer FAQs, and seamlessly transfer complex queries to human agents when needed.
+                {t.about.p2}
               </p>
               <a
                 href="#contact"
                 className="inline-block px-8 py-4 bg-gradient-to-r from-[#00D4FF] to-[#0099FF] text-white font-bold uppercase tracking-wider rounded-lg hover:shadow-2xl hover:shadow-[#00D4FF]/50 hover:scale-105 transition-all duration-300"
               >
-                Learn More
+                {t.about.cta}
               </a>
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
@@ -79,8 +81,8 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-extrabold uppercase">
-              <span className="text-[#FF5722] font-[family-name:var(--font-playfair)] italic">Our</span>{" "}
-              YOUR PERSONAL AI, OUR EXPERTISE
+              <span className="text-[#FF5722] font-[family-name:var(--font-playfair)] italic">{t.expertise.our}</span>{" "}
+              {t.expertise.title}
             </h2>
           </div>
 
@@ -88,27 +90,21 @@ export default function Home() {
             {[
               {
                 image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop",
-                icon: "🤖",
-                iconBg: "#FF9800",
-                title: "BESPOKE CHATBOT DEVELOPMENT",
-                desc: "We create custom AI chatbots tailored to your business data, providing instant, accurate support.",
-                features: ["Personalized responses", "Multi-language support", "Easy integration"]
+                title: t.expertise.card1.title,
+                desc: t.expertise.card1.desc,
+                features: t.expertise.card1.features
               },
               {
                 image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop",
-                icon: "🔒",
-                iconBg: "#FF9800",
-                title: "DATA SECURITY & PRIVACY",
-                desc: "Your data is our top priority. We implement end-to-end encryption and security protocols to ensure complete confidentiality.",
-                features: ["Document analysis", "Smart search", "Accurate answers"]
+                title: t.expertise.card2.title,
+                desc: t.expertise.card2.desc,
+                features: t.expertise.card2.features
               },
               {
                 image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop",
-                icon: "🧠",
-                iconBg: "#FFC107",
-                title: "INTELLIGENT INFORMATION RETRIEVAL",
-                desc: "Our AI quickly finds and summarizes information from thousands of your internal documents, saving you hours.",
-                features: ["Task automation", "Workflow optimization", "Time saving"]
+                title: t.expertise.card3.title,
+                desc: t.expertise.card3.desc,
+                features: t.expertise.card3.features
               }
             ].map((item, i) => (
               <div
@@ -152,31 +148,31 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <span className="text-4xl md:text-5xl font-[family-name:var(--font-playfair)] italic text-[#FF5722] animate-glow">
-              Our
+              {t.services.our}
             </span>
             <h2 className="text-4xl md:text-6xl font-extrabold uppercase mt-4 gradient-text">
-              CHATBOT SOLUTIONS
+              {t.services.title}
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "CUSTOM CHATBOT",
-                desc: "Build your personalized AI assistant that understands your business and talks to customers 24/7",
-                features: ["Personalized responses", "Multi-language support", "Easy integration"],
+                title: t.services.card1.title,
+                desc: t.services.card1.desc,
+                features: t.services.card1.features,
                 gradient: "from-[#00D4FF] to-[#0099FF]"
               },
               {
-                title: "RAG SYSTEM",
-                desc: "Advanced AI that searches your documents and gives accurate answers instantly",
-                features: ["Document analysis", "Smart search", "Accurate answers"],
+                title: t.services.card2.title,
+                desc: t.services.card2.desc,
+                features: t.services.card2.features,
                 gradient: "from-[#FF5722] to-[#FF7043]"
               },
               {
-                title: "AUTOMATION",
-                desc: "Automate repetitive tasks and save hours of work every day with AI",
-                features: ["Task automation", "Workflow optimization", "Time saving"],
+                title: t.services.card3.title,
+                desc: t.services.card3.desc,
+                features: t.services.card3.features,
                 gradient: "from-[#00D4FF] to-[#FF5722]"
               }
             ].map((service, i) => (
@@ -237,9 +233,9 @@ export default function Home() {
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-12 md:mb-20">
             <h2 className="text-3xl md:text-6xl font-extrabold uppercase gradient-text mb-2 md:mb-4">
-              HOW IT WORKS
+              {t.howItWorks.title}
             </h2>
-            <p className="text-base md:text-xl text-gray-600">Get started in 3 simple steps</p>
+            <p className="text-base md:text-xl text-gray-600">{t.howItWorks.subtitle}</p>
           </div>
 
           <div className="max-w-5xl mx-auto">
@@ -250,8 +246,8 @@ export default function Home() {
               {[
                 {
                   number: "01",
-                  title: "Share Your Data",
-                  desc: "Upload your documents, FAQs, or connect your knowledge base. We'll train the AI on your specific business information.",
+                  title: t.howItWorks.step1.title,
+                  desc: t.howItWorks.step1.desc,
                   icon: (
                     <svg className="w-10 md:w-12 h-10 md:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
@@ -261,8 +257,8 @@ export default function Home() {
                 },
                 {
                   number: "02",
-                  title: "Customize & Train",
-                  desc: "Personalize your chatbot's personality, tone, and responses. Our AI learns from your brand voice and customer interactions.",
+                  title: t.howItWorks.step2.title,
+                  desc: t.howItWorks.step2.desc,
                   icon: (
                     <svg className="w-10 md:w-12 h-10 md:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
@@ -272,8 +268,8 @@ export default function Home() {
                 },
                 {
                   number: "03",
-                  title: "Deploy & Scale",
-                  desc: "Launch your chatbot across multiple channels. Monitor performance and let AI handle thousands of conversations simultaneously.",
+                  title: t.howItWorks.step3.title,
+                  desc: t.howItWorks.step3.desc,
                   icon: (
                     <svg className="w-10 md:w-12 h-10 md:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
