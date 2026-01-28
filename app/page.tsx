@@ -312,7 +312,7 @@ export default function Home() {
                 href="#contact"
                 className="inline-flex items-center gap-2 md:gap-3 px-8 md:px-10 py-4 md:py-5 bg-gradient-to-r from-[#00D4FF] to-[#0099FF] text-white font-bold uppercase tracking-wider rounded-xl hover:shadow-2xl hover:shadow-[#00D4FF]/50 hover:scale-105 transition-all duration-300 text-sm md:text-base"
               >
-                Get Started Now
+                {t.cta.btn1}
                 <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -327,31 +327,31 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <span className="text-4xl md:text-5xl font-[family-name:var(--font-playfair)] italic text-[#FF5722] animate-glow">
-              Proven
+              {t.testimonials.proven}
             </span>
             <h2 className="text-4xl md:text-6xl font-extrabold uppercase mt-4">
-              SUCCESS STORIES
+              {t.testimonials.title}
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                quote: "KALEXIA's chatbot reduced our response time by 80% and increased customer satisfaction significantly.",
-                author: "Sarah Johnson",
-                role: "CEO, TechStart Inc",
+                quote: t.testimonials.card1.quote,
+                author: t.testimonials.card1.author,
+                role: t.testimonials.card1.role,
                 rating: 5,
               },
               {
-                quote: "The RAG system is incredible. It answers complex questions about our products with perfect accuracy.",
-                author: "Michael Chen",
-                role: "CTO, DataFlow Solutions",
+                quote: t.testimonials.card2.quote,
+                author: t.testimonials.card2.author,
+                role: t.testimonials.card2.role,
                 rating: 5,
               },
               {
-                quote: "Best investment we made this year. The automation saved us 40 hours per week in customer support.",
-                author: "Emma Rodriguez",
-                role: "Operations Manager, GrowthCo",
+                quote: t.testimonials.card3.quote,
+                author: t.testimonials.card3.author,
+                role: t.testimonials.card3.role,
                 rating: 5,
               },
             ].map((testimonial, i) => (
@@ -382,31 +382,31 @@ export default function Home() {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-extrabold uppercase gradient-text">
-              FREQUENTLY ASKED QUESTIONS
+              {t.faq.title}
             </h2>
           </div>
 
           <div className="space-y-6">
             {[
               {
-                q: "How long does it take to set up a chatbot?",
-                a: "Most chatbots can be set up and deployed within 1-2 weeks, depending on complexity and customization requirements.",
+                q: t.faq.q1,
+                a: t.faq.a1,
               },
               {
-                q: "Can the chatbot integrate with my existing systems?",
-                a: "Yes! Our chatbots integrate with popular CRMs, messaging platforms (WhatsApp, Telegram, Instagram), and custom APIs.",
+                q: t.faq.q2,
+                a: t.faq.a2,
               },
               {
-                q: "What languages does the chatbot support?",
-                a: "Our AI chatbots support 50+ languages including English, Turkish, Persian, Arabic, Spanish, and more.",
+                q: t.faq.q3,
+                a: t.faq.a3,
               },
               {
-                q: "How does the RAG system work?",
-                a: "RAG (Retrieval-Augmented Generation) searches your documents and knowledge base to provide accurate, context-aware answers based on your actual data.",
+                q: t.faq.q4,
+                a: t.faq.a4,
               },
               {
-                q: "What happens if the chatbot can't answer a question?",
-                a: "The chatbot can seamlessly transfer the conversation to a human agent or collect contact information for follow-up.",
+                q: t.faq.q5,
+                a: t.faq.a5,
               },
             ].map((faq, i) => (
               <details
@@ -480,23 +480,23 @@ export default function Home() {
       <section className="py-24 px-6 bg-gradient-to-br from-gray-900 to-black text-white text-center">
         <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-4xl md:text-6xl font-extrabold">
-            Ready to Transform Your Business?
+            {t.cta.title}
           </h2>
           <p className="text-xl text-gray-300">
-            Join hundreds of companies using AI to automate their workflow and boost productivity
+            {t.cta.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
               className="px-8 py-4 bg-gradient-to-r from-[#00D4FF] to-[#0099FF] text-white font-bold uppercase tracking-wider rounded-lg hover:shadow-2xl hover:shadow-[#00D4FF]/50 hover:scale-105 transition-all duration-300"
             >
-              Get Started Now
+              {t.cta.btn1}
             </a>
             <a
               href="#services"
               className="px-8 py-4 border-2 border-white text-white font-bold uppercase tracking-wider rounded-lg hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
             >
-              Learn More
+              {t.cta.btn2}
             </a>
           </div>
         </div>
@@ -507,17 +507,17 @@ export default function Home() {
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-16">
             <span className="text-4xl md:text-5xl font-[family-name:var(--font-playfair)] italic text-[#FF5722] animate-glow">
-              Get in
+              {t.contact.getIn}
             </span>
             <h2 className="text-4xl md:text-6xl font-extrabold uppercase mt-4 gradient-text">
-              TOUCH
+              {t.contact.title}
             </h2>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6 bg-white/70 backdrop-blur-lg p-8 rounded-2xl shadow-2xl">
             <input
               type="text"
-              placeholder="Your Name"
+              placeholder={t.contact.name}
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               className="w-full px-6 py-4 border-b-2 border-gray-300 focus:border-[#00D4FF] outline-none transition-colors bg-transparent"
@@ -525,14 +525,14 @@ export default function Home() {
             />
             <input
               type="email"
-              placeholder="Your Email"
+              placeholder={t.contact.email}
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               className="w-full px-6 py-4 border-b-2 border-gray-300 focus:border-[#00D4FF] outline-none transition-colors bg-transparent"
               required
             />
             <textarea
-              placeholder="Tell us about your business needs"
+              placeholder={t.contact.message}
               rows={5}
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -542,13 +542,13 @@ export default function Home() {
             
             {formStatus === "success" && (
               <div className="p-4 bg-green-100 text-green-800 rounded-lg text-center font-semibold">
-                ✓ Message sent successfully! We'll get back to you soon.
+                {t.contact.success}
               </div>
             )}
             
             {formStatus === "error" && (
               <div className="p-4 bg-red-100 text-red-800 rounded-lg text-center font-semibold">
-                ✗ Failed to send message. Please try again or contact us via WhatsApp.
+                {t.contact.error}
               </div>
             )}
             
@@ -557,7 +557,7 @@ export default function Home() {
               disabled={formStatus === "loading"}
               className="w-full px-8 py-4 bg-gradient-to-r from-[#00D4FF] to-[#0099FF] text-white font-bold uppercase tracking-wider rounded-lg hover:shadow-2xl hover:shadow-[#00D4FF]/50 hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {formStatus === "loading" ? "Sending..." : "Send Message"}
+              {formStatus === "loading" ? t.contact.sending : t.contact.submit}
             </button>
           </form>
         </div>
@@ -578,7 +578,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-gray-400">
-            © 2025 KALEXIA STUDIO. All Rights Reserved.
+            {t.footer.copyright}
           </p>
         </div>
       </footer>
