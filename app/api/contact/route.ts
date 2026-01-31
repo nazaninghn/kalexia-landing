@@ -27,7 +27,7 @@ export async function POST(request: Request) {
 ${message}
 
 ---
-Sent from KALEXIA Landing Page
+Sent from KLEXAI Landing Page
       `.trim();
 
       const telegramResponse = await fetch(
@@ -62,7 +62,7 @@ Sent from KALEXIA Landing Page
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: 'KALEXIA <noreply@yourdomain.com>',
+          from: 'KLEXAI <noreply@yourdomain.com>',
           to: [RECIPIENT_EMAIL],
           subject: `New Contact: ${name}`,
           html: `

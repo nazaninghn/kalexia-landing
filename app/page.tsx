@@ -41,43 +41,86 @@ export default function Home() {
       <Hero />
       <StickyCTA />
       
-      {/* About Section */}
+      {/* About Section - Problems We Solve */}
       <section id="about" className="py-24 px-6 bg-gradient-to-br from-gray-900 to-black text-white">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
-              <span className="text-4xl md:text-5xl font-[family-name:var(--font-playfair)] italic text-[#FF5722] animate-glow">
-                {t.about.why}
-              </span>
-              <h2 className="text-4xl md:text-6xl font-extrabold uppercase">
-                {t.about.title}
-              </h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                {t.about.p1}
-              </p>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                {t.about.p2}
-              </p>
-              <a
-                href="#contact"
-                className="inline-block px-8 py-4 bg-gradient-to-r from-[#00D4FF] to-[#0099FF] text-white font-bold uppercase tracking-wider rounded-lg hover:shadow-2xl hover:shadow-[#00D4FF]/50 hover:scale-105 transition-all duration-300"
+          <div className="text-center mb-16">
+            <span className="text-4xl md:text-5xl font-[family-name:var(--font-playfair)] italic text-[#FF5722] animate-glow">
+              {t.about.why}
+            </span>
+            <h2 className="text-4xl md:text-6xl font-extrabold uppercase mt-4">
+              {t.about.title}
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
+            {[
+              { 
+                title: t.about.problem1.title, 
+                desc: t.about.problem1.desc, 
+                icon: (
+                  <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                )
+              },
+              { 
+                title: t.about.problem2.title, 
+                desc: t.about.problem2.desc, 
+                icon: (
+                  <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                )
+              },
+              { 
+                title: t.about.problem3.title, 
+                desc: t.about.problem3.desc, 
+                icon: (
+                  <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                )
+              },
+              { 
+                title: t.about.problem4.title, 
+                desc: t.about.problem4.desc, 
+                icon: (
+                  <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                )
+              }
+            ].map((problem, i) => (
+              <div
+                key={i}
+                className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl hover:bg-white/20 transition-all duration-300 text-center group"
               >
-                {t.about.cta}
-              </a>
-            </div>
-            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600&auto=format&fit=crop"
-                alt="AI Technology"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-              />
-            </div>
+                <div className="text-[#FF5722] mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                  {problem.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{problem.title}</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">{problem.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-bold text-[#00D4FF] mb-8">
+              {t.about.solution}
+            </p>
+            <a
+              href="#expertise"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-[#00D4FF] to-[#0099FF] text-white font-bold uppercase tracking-wider rounded-lg hover:shadow-2xl hover:shadow-[#00D4FF]/50 hover:scale-105 transition-all duration-300"
+            >
+              {t.about.cta}
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Expertise Section - YOUR PERSONAL AI */}
-      <section className="py-24 px-6 bg-gradient-to-br from-gray-50 to-white">
+      {/* Expertise Section - OUR SOLUTION */}
+      <section id="expertise" className="py-24 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-extrabold uppercase">
@@ -86,57 +129,58 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
               {
-                image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop",
                 title: t.expertise.card1.title,
                 desc: t.expertise.card1.desc,
-                features: t.expertise.card1.features
+                icon: (
+                  <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                )
               },
               {
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop",
                 title: t.expertise.card2.title,
                 desc: t.expertise.card2.desc,
-                features: t.expertise.card2.features
+                icon: (
+                  <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                  </svg>
+                )
               },
               {
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop",
                 title: t.expertise.card3.title,
                 desc: t.expertise.card3.desc,
-                features: t.expertise.card3.features
+                icon: (
+                  <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                )
+              },
+              {
+                title: t.expertise.card4.title,
+                desc: t.expertise.card4.desc,
+                icon: (
+                  <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                )
               }
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 group"
+                className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 group p-8 text-center"
               >
-                {/* Image */}
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
-                  />
+                <div className="text-[#00D4FF] mb-6 flex justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                  {item.icon}
                 </div>
-
-                {/* Content */}
-                <div className="p-8">
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-                    {item.desc}
-                  </p>
-                  <ul className="space-y-3">
-                    {item.features.map((feature, j) => (
-                      <li key={j} className="flex items-center gap-3 text-sm text-gray-600">
-                        <span className="text-[#00D4FF]">✓</span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <h3 className="text-lg font-bold uppercase tracking-wider text-gray-600 mb-4 group-hover:text-[#00D4FF] transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -194,12 +238,12 @@ export default function Home() {
                     )}
                     {i === 1 && (
                       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     )}
                     {i === 2 && (
                       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                       </svg>
                     )}
                   </div>
@@ -219,6 +263,111 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us Section */}
+      <section className="py-24 px-6 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-extrabold uppercase gradient-text">
+              {t.whyUs.title}
+            </h2>
+            <p className="text-xl text-gray-600 mt-4">{t.whyUs.subtitle}</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+            {[
+              { 
+                title: t.whyUs.card1.title, 
+                desc: t.whyUs.card1.desc, 
+                icon: (
+                  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                  </svg>
+                )
+              },
+              { 
+                title: t.whyUs.card2.title, 
+                desc: t.whyUs.card2.desc, 
+                icon: (
+                  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                  </svg>
+                )
+              },
+              { 
+                title: t.whyUs.card3.title, 
+                desc: t.whyUs.card3.desc, 
+                icon: (
+                  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                )
+              },
+              { 
+                title: t.whyUs.card4.title, 
+                desc: t.whyUs.card4.desc, 
+                icon: (
+                  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                )
+              },
+              { 
+                title: t.whyUs.card5.title, 
+                desc: t.whyUs.card5.desc, 
+                icon: (
+                  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                  </svg>
+                )
+              }
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-center group"
+              >
+                <div className="text-[#00D4FF] mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Real Results Section */}
+      <section className="py-24 px-6 bg-gradient-to-br from-gray-900 to-black text-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-extrabold uppercase">
+              {t.results.title}
+            </h2>
+            <p className="text-xl text-gray-300 mt-4">{t.results.subtitle}</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {[
+              { value: t.results.metric1.value, label: t.results.metric1.label, desc: t.results.metric1.desc, color: "from-[#00D4FF] to-[#0099FF]" },
+              { value: t.results.metric2.value, label: t.results.metric2.label, desc: t.results.metric2.desc, color: "from-[#FF5722] to-[#FF7043]" },
+              { value: t.results.metric3.value, label: t.results.metric3.label, desc: t.results.metric3.desc, color: "from-[#00D4FF] to-[#FF5722]" },
+              { value: t.results.metric4.value, label: t.results.metric4.label, desc: t.results.metric4.desc, color: "from-[#0099FF] to-[#00D4FF]" }
+            ].map((metric, i) => (
+              <div
+                key={i}
+                className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl hover:bg-white/20 transition-all duration-300 text-center"
+              >
+                <div className={`text-5xl md:text-6xl font-extrabold bg-gradient-to-r ${metric.color} bg-clip-text text-transparent mb-2`}>
+                  {metric.value}
+                </div>
+                <div className="text-xl font-bold mb-2">{metric.label}</div>
+                <div className="text-sm text-gray-300">{metric.desc}</div>
               </div>
             ))}
           </div>

@@ -25,12 +25,12 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "KALEXIA - Smart AI Chatbots for Business",
+  title: "KLEXAI - Smart AI Chatbots for Business",
   description: "Transform your customer service with intelligent AI chatbots that understand your business, engage customers 24/7, and boost sales automatically.",
   keywords: ["AI chatbot", "business automation", "customer service", "RAG system", "AI assistant"],
-  authors: [{ name: "KALEXIA" }],
+  authors: [{ name: "KLEXAI" }],
   openGraph: {
-    title: "KALEXIA - Smart AI Chatbots for Business",
+    title: "KLEXAI - Smart AI Chatbots for Business",
     description: "Transform your customer service with intelligent AI chatbots",
     type: "website",
     locale: "en_US",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "KALEXIA - Smart AI Chatbots for Business",
+    title: "KLEXAI - Smart AI Chatbots for Business",
     description: "Transform your customer service with intelligent AI chatbots",
   },
 };

@@ -1,3 +1,5 @@
+export type Language = 'en' | 'tr';
+
 export const translations = {
   en: {
     nav: {
@@ -6,54 +8,74 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      title: "AI CHATBOTS FOR BUSINESS",
-      subtitle: "Transform your customer service with intelligent AI chatbots that understand your business, engage customers 24/7, and boost sales automatically.",
-      cta1: "Book Free Demo",
-      cta2: "Chat on WhatsApp",
+      title: "AI Assistant That Speaks Your Tone and Automates Your Work",
+      subtitle: "Chatbot, Voice Assistant, and Smart Automation for Businesses",
+      cta1: "Request Demo",
+      cta2: "Free Consultation",
     },
     about: {
-      why: "Why Choose",
-      title: "AI CHATBOTS?",
-      p1: "AI chatbots revolutionize customer engagement by providing instant, personalized responses 24/7. They handle multiple conversations simultaneously, reduce response times, and never take a break.",
-      p2: "Our intelligent chatbots learn from every interaction, becoming smarter over time. They can qualify leads, book appointments, answer FAQs, and seamlessly transfer complex queries to human agents when needed.",
-      cta: "Learn More",
+      why: "Problems",
+      title: "WE SOLVE",
+      problem1: {
+        title: "Time Waste",
+        desc: "Repetitive tasks consume your team's valuable time"
+      },
+      problem2: {
+        title: "Slow Response",
+        desc: "Customers wait too long for answers"
+      },
+      problem3: {
+        title: "High Costs",
+        desc: "Human workforce expenses keep growing"
+      },
+      problem4: {
+        title: "Poor UX",
+        desc: "Inconsistent customer experience"
+      },
+      solution: "We solve these with AI, not just simple chatbots.",
+      cta: "See How",
     },
     expertise: {
       our: "Our",
-      title: "YOUR PERSONAL AI, OUR EXPERTISE",
+      title: "SOLUTION",
       card1: {
-        title: "BESPOKE CHATBOT DEVELOPMENT",
-        desc: "We create custom AI chatbots tailored to your business data, providing instant, accurate support.",
-        features: ["Personalized responses", "Multi-language support", "Easy integration"]
+        title: "Tone & Emotion Understanding",
+        desc: "AI that understands user tone and emotions",
+        icon: "brain"
       },
       card2: {
-        title: "DATA SECURITY & PRIVACY",
-        desc: "Your data is our top priority. We implement end-to-end encryption and security protocols to ensure complete confidentiality.",
-        features: ["Document analysis", "Smart search", "Accurate answers"]
+        title: "Natural Text & Voice Response",
+        desc: "Natural responses in text and voice",
+        icon: "message"
       },
       card3: {
-        title: "INTELLIGENT INFORMATION RETRIEVAL",
-        desc: "Our AI quickly finds and summarizes information from thousands of your internal documents, saving you hours.",
-        features: ["Task automation", "Workflow optimization", "Time saving"]
+        title: "Business Personalization",
+        desc: "Customized for every business",
+        icon: "settings"
+      },
+      card4: {
+        title: "Process Automation",
+        desc: "Automate workflows intelligently",
+        icon: "zap"
       }
     },
     services: {
       our: "Our",
-      title: "CHATBOT SOLUTIONS",
+      title: "SERVICES",
       card1: {
-        title: "CUSTOM CHATBOT",
-        desc: "Build your personalized AI assistant that understands your business and talks to customers 24/7",
-        features: ["Personalized responses", "Multi-language support", "Easy integration"]
+        title: "Smart Personal Assistant",
+        desc: "Text and voice chatbot with intelligent responses",
+        features: ["Voice to Text", "Text to Voice", "Tone adaptation"]
       },
       card2: {
-        title: "RAG SYSTEM",
-        desc: "Advanced AI that searches your documents and gives accurate answers instantly",
-        features: ["Document analysis", "Smart search", "Accurate answers"]
+        title: "Process Automation",
+        desc: "Automate your business workflows",
+        features: ["Workflow automation", "Task scheduling", "Smart triggers"]
       },
       card3: {
-        title: "AUTOMATION",
-        desc: "Automate repetitive tasks and save hours of work every day with AI",
-        features: ["Task automation", "Workflow optimization", "Time saving"]
+        title: "API & Integration",
+        desc: "Connect with your existing systems",
+        features: ["REST API", "Webhooks", "Custom integration"]
       }
     },
     howItWorks: {
@@ -72,21 +94,69 @@ export const translations = {
         desc: "Launch your chatbot across multiple channels. Monitor performance and let AI handle thousands of conversations simultaneously."
       }
     },
+    whyUs: {
+      title: "WHY US?",
+      subtitle: "What makes us different",
+      card1: {
+        title: "Persian Language Support",
+        desc: "Native Persian understanding and response"
+      },
+      card2: {
+        title: "Tone Adaptation",
+        desc: "AI adapts to user's communication style"
+      },
+      card3: {
+        title: "Data Security",
+        desc: "Your data stays private and secure"
+      },
+      card4: {
+        title: "Fast Deployment",
+        desc: "Get started in days, not months"
+      },
+      card5: {
+        title: "Scalable",
+        desc: "Grows with your business needs"
+      }
+    },
+    results: {
+      title: "REAL RESULTS",
+      subtitle: "Outcome-based metrics",
+      metric1: {
+        value: "70%",
+        label: "Cost Reduction",
+        desc: "Lower support costs"
+      },
+      metric2: {
+        value: "5x",
+        label: "Faster Response",
+        desc: "Instant answers 24/7"
+      },
+      metric3: {
+        value: "95%",
+        label: "Satisfaction",
+        desc: "Higher customer happiness"
+      },
+      metric4: {
+        value: "100%",
+        label: "Team Focus",
+        desc: "Focus on important work"
+      }
+    },
     testimonials: {
       proven: "Proven",
       title: "SUCCESS STORIES",
       card1: {
-        quote: "KALEXIA's chatbot reduced our response time by 80% and increased customer satisfaction significantly.",
+        quote: "KLEXAI reduced our support costs by 70% while improving response quality.",
         author: "Sarah Johnson",
         role: "CEO, TechStart Inc"
       },
       card2: {
-        quote: "The RAG system is incredible. It answers complex questions about our products with perfect accuracy.",
+        quote: "The Persian tone adaptation is incredible. Customers love the natural conversations.",
         author: "Michael Chen",
         role: "CTO, DataFlow Solutions"
       },
       card3: {
-        quote: "Best investment we made this year. The automation saved us 40 hours per week in customer support.",
+        quote: "Our team now focuses on strategic work. AI handles the repetitive tasks perfectly.",
         author: "Emma Rodriguez",
         role: "Operations Manager, GrowthCo"
       }
@@ -122,7 +192,7 @@ export const translations = {
       error: "✗ Failed to send message. Please try again or contact us via WhatsApp."
     },
     footer: {
-      copyright: "© 2025 KALEXIA STUDIO. All Rights Reserved."
+      copyright: "© 2025 KLEXAI STUDIO. All Rights Reserved."
     }
   },
   tr: {
@@ -132,54 +202,74 @@ export const translations = {
       contact: "İletişim",
     },
     hero: {
-      title: "İŞLETMELER İÇİN YAPAY ZEKA CHATBOTLARI",
-      subtitle: "İşinizi anlayan, müşterilerinizle 7/24 etkileşim kuran ve satışları otomatik olarak artıran akıllı yapay zeka chatbotları ile müşteri hizmetinizi dönüştürün.",
-      cta1: "Ücretsiz Demo Rezervasyonu",
-      cta2: "WhatsApp'tan Sohbet",
+      title: "Sizin Tonunuzla Konuşan ve İşlerinizi Otomatikleştiren AI Asistan",
+      subtitle: "İşletmeler için Chatbot, Sesli Asistan ve Akıllı Otomasyon",
+      cta1: "Demo Talep Et",
+      cta2: "Ücretsiz Danışmanlık",
     },
     about: {
-      why: "Neden",
-      title: "YAPAY ZEKA CHATBOTLARI?",
-      p1: "Yapay zeka chatbotları, 7/24 anında ve kişiselleştirilmiş yanıtlar sağlayarak müşteri etkileşiminde devrim yaratır. Aynı anda birden fazla konuşmayı yönetir, yanıt sürelerini azaltır ve asla mola vermez.",
-      p2: "Akıllı chatbotlarımız her etkileşimden öğrenir ve zamanla daha akıllı hale gelir. Potansiyel müşterileri nitelendirebilir, randevu alabilir, SSS'leri yanıtlayabilir ve karmaşık sorguları sorunsuz bir şekilde insan temsilcilere aktarabilir.",
-      cta: "Daha Fazla Bilgi",
+      why: "Çözdüğümüz",
+      title: "SORUNLAR",
+      problem1: {
+        title: "Zaman Kaybı",
+        desc: "Tekrarlayan görevler ekibinizin değerli zamanını tüketiyor"
+      },
+      problem2: {
+        title: "Yavaş Yanıt",
+        desc: "Müşteriler cevap için çok uzun bekliyor"
+      },
+      problem3: {
+        title: "Yüksek Maliyetler",
+        desc: "İnsan gücü masrafları sürekli artıyor"
+      },
+      problem4: {
+        title: "Zayıf Deneyim",
+        desc: "Tutarsız müşteri deneyimi"
+      },
+      solution: "Bunları basit chatbot'larla değil, AI ile çözüyoruz.",
+      cta: "Nasıl Olduğunu Gör",
     },
     expertise: {
       our: "Bizim",
-      title: "KİŞİSEL YAPAY ZEKANIZ, BİZİM UZMANLIĞIMIZ",
+      title: "ÇÖZÜMÜMÜZ",
       card1: {
-        title: "ÖZEL CHATBOT GELİŞTİRME",
-        desc: "İşletme verilerinize özel, anında ve doğru destek sağlayan özel yapay zeka chatbotları oluşturuyoruz.",
-        features: ["Kişiselleştirilmiş yanıtlar", "Çoklu dil desteği", "Kolay entegrasyon"]
+        title: "Ton ve Duygu Anlama",
+        desc: "Kullanıcı tonunu ve duygularını anlayan AI",
+        icon: "brain"
       },
       card2: {
-        title: "VERİ GÜVENLİĞİ VE GİZLİLİK",
-        desc: "Verileriniz bizim önceliğimizdir. Tam gizliliği sağlamak için uçtan uca şifreleme ve güvenlik protokolleri uyguluyoruz.",
-        features: ["Doküman analizi", "Akıllı arama", "Doğru yanıtlar"]
+        title: "Doğal Metin ve Ses Yanıtı",
+        desc: "Metin ve seste doğal yanıtlar",
+        icon: "message"
       },
       card3: {
-        title: "AKILLI BİLGİ ERİŞİMİ",
-        desc: "Yapay zekamız, binlerce dahili belgenizden bilgileri hızla bulur ve özetler, size saatler kazandırır.",
-        features: ["Görev otomasyonu", "İş akışı optimizasyonu", "Zaman tasarrufu"]
+        title: "İşletme Kişiselleştirme",
+        desc: "Her işletme için özelleştirilmiş",
+        icon: "settings"
+      },
+      card4: {
+        title: "Süreç Otomasyonu",
+        desc: "İş akışlarını akıllıca otomatikleştir",
+        icon: "zap"
       }
     },
     services: {
       our: "Bizim",
-      title: "CHATBOT ÇÖZÜMLERİ",
+      title: "HİZMETLER",
       card1: {
-        title: "ÖZEL CHATBOT",
-        desc: "İşinizi anlayan ve müşterilerle 7/24 konuşan kişiselleştirilmiş yapay zeka asistanınızı oluşturun",
-        features: ["Kişiselleştirilmiş yanıtlar", "Çoklu dil desteği", "Kolay entegrasyon"]
+        title: "Akıllı Kişisel Asistan",
+        desc: "Akıllı yanıtlarla metin ve sesli chatbot",
+        features: ["Ses'ten Metin'e", "Metin'den Ses'e", "Ton uyarlama"]
       },
       card2: {
-        title: "RAG SİSTEMİ",
-        desc: "Belgelerinizi arayan ve anında doğru yanıtlar veren gelişmiş yapay zeka",
-        features: ["Doküman analizi", "Akıllı arama", "Doğru yanıtlar"]
+        title: "Süreç Otomasyonu",
+        desc: "İş akışlarınızı otomatikleştirin",
+        features: ["İş akışı otomasyonu", "Görev planlama", "Akıllı tetikleyiciler"]
       },
       card3: {
-        title: "OTOMASYON",
-        desc: "Tekrarlayan görevleri otomatikleştirin ve yapay zeka ile her gün saatler kazanın",
-        features: ["Görev otomasyonu", "İş akışı optimizasyonu", "Zaman tasarrufu"]
+        title: "API ve Entegrasyon",
+        desc: "Mevcut sistemlerinizle bağlantı kurun",
+        features: ["REST API", "Webhook'lar", "Özel entegrasyon"]
       }
     },
     howItWorks: {
@@ -198,21 +288,69 @@ export const translations = {
         desc: "Chatbotunuzu birden fazla kanalda başlatın. Performansı izleyin ve yapay zekanın aynı anda binlerce konuşmayı yönetmesine izin verin."
       }
     },
+    whyUs: {
+      title: "NEDEN BİZ?",
+      subtitle: "Bizi farklı kılan nedir",
+      card1: {
+        title: "Farsça Dil Desteği",
+        desc: "Yerel Farsça anlama ve yanıt"
+      },
+      card2: {
+        title: "Ton Uyarlama",
+        desc: "AI kullanıcının iletişim tarzına uyum sağlar"
+      },
+      card3: {
+        title: "Veri Güvenliği",
+        desc: "Verileriniz özel ve güvende kalır"
+      },
+      card4: {
+        title: "Hızlı Dağıtım",
+        desc: "Aylar değil, günler içinde başlayın"
+      },
+      card5: {
+        title: "Ölçeklenebilir",
+        desc: "İşletmenizle birlikte büyür"
+      }
+    },
+    results: {
+      title: "GERÇEK SONUÇLAR",
+      subtitle: "Sonuç odaklı metrikler",
+      metric1: {
+        value: "70%",
+        label: "Maliyet Azaltma",
+        desc: "Daha düşük destek maliyetleri"
+      },
+      metric2: {
+        value: "5x",
+        label: "Daha Hızlı Yanıt",
+        desc: "7/24 anında cevaplar"
+      },
+      metric3: {
+        value: "95%",
+        label: "Memnuniyet",
+        desc: "Daha yüksek müşteri mutluluğu"
+      },
+      metric4: {
+        value: "100%",
+        label: "Ekip Odağı",
+        desc: "Önemli işlere odaklanın"
+      }
+    },
     testimonials: {
       proven: "Kanıtlanmış",
       title: "BAŞARI HİKAYELERİ",
       card1: {
-        quote: "KALEXIA'nın chatbotu yanıt süremizi %80 azalttı ve müşteri memnuniyetini önemli ölçüde artırdı.",
+        quote: "KLEXAI destek maliyetlerimizi %70 azalttı ve yanıt kalitesini artırdı.",
         author: "Sarah Johnson",
         role: "CEO, TechStart Inc"
       },
       card2: {
-        quote: "RAG sistemi inanılmaz. Ürünlerimiz hakkındaki karmaşık soruları mükemmel doğrulukla yanıtlıyor.",
+        quote: "Farsça ton uyarlaması inanılmaz. Müşteriler doğal konuşmaları seviyor.",
         author: "Michael Chen",
         role: "CTO, DataFlow Solutions"
       },
       card3: {
-        quote: "Bu yıl yaptığımız en iyi yatırım. Otomasyon, müşteri desteğinde haftada 40 saat tasarruf sağladı.",
+        quote: "Ekibimiz artık stratejik işlere odaklanıyor. AI tekrarlayan görevleri mükemmel hallediyor.",
         author: "Emma Rodriguez",
         role: "Operasyon Müdürü, GrowthCo"
       }
@@ -248,12 +386,10 @@ export const translations = {
       error: "✗ Mesaj gönderilemedi. Lütfen tekrar deneyin veya WhatsApp üzerinden bize ulaşın."
     },
     footer: {
-      copyright: "© 2025 KALEXIA STUDIO. Tüm Hakları Saklıdır."
+      copyright: "© 2025 KLEXAI STUDIO. Tüm Hakları Saklıdır."
     }
   }
 };
-
-export type Language = 'en' | 'tr';
 
 export function getTranslation(lang: Language) {
   return translations[lang];

@@ -33,7 +33,7 @@ export default function Header() {
           href="/"
           className="text-3xl font-bold font-[family-name:var(--font-orbitron)] bg-gradient-to-r from-gray-900 to-[#00D4FF] bg-clip-text text-transparent hover:scale-105 transition-transform tracking-tighter"
         >
-          KALEXIA
+          KLEXAI
         </Link>
 
         <nav className="hidden md:flex gap-8">
@@ -64,7 +64,7 @@ export default function Header() {
           onClick={toggleLanguage}
           className="px-6 py-2 border-2 border-[#00D4FF] text-[#00D4FF] rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-[#00D4FF] hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00D4FF]/30"
         >
-          {lang === "en" ? "TR" : "EN"}
+          {lang === "en" ? "EN" : lang === "tr" ? "TR" : "FA"}
         </button>
       </div>
     </header>

@@ -19,29 +19,29 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,212,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,87,34,0.03)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_110%)]"></div>
       </div>
 
-      <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         {/* Left Content */}
-        <div className="space-y-8 relative">
+        <div className="space-y-6 md:space-y-8 relative order-2 md:order-1">
           {/* Floating Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#00D4FF]/10 to-[#FF5722]/10 border border-[#00D4FF]/20 rounded-full backdrop-blur-sm animate-fade-in">
-            <span className="relative flex h-3 w-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r from-[#00D4FF]/10 to-[#FF5722]/10 border border-[#00D4FF]/20 rounded-full backdrop-blur-sm animate-fade-in">
+            <span className="relative flex h-2.5 w-2.5 md:h-3 md:w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00D4FF] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-[#00D4FF]"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 md:h-3 md:w-3 bg-[#00D4FF]"></span>
             </span>
-            <span className="text-sm font-semibold bg-gradient-to-r from-[#00D4FF] to-[#FF5722] bg-clip-text text-transparent">
+            <span className="text-xs md:text-sm font-semibold bg-gradient-to-r from-[#00D4FF] to-[#FF5722] bg-clip-text text-transparent">
               AI-Powered Solutions
             </span>
           </div>
 
           {/* Main Title with Gradient */}
-          <h1 className="text-5xl md:text-7xl font-extrabold uppercase leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold uppercase leading-tight">
             <span className="bg-gradient-to-r from-gray-900 via-[#00D4FF] to-gray-900 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
               {t.hero.title}
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
+          <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-xl">
             {t.hero.subtitle}
           </p>
 
@@ -73,36 +73,39 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="flex flex-wrap gap-6 md:gap-8 pt-6 md:pt-8 border-t border-gray-200">
+          <div className="flex flex-wrap gap-4 md:gap-6 lg:gap-8 pt-4 md:pt-6 lg:pt-8 border-t border-gray-200">
             <div>
-              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#00D4FF] to-[#0099FF] bg-clip-text text-transparent">500+</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#00D4FF] to-[#0099FF] bg-clip-text text-transparent">500+</div>
               <div className="text-xs md:text-sm text-gray-600">Active Clients</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#FF5722] to-[#FF7043] bg-clip-text text-transparent">24/7</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#FF5722] to-[#FF7043] bg-clip-text text-transparent">24/7</div>
               <div className="text-xs md:text-sm text-gray-600">Support</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#00D4FF] to-[#FF5722] bg-clip-text text-transparent">99%</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#00D4FF] to-[#FF5722] bg-clip-text text-transparent">99%</div>
               <div className="text-xs md:text-sm text-gray-600">Satisfaction</div>
             </div>
           </div>
         </div>
 
         {/* Right Image - 3D Card Effect */}
-        <div className="relative perspective-1000">
-          <div className="relative h-[500px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl transform hover:rotate-y-6 transition-all duration-500 group">
-            {/* Glassmorphism Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#00D4FF]/30 via-transparent to-[#FF5722]/30 z-10 backdrop-blur-[2px] group-hover:backdrop-blur-0 transition-all duration-500"></div>
+        <div className="relative perspective-1000 order-1 md:order-2">
+          <div className="relative w-full aspect-[3/4] md:aspect-[4/5] rounded-2xl md:rounded-3xl overflow-hidden shadow-xl md:shadow-2xl group">
             
-            {/* Image */}
+            {/* Image - کل عکس معلوم بدون crop */}
             <Image
-              src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800&auto=format&fit=crop"
+              src="/hero-image.jpg"
               alt="AI Chatbot Interface"
               fill
-              className="object-cover group-hover:scale-110 transition-all duration-700"
+              className="object-contain group-hover:scale-105 transition-transform duration-700"
               priority
+              quality={100}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
             />
+
+            {/* Glassmorphism Overlay - فقط روی لایه جداگانه */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[#00D4FF]/5 via-transparent to-[#FF5722]/5 z-10 pointer-events-none group-hover:opacity-0 transition-opacity duration-500"></div>
 
             {/* Floating Elements */}
             <div className="absolute top-4 right-4 md:top-8 md:right-8 z-20 bg-white/90 backdrop-blur-md px-4 py-3 md:px-6 md:py-4 rounded-xl md:rounded-2xl shadow-xl animate-float">
