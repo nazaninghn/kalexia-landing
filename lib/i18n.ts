@@ -145,7 +145,7 @@ export const translations = {
       }
     },
     results: {
-      title: "Real Results",
+      title: "REAL RESULTS",
       subtitle: "Outcome-based metrics",
       note: "Measured across real client deployments",
       metric1: {

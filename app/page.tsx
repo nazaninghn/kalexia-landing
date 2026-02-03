@@ -49,7 +49,7 @@ export default function Home() {
             <span className="text-4xl md:text-5xl font-semibold text-[#FF5722]">
               {t.about.why}
             </span>
-            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase mt-4`}>
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold leading-tight py-2 mt-4`}>
               {t.about.title}
             </h2>
           </div>
@@ -135,7 +135,7 @@ export default function Home() {
       <section className="py-16 px-6 bg-white border-t border-gray-100 pb-8">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-10">
-            <h2 className={`${poppins.className} text-3xl md:text-4xl font-bold uppercase text-gray-900 mb-2`}>
+            <h2 className={`${poppins.className} text-3xl md:text-4xl font-bold text-gray-900 leading-tight py-2 mb-2`}>
               {t.howWeSolve.title}
             </h2>
             <p className="text-gray-600 text-base">{t.howWeSolve.subtitle}</p>
@@ -269,7 +269,7 @@ export default function Home() {
       <section id="services" className="py-24 px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase gradient-text`}>
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold gradient-text leading-tight py-2`}>
               {t.services.title}
             </h2>
           </div>
@@ -367,7 +367,7 @@ export default function Home() {
       <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase gradient-text`}>
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold gradient-text leading-tight py-2`}>
               {t.whyUs.title}
             </h2>
             <p className="text-xl text-gray-600 mt-4">{t.whyUs.subtitle}</p>
@@ -440,7 +440,7 @@ export default function Home() {
       <section className="py-24 px-6 bg-gradient-to-br from-gray-900 to-black text-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase`}>
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold leading-tight py-2`}>
               {t.results.title}
             </h2>
             <p className="text-xl text-gray-300 mt-4">{t.results.subtitle}</p>
@@ -476,7 +476,7 @@ export default function Home() {
         
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-12 md:mb-20">
-            <h2 className={`${poppins.className} text-3xl md:text-6xl font-extrabold uppercase gradient-text mb-2 md:mb-4`}>
+            <h2 className={`${poppins.className} text-3xl md:text-6xl font-extrabold gradient-text leading-tight py-2 mb-2 md:mb-4`}>
               {t.howItWorks.title}
             </h2>
             <p className="text-base md:text-xl text-gray-600">{t.howItWorks.subtitle}</p>
@@ -577,7 +577,7 @@ export default function Home() {
             <span className="text-4xl md:text-5xl font-semibold text-[#00D4FF]">
               {t.testimonials.proven}
             </span>
-            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase mt-4`}>
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold leading-tight py-2 mt-4`}>
               {t.testimonials.title}
             </h2>
             <p className="text-gray-400 mt-3 text-sm tracking-wide">Real teams. Real deployments. Real impact.</p>
@@ -743,7 +743,7 @@ export default function Home() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         
         <div className="container mx-auto max-w-4xl text-center relative z-10 space-y-8">
-          <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase`}>
+          <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold leading-tight py-2`}>
             {t.cta.title}
           </h2>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
