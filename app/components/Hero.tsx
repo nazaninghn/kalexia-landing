@@ -77,15 +77,15 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 md:gap-6 lg:gap-8 pt-6 md:pt-8 mt-4 md:mt-6 border-t border-gray-200/60">
             <div>
               <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#00C4EF] to-[#0099CC] bg-clip-text text-transparent">500+</div>
-              <div className="text-xs md:text-sm text-gray-600">Active Clients</div>
+              <div className="text-xs md:text-sm text-gray-600">{t.hero.stats.clients}</div>
             </div>
             <div>
               <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#FF5722] to-[#FF7043] bg-clip-text text-transparent">24/7</div>
-              <div className="text-xs md:text-sm text-gray-600">Support</div>
+              <div className="text-xs md:text-sm text-gray-600">{t.hero.stats.support}</div>
             </div>
             <div>
               <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#00C4EF] to-[#FF5722] bg-clip-text text-transparent">99%</div>
-              <div className="text-xs md:text-sm text-gray-600">Satisfaction</div>
+              <div className="text-xs md:text-sm text-gray-600">{t.hero.stats.satisfaction}</div>
             </div>
           </div>
         </div>

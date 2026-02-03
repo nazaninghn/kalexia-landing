@@ -19,6 +19,11 @@ export const translations = {
       badge2: {
         title: "AI Powered",
         desc: "Learns your tone"
+      },
+      stats: {
+        clients: "Active Clients",
+        support: "Support",
+        satisfaction: "Satisfaction"
       }
     },
     about: {
@@ -244,6 +249,11 @@ export const translations = {
       badge2: {
         title: "AI Destekli",
         desc: "Tonunuzu öğrenir"
+      },
+      stats: {
+        clients: "Aktif Müşteri",
+        support: "Destek",
+        satisfaction: "Memnuniyet"
       }
     },
     about: {
