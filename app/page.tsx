@@ -269,10 +269,7 @@ export default function Home() {
       <section id="services" className="py-24 px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <span className="text-4xl md:text-5xl font-special italic text-[#FF5722] animate-glow">
-              {t.services.our}
-            </span>
-            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase mt-4 gradient-text`}>
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase gradient-text`}>
               {t.services.title}
             </h2>
           </div>
@@ -447,7 +444,7 @@ export default function Home() {
               {t.results.title}
             </h2>
             <p className="text-xl text-gray-300 mt-4">{t.results.subtitle}</p>
-            <p className="text-sm text-gray-400 mt-2">Measured across real client deployments</p>
+            <p className="text-sm text-gray-400 mt-2">{t.results.note}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">

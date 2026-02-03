@@ -78,8 +78,7 @@ export const translations = {
       }
     },
     services: {
-      our: "Our",
-      title: "SERVICES",
+      title: "Services",
       card1: {
         title: "Smart Personal Assistant",
         desc: "AI assistant that understands intent, tone, and context",
@@ -138,8 +137,9 @@ export const translations = {
       }
     },
     results: {
-      title: "REAL RESULTS",
+      title: "Real Results",
       subtitle: "Outcome-based metrics",
+      note: "Measured across real client deployments",
       metric1: {
         value: "70%",
         label: "Cost Reduction",
@@ -295,8 +295,7 @@ export const translations = {
       }
     },
     services: {
-      our: "Bizim",
-      title: "HİZMETLER",
+      title: "Hizmetlerimiz",
       card1: {
         title: "Akıllı Kişisel Asistan",
         desc: "Niyet, ton ve bağlamı anlayan AI asistanı",
@@ -355,8 +354,9 @@ export const translations = {
       }
     },
     results: {
-      title: "GERÇEK SONUÇLAR",
+      title: "Gerçek Sonuçlar",
       subtitle: "Sonuç odaklı metrikler",
+      note: "Gerçek müşteri projeleri üzerinden ölçülmüştür",
       metric1: {
         value: "70%",
         label: "Maliyet Azaltma",
