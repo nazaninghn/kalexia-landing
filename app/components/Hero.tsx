@@ -30,7 +30,7 @@ export default function Hero() {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 md:h-3 md:w-3 bg-[#00C4EF]"></span>
             </span>
             <span className="text-xs md:text-sm font-semibold bg-gradient-to-r from-[#00C4EF] to-[#FF5722] bg-clip-text text-transparent">
-              AI-Powered Solutions
+              {t.hero.topBadge}
             </span>
           </div>
 

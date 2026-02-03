@@ -12,6 +12,7 @@ export const translations = {
       subtitle: "Chatbot, Voice Assistant, and Smart Automation for Businesses",
       cta1: "Request Demo",
       cta2: "Free Consultation",
+      topBadge: "AI-Powered Solutions",
       badge1: {
         title: "Fast Response",
         desc: "< 2 seconds"
@@ -92,6 +93,7 @@ export const translations = {
     },
     services: {
       title: "Services",
+      coreLabel: "Core Service",
       card1: {
         title: "Smart Personal Assistant",
         desc: "AI assistant that understands intent, tone, and context",
@@ -177,6 +179,7 @@ export const translations = {
     testimonials: {
       proven: "Proven",
       title: "SUCCESS STORIES",
+      subtitle: "Real teams. Real deployments. Real impact.",
       card1: {
         quote: "KLEXAI reduced our support costs by 70% while improving response quality.",
         author: "Sarah Johnson",
@@ -210,7 +213,12 @@ export const translations = {
       title: "Ready to Automate Conversations with AI That Actually Works?",
       subtitle: "Join hundreds of companies using AI to reduce support costs and boost customer satisfaction",
       btn1: "Request a Demo",
-      btn2: "Free Consultation"
+      btn2: "Free Consultation",
+      trust: {
+        commitment: "No Commitment",
+        security: "Enterprise-Grade Security",
+        speed: "Live in Days"
+      }
     },
     contact: {
       title: "Talk to an AI Automation Expert",
@@ -242,6 +250,7 @@ export const translations = {
       subtitle: "İşletmeler için hızlı, akıllı ve ölçeklenebilir AI çözümleri",
       cta1: "Demo Talep Et",
       cta2: "Ücretsiz Görüşme",
+      topBadge: "Yapay Zekâ Destekli Çözümler",
       badge1: {
         title: "Hızlı Yanıt",
         desc: "< 2 saniye"
@@ -322,6 +331,7 @@ export const translations = {
     },
     services: {
       title: "Hizmetlerimiz",
+      coreLabel: "Ana Hizmet",
       card1: {
         title: "Akıllı Kişisel Asistan",
         desc: "Niyet, ton ve bağlamı anlayan AI asistanı",
@@ -407,6 +417,7 @@ export const translations = {
     testimonials: {
       proven: "Kanıtlanmış",
       title: "BAŞARI HİKAYELERİ",
+      subtitle: "Gerçek ekipler. Gerçek kurulumlar. Gerçek etki.",
       card1: {
         quote: "KLEXAI destek maliyetlerimizi %70 azalttı ve yanıt kalitesini artırdı.",
         author: "Sarah Johnson",
@@ -440,7 +451,12 @@ export const translations = {
       title: "Gerçekten İşe Yarayan AI ile Konuşmaları Otomatikleştirmeye Hazır mısınız?",
       subtitle: "Destek maliyetlerini azaltmak ve müşteri memnuniyetini artırmak için yapay zeka kullanan yüzlerce şirkete katılın",
       btn1: "Demo Talep Et",
-      btn2: "Ücretsiz Görüşme"
+      btn2: "Ücretsiz Görüşme",
+      trust: {
+        commitment: "Taahhüt Yok",
+        security: "Kurumsal Düzey Güvenlik",
+        speed: "Günler İçinde Yayında"
+      }
     },
     contact: {
       title: "Bir AI Otomasyon Uzmanıyla Konuşun",
