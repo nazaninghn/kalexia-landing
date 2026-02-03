@@ -54,7 +54,8 @@ export const translations = {
     },
     expertise: {
       our: "Our",
-      title: "SOLUTION",
+      title: "Solution",
+      subtitle: "Everything you need to automate conversations intelligently",
       card1: {
         title: "Tone & Emotion Understanding",
         desc: "AI that understands user tone and emotions",
@@ -270,7 +271,8 @@ export const translations = {
     },
     expertise: {
       our: "Bizim",
-      title: "ÇÖZÜMÜMÜZ",
+      title: "Çözümümüz",
+      subtitle: "Konuşmaları akıllıca otomatikleştirmek için ihtiyacınız olan her şey",
       card1: {
         title: "Ton ve Duygu Anlama",
         desc: "Kullanıcı tonunu ve duygularını anlayan AI",

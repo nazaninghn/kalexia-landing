@@ -196,15 +196,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Expertise Section - OUR SOLUTION */}
+      {/* Expertise Section - Solution */}
       <section id="expertise" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white pt-8">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className={`${poppins.className} text-4xl md:text-5xl font-extrabold uppercase mb-3`}>
-              <span className="text-[#FF5722] font-semibold">OUR </span>
-              <span className="font-bold">SOLUTION</span>
+            <h2 className={`${poppins.className} text-4xl md:text-5xl font-extrabold mb-3`}>
+              <span className="text-[#FF5722] font-semibold uppercase">{t.expertise.our} </span>
+              <span className="font-bold uppercase">{t.expertise.title}</span>
             </h2>
-            <p className="text-gray-600 text-lg">Everything you need to automate conversations intelligently</p>
+            <p className="text-gray-600 text-lg">{t.expertise.subtitle}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
