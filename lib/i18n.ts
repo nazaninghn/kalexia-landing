@@ -35,6 +35,23 @@ export const translations = {
       solution: "We don't build chatbots. We build AI systems that work.",
       cta: "See How It Works",
     },
+    howWeSolve: {
+      title: "How We Solve This",
+      subtitle: "Intelligence at scale, not just automation",
+      listen: {
+        title: "Listen",
+        desc: "Learns your brand tone and customer intent"
+      },
+      learn: {
+        title: "Learn",
+        desc: "Learns from your data to give accurate, consistent answers"
+      },
+      act: {
+        title: "Act",
+        desc: "Takes action instantly across channels and workflows"
+      },
+      bridge: "Powered by the system below"
+    },
     expertise: {
       our: "Our",
       title: "SOLUTION",
@@ -233,6 +250,23 @@ export const translations = {
       },
       solution: "Chatbot yapmıyoruz. Çalışan AI sistemleri kuruyoruz.",
       cta: "Nasıl Çalıştığını Görün",
+    },
+    howWeSolve: {
+      title: "Bunu Nasıl Çözüyoruz",
+      subtitle: "Ölçekte zeka, sadece otomasyon değil",
+      listen: {
+        title: "Dinle",
+        desc: "Marka tonunuzu ve müşteri niyetini öğrenir"
+      },
+      learn: {
+        title: "Öğren",
+        desc: "Doğru, tutarlı yanıtlar vermek için verilerinizden öğrenir"
+      },
+      act: {
+        title: "Hareket Et",
+        desc: "Kanallar ve iş akışları boyunca anında harekete geçer"
+      },
+      bridge: "Aşağıdaki sistem tarafından desteklenmektedir"
     },
     expertise: {
       our: "Bizim",

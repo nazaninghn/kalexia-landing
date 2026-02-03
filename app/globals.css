@@ -8,10 +8,15 @@
   --text-muted: #737373;
 }
 
-body {
-  @apply bg-white text-gray-900 font-[family-name:var(--font-roboto)];
+/* CRITICAL: Prevent font synthesis that can distort Turkish characters (Ş, İ, Ğ, etc.) */
+* {
+  font-synthesis: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-white text-gray-900;
   text-rendering: optimizeLegibility;
   /* Ensure proper Turkish character rendering */
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
@@ -19,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-[family-name:var(--font-poppins)] tracking-tight;
+  @apply tracking-tight;
   font-feature-settings: "kern" 1, "liga" 1;
   font-variant-ligatures: common-ligatures;
 }
@@ -34,10 +39,6 @@ p, span, a, button, input, textarea, label {
   input, textarea, select {
     font-size: 16px !important; /* Prevents zoom on iOS */
   }
-}
-
-.font-special {
-  font-family: var(--font-montserrat);
 }
 
 .text-balance {

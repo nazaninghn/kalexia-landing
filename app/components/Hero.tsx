@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
+import { poppins } from "@/lib/fonts";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -34,7 +35,7 @@ export default function Hero() {
           </div>
 
           {/* Main Title with Gradient */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase leading-tight">
+          <h1 className={`${poppins.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase leading-tight`}>
             <span className="bg-gradient-to-r from-gray-900 via-[#00C4EF] to-gray-900 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
               {t.hero.title}
             </span>

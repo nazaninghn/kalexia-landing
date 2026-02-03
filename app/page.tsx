@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import StickyCTA from "./components/StickyCTA";
 import { useLanguage } from "@/lib/LanguageContext";
+import { poppins } from "@/lib/fonts";
 
 export default function Home() {
   const { t } = useLanguage();
@@ -48,7 +49,7 @@ export default function Home() {
             <span className="text-4xl md:text-5xl font-semibold text-[#FF5722]">
               {t.about.why}
             </span>
-            <h2 className="text-4xl md:text-6xl font-extrabold uppercase mt-4">
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase mt-4`}>
               {t.about.title}
             </h2>
           </div>
@@ -134,10 +135,10 @@ export default function Home() {
       <section className="py-16 px-6 bg-white border-t border-gray-100 pb-8">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-gray-900 mb-2">
-              How We Solve This
+            <h2 className={`${poppins.className} text-3xl md:text-4xl font-bold uppercase text-gray-900 mb-2`}>
+              {t.howWeSolve.title}
             </h2>
-            <p className="text-gray-600 text-base">Intelligence at scale, not just automation</p>
+            <p className="text-gray-600 text-base">{t.howWeSolve.subtitle}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 relative">
@@ -154,8 +155,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#00C4EF] transition-colors">Listen</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Learns your brand tone and customer intent</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#00C4EF] transition-colors">{t.howWeSolve.listen.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{t.howWeSolve.listen.desc}</p>
             </div>
 
             {/* Learn */}
@@ -168,8 +169,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#00C4EF] transition-colors">Learn</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Learns from your data to give accurate, consistent answers</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#00C4EF] transition-colors">{t.howWeSolve.learn.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{t.howWeSolve.learn.desc}</p>
             </div>
 
             {/* Act */}
@@ -182,14 +183,14 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#00C4EF] transition-colors">Act</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Takes action instantly across channels and workflows</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#00C4EF] transition-colors">{t.howWeSolve.act.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{t.howWeSolve.act.desc}</p>
             </div>
           </div>
 
           {/* Bridge text */}
           <div className="text-center mt-10 mb-4">
-            <p className="text-sm text-gray-500 uppercase tracking-wider">Powered by the system below</p>
+            <p className="text-sm text-gray-500 uppercase tracking-wider">{t.howWeSolve.bridge}</p>
             <div className="w-px h-12 bg-gradient-to-b from-gray-300 via-gray-200 to-transparent mx-auto mt-4"></div>
           </div>
         </div>
@@ -199,7 +200,7 @@ export default function Home() {
       <section id="expertise" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white pt-8">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-extrabold uppercase mb-3">
+            <h2 className={`${poppins.className} text-4xl md:text-5xl font-extrabold uppercase mb-3`}>
               <span className="text-[#FF5722] font-semibold">OUR </span>
               <span className="font-bold">SOLUTION</span>
             </h2>
@@ -268,10 +269,10 @@ export default function Home() {
       <section id="services" className="py-24 px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <span className="text-4xl md:text-5xl font-[family-name:var(--font-playfair)] italic text-[#FF5722] animate-glow">
+            <span className="text-4xl md:text-5xl font-special italic text-[#FF5722] animate-glow">
               {t.services.our}
             </span>
-            <h2 className="text-4xl md:text-6xl font-extrabold uppercase mt-4 gradient-text">
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase mt-4 gradient-text`}>
               {t.services.title}
             </h2>
           </div>
@@ -335,7 +336,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold uppercase tracking-wider text-gray-600 mb-4 group-hover:text-[#00D4FF] transition-colors text-center">
+                <h3 className={`${poppins.className} text-xl font-bold uppercase tracking-wider text-gray-600 mb-4 group-hover:text-[#00D4FF] transition-colors text-center`}>
                   {service.title}
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed text-center">
@@ -369,7 +370,7 @@ export default function Home() {
       <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-extrabold uppercase gradient-text">
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase gradient-text`}>
               {t.whyUs.title}
             </h2>
             <p className="text-xl text-gray-600 mt-4">{t.whyUs.subtitle}</p>
@@ -442,7 +443,7 @@ export default function Home() {
       <section className="py-24 px-6 bg-gradient-to-br from-gray-900 to-black text-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-extrabold uppercase">
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase`}>
               {t.results.title}
             </h2>
             <p className="text-xl text-gray-300 mt-4">{t.results.subtitle}</p>
@@ -478,7 +479,7 @@ export default function Home() {
         
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-12 md:mb-20">
-            <h2 className="text-3xl md:text-6xl font-extrabold uppercase gradient-text mb-2 md:mb-4">
+            <h2 className={`${poppins.className} text-3xl md:text-6xl font-extrabold uppercase gradient-text mb-2 md:mb-4`}>
               {t.howItWorks.title}
             </h2>
             <p className="text-base md:text-xl text-gray-600">{t.howItWorks.subtitle}</p>
@@ -540,7 +541,7 @@ export default function Home() {
                     </div>
 
                     {/* Content */}
-                    <h3 className="text-lg md:text-xl font-bold uppercase text-center mb-3 md:mb-4 text-gray-900">
+                    <h3 className={`${poppins.className} text-lg md:text-xl font-bold uppercase text-center mb-3 md:mb-4 text-gray-900`}>
                       {step.title}
                     </h3>
                     <p className="text-sm md:text-base text-gray-600 text-center leading-relaxed">
@@ -579,7 +580,7 @@ export default function Home() {
             <span className="text-4xl md:text-5xl font-semibold text-[#00D4FF]">
               {t.testimonials.proven}
             </span>
-            <h2 className="text-4xl md:text-6xl font-extrabold uppercase mt-4">
+            <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase mt-4`}>
               {t.testimonials.title}
             </h2>
             <p className="text-gray-400 mt-3 text-sm tracking-wide">Real teams. Real deployments. Real impact.</p>
@@ -643,7 +644,7 @@ export default function Home() {
       <section className="py-24 px-6">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+            <h2 className={`${poppins.className} text-3xl md:text-5xl font-bold text-gray-900`}>
               {t.faq.title}
             </h2>
           </div>
@@ -745,7 +746,7 @@ export default function Home() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         
         <div className="container mx-auto max-w-4xl text-center relative z-10 space-y-8">
-          <h2 className="text-4xl md:text-6xl font-extrabold uppercase">
+          <h2 className={`${poppins.className} text-4xl md:text-6xl font-extrabold uppercase`}>
             {t.cta.title}
           </h2>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
@@ -799,7 +800,7 @@ export default function Home() {
       <section id="contact" className="py-24 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className={`${poppins.className} text-3xl md:text-5xl font-bold text-gray-900 mb-4`}>
               {t.contact.title}
             </h2>
             <p className="text-lg text-gray-600">{t.contact.subtitle}</p>

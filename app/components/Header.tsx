@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
+import { poppins } from "@/lib/fonts";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,7 @@ export default function Header() {
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <Link
             href="/"
-            className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-orbitron)] bg-gradient-to-r from-gray-900 to-[#00D4FF] bg-clip-text text-transparent hover:scale-105 transition-transform tracking-tighter"
+            className={`${poppins.className} text-2xl md:text-3xl font-bold bg-gradient-to-r from-gray-900 to-[#00D4FF] bg-clip-text text-transparent hover:scale-105 transition-transform tracking-tighter`}
           >
             KLEXAI
           </Link>
