@@ -12,6 +12,14 @@ export const translations = {
       subtitle: "Chatbot, Voice Assistant, and Smart Automation for Businesses",
       cta1: "Request Demo",
       cta2: "Free Consultation",
+      badge1: {
+        title: "Fast Response",
+        desc: "< 2 seconds"
+      },
+      badge2: {
+        title: "AI Powered",
+        desc: "Learns your tone"
+      }
     },
     about: {
       why: "Business Problems",
@@ -229,6 +237,14 @@ export const translations = {
       subtitle: "İşletmeler için hızlı, akıllı ve ölçeklenebilir AI çözümleri",
       cta1: "Demo Talep Et",
       cta2: "Ücretsiz Görüşme",
+      badge1: {
+        title: "Hızlı Yanıt",
+        desc: "< 2 saniye"
+      },
+      badge2: {
+        title: "AI Destekli",
+        desc: "Tonunuzu öğrenir"
+      }
     },
     about: {
       why: "İş Sorunları",

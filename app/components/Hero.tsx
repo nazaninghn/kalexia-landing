@@ -122,8 +122,8 @@ export default function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-[13px] font-bold text-gray-900">Fast Response</div>
-                  <div className="text-[11px] text-gray-600 mt-0.5">&lt; 2 seconds</div>
+                  <div className="text-[13px] font-bold text-gray-900">{t.hero.badge1.title}</div>
+                  <div className="text-[11px] text-gray-600 mt-0.5">{t.hero.badge1.desc}</div>
                 </div>
               </div>
             </div>
@@ -137,8 +137,8 @@ export default function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-[13px] font-bold text-gray-900">AI Powered</div>
-                  <div className="text-[11px] text-gray-600 mt-0.5">Learns your tone</div>
+                  <div className="text-[13px] font-bold text-gray-900">{t.hero.badge2.title}</div>
+                  <div className="text-[11px] text-gray-600 mt-0.5">{t.hero.badge2.desc}</div>
                 </div>
               </div>
             </div>
@@ -147,12 +147,12 @@ export default function Hero() {
           {/* Mobile badges - under image, clean layout */}
           <div className="flex gap-3 mt-4 md:hidden">
             <div className="flex-1 bg-white/75 backdrop-blur-lg px-3 py-3 rounded-xl border border-gray-100">
-              <div className="text-[13px] font-bold text-gray-900">Fast Response</div>
-              <div className="text-[11px] text-gray-600 mt-0.5">&lt; 2s</div>
+              <div className="text-[13px] font-bold text-gray-900">{t.hero.badge1.title}</div>
+              <div className="text-[11px] text-gray-600 mt-0.5">{t.hero.badge1.desc}</div>
             </div>
             <div className="flex-1 bg-white/75 backdrop-blur-lg px-3 py-3 rounded-xl border border-gray-100">
-              <div className="text-[13px] font-bold text-gray-900">AI Powered</div>
-              <div className="text-[11px] text-gray-600 mt-0.5">Smart Learning</div>
+              <div className="text-[13px] font-bold text-gray-900">{t.hero.badge2.title}</div>
+              <div className="text-[11px] text-gray-600 mt-0.5">{t.hero.badge2.desc}</div>
             </div>
           </div>
 
