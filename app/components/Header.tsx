@@ -76,14 +76,16 @@ export default function Header() {
             {lang === "en" ? "EN" : lang === "tr" ? "TR" : "FA"}
           </button>
 
-          {/* Mobile: CTA + Hamburger */}
+          {/* Mobile: Language Switch + Hamburger */}
           <div className="flex md:hidden items-center gap-3">
-            <a
-              href="#contact"
-              className="px-4 py-2 bg-gradient-to-r from-[#00D4FF] to-[#0099FF] text-white text-sm font-bold rounded-full hover:shadow-lg transition-all"
+            {/* Compact Language Switcher */}
+            <button
+              onClick={toggleLanguage}
+              className="px-3 py-1.5 border-2 border-[#00D4FF] text-[#00D4FF] rounded-full font-bold text-xs uppercase tracking-wider hover:bg-[#00D4FF] hover:text-white transition-all"
+              aria-label="Switch language"
             >
-              Demo
-            </a>
+              {lang === "en" ? "EN" : "TR"}
+            </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 text-gray-900 hover:text-[#00D4FF] transition-colors"
@@ -133,15 +135,15 @@ export default function Header() {
               >
                 {t.nav.contact}
               </Link>
-              <button
-                onClick={() => {
-                  toggleLanguage();
-                  closeMobileMenu();
-                }}
-                className="w-full py-3 mt-4 border-2 border-[#00D4FF] text-[#00D4FF] rounded-lg font-semibold text-sm uppercase tracking-wider hover:bg-[#00D4FF] hover:text-white transition-all"
+              
+              {/* Demo CTA in Mobile Menu */}
+              <a
+                href="#contact"
+                onClick={closeMobileMenu}
+                className="block w-full py-4 mt-4 bg-gradient-to-r from-[#00D4FF] to-[#0099FF] text-white text-center font-bold rounded-xl hover:shadow-lg transition-all"
               >
-                {lang === "en" ? "Switch to TR" : "Switch to EN"}
-              </button>
+                🚀 {t.hero.cta1}
+              </a>
             </div>
           </nav>
         </div>
