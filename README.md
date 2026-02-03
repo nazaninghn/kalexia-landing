@@ -1,201 +1,150 @@
-# KALEXIA Landing Page
+# KLEXAI Landing Page
 
-Modern, high-converting landing page for KALEXIA AI Chatbot services built with Next.js 15, TypeScript, and Tailwind CSS.
+Modern, responsive landing page for KLEXAI - AI-powered chatbot solutions for businesses.
 
-## 🚀 Features
+## 🌟 Features
 
-- ⚡ **Next.js 15** with App Router
-- 🎨 **Modern Design** with Electric Blue (#00D4FF) and Fire Orange (#FF5722)
-- 📱 **Fully Responsive** - Mobile, Tablet, Desktop
-- 🌐 **Multi-language Support** - EN/TR/FA (i18n ready)
-- 📧 **Contact Form** with Telegram Bot integration
-- 💰 **Pricing Section** with 3 tiers
-- ⭐ **Testimonials** for social proof
-- ❓ **FAQ Section** with Schema.org markup for SEO
-- 🔍 **SEO Optimized** - sitemap, robots.txt, metadata
-- 🎭 **Smooth Animations** and transitions
-- 📊 **WhatsApp Integration** for instant contact
+- ✅ **Bilingual Support** - Turkish (default) & English
+- ✅ **Fully Responsive** - Mobile, tablet, and desktop optimized
+- ✅ **Modern Design** - Clean, professional UI with smooth animations
+- ✅ **SEO Optimized** - Meta tags, sitemap, robots.txt
+- ✅ **Performance** - Next.js 16 with optimized fonts and images
+- ✅ **Contact Form** - Integrated contact form with validation
+- ✅ **Sticky CTA** - Persistent call-to-action button
 
-## 📦 Installation
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone <your-repo-url>
+cd kalexia-landing
+
 # Install dependencies
 npm install
 
-# Create environment file
-cp .env.local.example .env.local
-
-# Edit .env.local and add your Telegram Bot credentials
-```
-
-## 🔧 Configuration
-
-### Telegram Bot Setup (Recommended)
-
-1. Create a bot with [@BotFather](https://t.me/botfather) on Telegram
-2. Get your bot token
-3. Get your chat ID (send a message to your bot, then visit: `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`)
-4. Add to `.env.local`:
-
-```env
-TELEGRAM_BOT_TOKEN=your_bot_token_here
-TELEGRAM_CHAT_ID=your_chat_id_here
-```
-
-### Optional: Resend Email Setup
-
-Uncomment the Resend code in `app/api/contact/route.ts` and add:
-
-```env
-RESEND_API_KEY=your_resend_api_key
-RECIPIENT_EMAIL=your@email.com
-```
-
-## 🏃 Development
-
-```bash
 # Run development server
 npm run dev
-
-# Open http://localhost:3000
 ```
 
-## 🌐 Deployment
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Deploy to Vercel (Recommended - Free & Fast)
+## 📦 Build & Deploy
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+### Deploy to Vercel (Recommended)
 
 1. Push your code to GitHub
 2. Go to [vercel.com](https://vercel.com)
-3. Click "New Project"
-4. Import your GitHub repository
-5. Add environment variables (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
-6. Click "Deploy"
+3. Import your repository
+4. Click "Deploy"
 
-Your site will be live at `your-project.vercel.app`
+See `DEPLOYMENT-GUIDE.md` for detailed deployment instructions.
 
-### Custom Domain Setup
+## 🎨 Tech Stack
 
-1. In Vercel dashboard, go to your project
-2. Click "Settings" → "Domains"
-3. Add your custom domain (e.g., `kalexia.com`)
-4. Update DNS records as instructed by Vercel
+- **Framework:** Next.js 16
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **Fonts:** Google Fonts (Roboto, Poppins, Montserrat)
+- **Icons:** Lucide React
+- **Animations:** Framer Motion
+- **Forms:** React Hook Form + Zod
 
 ## 📁 Project Structure
 
 ```
 kalexia-landing/
 ├── app/
-│   ├── api/
-│   │   └── contact/
-│   │       └── route.ts          # Contact form API
-│   ├── components/
-│   │   ├── Header.tsx            # Navigation header
-│   │   └── Hero.tsx              # Hero section
-│   ├── globals.css               # Global styles
-│   ├── layout.tsx                # Root layout
-│   ├── page.tsx                  # Main landing page
-│   ├── robots.ts                 # SEO robots.txt
-│   └── sitemap.ts                # SEO sitemap
+│   ├── api/              # API routes
+│   ├── components/       # React components
+│   ├── globals.css       # Global styles
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Home page
 ├── lib/
-│   └── i18n.ts                   # Translations
-├── public/                       # Static assets
-├── .env.local.example            # Environment template
+│   ├── i18n.ts          # Translations
+│   └── LanguageContext.tsx
+├── public/              # Static assets
 └── package.json
 ```
 
-## 🎨 Color Palette
+## 🌍 Languages
 
-- **Electric Blue**: `#00D4FF` - Primary accent, buttons, links
-- **Fire Orange**: `#FF5722` - Script titles, highlights
-- **Black**: `#0a0a0a` - Text, backgrounds
-- **White**: `#ffffff` - Backgrounds, text on dark
+- **Turkish (TR)** - Default language
+- **English (EN)** - Secondary language
 
-## 📝 Customization
+Users can toggle between languages using the language switcher in the header.
 
-### Update Content
+## 🎯 Key Sections
 
-Edit `app/page.tsx` to change:
-- Services descriptions
-- Pricing plans
-- Testimonials
-- FAQ questions
+1. **Hero** - Main headline with CTA buttons
+2. **Problems** - Pain points we solve
+3. **Solution** - How we solve them
+4. **Services** - Our service offerings
+5. **Why Us** - Key differentiators
+6. **Real Results** - Metrics and outcomes
+7. **How It Works** - 3-step process
+8. **Testimonials** - Social proof
+9. **FAQ** - Common questions
+10. **Contact** - Contact form
 
-### Update Metadata
+## 🔧 Configuration
 
-Edit `app/layout.tsx` to change:
-- Page title
-- Description
-- Keywords
-- Open Graph tags
+### Environment Variables
 
-### Update Domain
+Create `.env.local` file:
 
-Edit these files and replace `https://kalexia.com`:
-- `app/robots.ts`
-- `app/sitemap.ts`
-
-### WhatsApp Number
-
-Edit `app/components/Hero.tsx` and replace `YOUR_NUMBER` with your WhatsApp number (format: country code + number, e.g., `905551234567`)
-
-## 🔗 Integration with Django Backend
-
-If you have a Django backend for the chatbot app:
-
-1. Deploy Next.js landing to `yourdomain.com`
-2. Deploy Django to `app.yourdomain.com` or keep on Render
-3. Link from landing page CTA buttons to Django app
-
-## 📊 Analytics (Optional)
-
-Add Google Analytics or Vercel Analytics:
-
-```bash
-npm install @vercel/analytics
+```env
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+CONTACT_EMAIL=hello@klexai.com
+NEXT_PUBLIC_WHATSAPP_NUMBER=+905XXXXXXXXX
 ```
 
-Then add to `app/layout.tsx`:
+### Customization
 
-```tsx
-import { Analytics } from '@vercel/analytics/react';
+- **Colors:** Edit `app/globals.css` (CSS variables)
+- **Fonts:** Edit `app/layout.tsx`
+- **Content:** Edit `lib/i18n.ts`
+- **Images:** Replace files in `public/`
 
-// In the body:
-<Analytics />
-```
+## 📱 Responsive Design
 
-## 🐛 Troubleshooting
+- **Mobile:** < 640px
+- **Tablet:** 640px - 1024px
+- **Desktop:** > 1024px
 
-### Contact form not working
+All sections are fully responsive with mobile-first approach.
 
-1. Check `.env.local` has correct Telegram credentials
-2. Verify bot token is valid
-3. Check browser console for errors
-4. Test API directly: `POST /api/contact` with JSON body
-
-### Images not loading
-
-1. Check Next.js Image domains in `next.config.ts`
-2. Use local images in `public/` folder instead
-
-### Build errors
+## 🧪 Testing
 
 ```bash
-# Clear cache and rebuild
-rm -rf .next
+# Lint code
+npm run lint
+
+# Build test
 npm run build
 ```
 
 ## 📄 License
 
-MIT License - feel free to use for your projects!
+Private - All rights reserved
 
 ## 🤝 Support
 
-For issues or questions, contact via:
-- WhatsApp: [Your Number]
-- Email: [Your Email]
-- Telegram: [Your Telegram]
+For support, email hello@klexai.com or visit our website.
 
 ---
 
-Built with ❤️ by KALEXIA
+**Built with ❤️ by KLEXAI Team**

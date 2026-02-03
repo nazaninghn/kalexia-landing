@@ -1,27 +1,31 @@
 import type { Metadata } from "next";
-import { Inter, Orbitron, Sora } from "next/font/google";
+import { Roboto, Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
+import LanguageUpdater from "./components/LanguageUpdater";
 
-// Modern, clean font for body text
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-inter",
+// Clean, readable font for body text - excellent Turkish support
+const roboto = Roboto({
+  subsets: ["latin", "latin-ext"],
+  weight: ["300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
+  display: "swap",
 });
 
-// Futuristic, tech font for headings
-const orbitron = Orbitron({
-  subsets: ["latin"],
+// Modern, professional font for headings - perfect Turkish support
+const poppins = Poppins({
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--font-orbitron",
+  variable: "--font-poppins",
+  display: "swap",
 });
 
-// Modern, geometric font for special text
-const sora = Sora({
-  subsets: ["latin"],
+// Alternative elegant font for special sections
+const montserrat = Montserrat({
+  subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-sora",
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -33,8 +37,8 @@ export const metadata: Metadata = {
     title: "KLEXAI - Smart AI Chatbots for Business",
     description: "Transform your customer service with intelligent AI chatbots",
     type: "website",
-    locale: "en_US",
-    alternateLocale: ["tr_TR"],
+    locale: "tr_TR", // Default Turkish
+    alternateLocale: ["en_US"],
   },
   twitter: {
     card: "summary_large_image",
@@ -49,11 +53,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="tr" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body
-        className={`${inter.variable} ${orbitron.variable} ${sora.variable} antialiased`}
+        className={`${roboto.variable} ${poppins.variable} ${montserrat.variable} antialiased`}
+        style={{ fontFeatureSettings: '"kern" 1, "liga" 1' }}
       >
         <LanguageProvider>
+          <LanguageUpdater />
           {children}
         </LanguageProvider>
       </body>

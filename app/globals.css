@@ -2,21 +2,42 @@
 
 :root {
   --primary-orange: #FF5722;
-  --primary-blue: #00D4FF;
+  --primary-blue: #00C4EF;
+  --primary-blue-dark: #0099CC;
   --text-dark: #0d0d0d;
   --text-muted: #737373;
 }
 
 body {
-  @apply bg-white text-gray-900 font-[family-name:var(--font-inter)];
+  @apply bg-white text-gray-900 font-[family-name:var(--font-roboto)];
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Ensure proper Turkish character rendering */
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  font-variant-ligatures: common-ligatures;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-[family-name:var(--font-orbitron)] tracking-tight;
+  @apply font-[family-name:var(--font-poppins)] tracking-tight;
+  font-feature-settings: "kern" 1, "liga" 1;
+  font-variant-ligatures: common-ligatures;
+}
+
+/* Ensure consistent font rendering across all text elements */
+p, span, a, button, input, textarea, label {
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* Prevent font size inflation on mobile for Turkish characters */
+@media screen and (max-width: 768px) {
+  input, textarea, select {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
 }
 
 .font-special {
-  font-family: var(--font-sora);
+  font-family: var(--font-montserrat);
 }
 
 .text-balance {
@@ -24,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-gray-900 via-[#00D4FF] to-gray-900 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-gray-900 via-[#00C4EF] to-gray-900 bg-clip-text text-transparent;
 }
 
 .gradient-orange {
@@ -32,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-blue {
-  @apply bg-gradient-to-r from-[#00D4FF] to-[#0099FF];
+  @apply bg-gradient-to-r from-[#00C4EF] to-[#0099CC];
 }
 
 .perspective-1000 {
@@ -83,6 +104,28 @@ h1, h2, h3, h4, h5, h6 {
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 0.88;
     transform: translateY(0);
   }
 }

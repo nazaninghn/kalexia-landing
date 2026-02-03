@@ -8,32 +8,32 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      title: "AI Assistant That Speaks Your Tone and Automates Your Work",
+      title: "AI Assistant That Speaks Your Brand's Tone and Automates Your Work",
       subtitle: "Chatbot, Voice Assistant, and Smart Automation for Businesses",
       cta1: "Request Demo",
       cta2: "Free Consultation",
     },
     about: {
-      why: "Problems",
-      title: "WE SOLVE",
+      why: "Business Problems",
+      title: "AI WAS BUILT TO FIX",
       problem1: {
         title: "Time Waste",
-        desc: "Repetitive tasks consume your team's valuable time"
+        desc: "Your team spends hours on repetitive conversations"
       },
       problem2: {
         title: "Slow Response",
-        desc: "Customers wait too long for answers"
+        desc: "Customers expect instant replies — humans can't scale"
       },
       problem3: {
         title: "High Costs",
-        desc: "Human workforce expenses keep growing"
+        desc: "Support costs increase faster than revenue"
       },
       problem4: {
         title: "Poor UX",
-        desc: "Inconsistent customer experience"
+        desc: "Different agents, different answers — customers notice"
       },
-      solution: "We solve these with AI, not just simple chatbots.",
-      cta: "See How",
+      solution: "We don't build chatbots. We build AI systems that work.",
+      cta: "See How It Works",
     },
     expertise: {
       our: "Our",
@@ -64,7 +64,7 @@ export const translations = {
       title: "SERVICES",
       card1: {
         title: "Smart Personal Assistant",
-        desc: "Text and voice chatbot with intelligent responses",
+        desc: "AI assistant that understands intent, tone, and context",
         features: ["Voice to Text", "Text to Voice", "Tone adaptation"]
       },
       card2: {
@@ -76,7 +76,8 @@ export const translations = {
         title: "API & Integration",
         desc: "Connect with your existing systems",
         features: ["REST API", "Webhooks", "Custom integration"]
-      }
+      },
+      cta: "See how these work together →"
     },
     howItWorks: {
       title: "HOW IT WORKS",
@@ -95,7 +96,7 @@ export const translations = {
       }
     },
     whyUs: {
-      title: "WHY US?",
+      title: "WHY TEAMS CHOOSE US",
       subtitle: "What makes us different",
       card1: {
         title: "Persian Language Support",
@@ -162,37 +163,41 @@ export const translations = {
       }
     },
     faq: {
-      title: "FREQUENTLY ASKED QUESTIONS",
-      q1: "How long does it take to set up a chatbot?",
-      a1: "Most chatbots can be set up and deployed within 1-2 weeks, depending on complexity and customization requirements.",
-      q2: "Can the chatbot integrate with my existing systems?",
-      a2: "Yes! Our chatbots integrate with popular CRMs, messaging platforms (WhatsApp, Telegram, Instagram), and custom APIs.",
-      q3: "What languages does the chatbot support?",
-      a3: "Our AI chatbots support 50+ languages including English, Turkish, Persian, Arabic, Spanish, and more.",
+      title: "Questions Teams Ask Before Getting Started",
+      q1: "How long does it take to set up?",
+      a1: "Most teams go live in 1-2 weeks, including training, integrations, and testing — without disrupting existing workflows.",
+      q2: "What languages does the chatbot support?",
+      a2: "Our AI chatbots support 50+ languages including English, Turkish, Persian, Arabic, Spanish, and more — with native understanding of tone and context in each language.",
+      q3: "Can the chatbot integrate with my existing systems?",
+      a3: "Yes! Our chatbots integrate seamlessly with popular CRMs, messaging platforms (WhatsApp, Telegram, Instagram), and custom APIs — no technical expertise required.",
       q4: "How does the RAG system work?",
-      a4: "RAG (Retrieval-Augmented Generation) searches your documents and knowledge base to provide accurate, context-aware answers based on your actual data.",
+      a4: "RAG (Retrieval-Augmented Generation) searches your documents and knowledge base in real-time to provide accurate, context-aware answers based on your actual data — ensuring responses stay up-to-date automatically.",
       q5: "What happens if the chatbot can't answer a question?",
-      a5: "The chatbot can seamlessly transfer the conversation to a human agent or collect contact information for follow-up."
+      a5: "The chatbot seamlessly transfers the conversation to a human agent or collects contact information for follow-up — ensuring no customer is left without help."
     },
     cta: {
-      title: "Ready to Transform Your Business?",
-      subtitle: "Join hundreds of companies using AI to automate their workflow and boost productivity",
-      btn1: "Get Started Now",
-      btn2: "Learn More"
+      title: "Ready to Automate Conversations with AI That Actually Works?",
+      subtitle: "Join hundreds of companies using AI to reduce support costs and boost customer satisfaction",
+      btn1: "Request a Demo",
+      btn2: "Free Consultation"
     },
     contact: {
-      getIn: "Get in",
-      title: "TOUCH",
+      title: "Talk to an AI Automation Expert",
+      subtitle: "Let's discuss how AI can transform your customer conversations",
       name: "Your Name",
       email: "Your Email",
-      message: "Tell us about your business needs",
-      submit: "Send Message",
+      message: "Tell us about your use case, challenges, or goals",
+      submit: "Request Free Consultation",
       sending: "Sending...",
-      success: "✓ Message sent successfully! We'll get back to you soon.",
-      error: "✗ Failed to send message. Please try again or contact us via WhatsApp."
+      success: "✓ Message sent successfully! We'll get back to you within 24 hours.",
+      error: "✗ Failed to send message. Please try again or contact us via WhatsApp.",
+      trust: "No commitment · We reply within 24 hours · Enterprise-ready"
     },
     footer: {
-      copyright: "© 2025 KLEXAI STUDIO. All Rights Reserved."
+      copyright: "© 2025 KLEXAI STUDIO. All Rights Reserved.",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+      contact: "hello@klexai.com"
     }
   },
   tr: {
@@ -202,32 +207,32 @@ export const translations = {
       contact: "İletişim",
     },
     hero: {
-      title: "Sizin Tonunuzla Konuşan ve İşlerinizi Otomatikleştiren AI Asistan",
-      subtitle: "İşletmeler için Chatbot, Sesli Asistan ve Akıllı Otomasyon",
+      title: "Markanızın Tonuyla Konuşan ve İşlerinizi Otomatikleştiren AI Asistanı",
+      subtitle: "İşletmeler için hızlı, akıllı ve ölçeklenebilir AI çözümleri",
       cta1: "Demo Talep Et",
-      cta2: "Ücretsiz Danışmanlık",
+      cta2: "Ücretsiz Görüşme",
     },
     about: {
-      why: "Çözdüğümüz",
-      title: "SORUNLAR",
+      why: "İş Sorunları",
+      title: "AI ÇÖZMEK İÇİN TASARLANDI",
       problem1: {
         title: "Zaman Kaybı",
-        desc: "Tekrarlayan görevler ekibinizin değerli zamanını tüketiyor"
+        desc: "Ekibiniz tekrarlayan konuşmalara saatler harcıyor"
       },
       problem2: {
         title: "Yavaş Yanıt",
-        desc: "Müşteriler cevap için çok uzun bekliyor"
+        desc: "Müşteriler anında yanıt bekliyor — insanlar ölçeklenemiyor"
       },
       problem3: {
         title: "Yüksek Maliyetler",
-        desc: "İnsan gücü masrafları sürekli artıyor"
+        desc: "Destek maliyetleri gelirden daha hızlı artıyor"
       },
       problem4: {
         title: "Zayıf Deneyim",
-        desc: "Tutarsız müşteri deneyimi"
+        desc: "Farklı temsilciler, farklı cevaplar — müşteriler fark ediyor"
       },
-      solution: "Bunları basit chatbot'larla değil, AI ile çözüyoruz.",
-      cta: "Nasıl Olduğunu Gör",
+      solution: "Chatbot yapmıyoruz. Çalışan AI sistemleri kuruyoruz.",
+      cta: "Nasıl Çalıştığını Görün",
     },
     expertise: {
       our: "Bizim",
@@ -258,7 +263,7 @@ export const translations = {
       title: "HİZMETLER",
       card1: {
         title: "Akıllı Kişisel Asistan",
-        desc: "Akıllı yanıtlarla metin ve sesli chatbot",
+        desc: "Niyet, ton ve bağlamı anlayan AI asistanı",
         features: ["Ses'ten Metin'e", "Metin'den Ses'e", "Ton uyarlama"]
       },
       card2: {
@@ -270,7 +275,8 @@ export const translations = {
         title: "API ve Entegrasyon",
         desc: "Mevcut sistemlerinizle bağlantı kurun",
         features: ["REST API", "Webhook'lar", "Özel entegrasyon"]
-      }
+      },
+      cta: "Bunların birlikte nasıl çalıştığını görün →"
     },
     howItWorks: {
       title: "NASIL ÇALIŞIR",
@@ -356,37 +362,41 @@ export const translations = {
       }
     },
     faq: {
-      title: "SIK SORULAN SORULAR",
-      q1: "Bir chatbot kurmak ne kadar sürer?",
-      a1: "Çoğu chatbot, karmaşıklığa ve özelleştirme gereksinimlerine bağlı olarak 1-2 hafta içinde kurulabilir ve devreye alınabilir.",
-      q2: "Chatbot mevcut sistemlerimle entegre olabilir mi?",
-      a2: "Evet! Chatbotlarımız popüler CRM'ler, mesajlaşma platformları (WhatsApp, Telegram, Instagram) ve özel API'lerle entegre olur.",
-      q3: "Chatbot hangi dilleri destekliyor?",
-      a3: "Yapay zeka chatbotlarımız İngilizce, Türkçe, Farsça, Arapça, İspanyolca ve daha fazlası dahil olmak üzere 50'den fazla dili destekler.",
+      title: "Ekiplerin Başlamadan Önce Sorduğu Sorular",
+      q1: "Kurulum ne kadar sürer?",
+      a1: "Çoğu ekip, eğitim, entegrasyonlar ve testler dahil 1-2 hafta içinde yayına geçer — mevcut iş akışlarını aksatmadan.",
+      q2: "Chatbot hangi dilleri destekliyor?",
+      a2: "Yapay zeka chatbotlarımız İngilizce, Türkçe, Farsça, Arapça, İspanyolca ve daha fazlası dahil olmak üzere 50'den fazla dili destekler — her dilde ton ve bağlamın yerel anlayışıyla.",
+      q3: "Chatbot mevcut sistemlerimle entegre olabilir mi?",
+      a3: "Evet! Chatbotlarımız popüler CRM'ler, mesajlaşma platformları (WhatsApp, Telegram, Instagram) ve özel API'lerle sorunsuz entegre olur — teknik uzmanlık gerekmez.",
       q4: "RAG sistemi nasıl çalışır?",
-      a4: "RAG (Retrieval-Augmented Generation), belgelerinizi ve bilgi tabanınızı arayarak gerçek verilerinize dayalı doğru, bağlama duyarlı yanıtlar sağlar.",
+      a4: "RAG (Retrieval-Augmented Generation), gerçek verilerinize dayalı doğru, bağlama duyarlı yanıtlar sağlamak için belgelerinizi ve bilgi tabanınızı gerçek zamanlı olarak arar — yanıtların otomatik olarak güncel kalmasını sağlar.",
       q5: "Chatbot bir soruyu yanıtlayamazsa ne olur?",
-      a5: "Chatbot, konuşmayı sorunsuz bir şekilde insan temsilciye aktarabilir veya takip için iletişim bilgilerini toplayabilir."
+      a5: "Chatbot, konuşmayı sorunsuz bir şekilde insan temsilciye aktarır veya takip için iletişim bilgilerini toplar — hiçbir müşteri yardım almadan bırakılmaz."
     },
     cta: {
-      title: "İşinizi Dönüştürmeye Hazır mısınız?",
-      subtitle: "İş akışlarını otomatikleştirmek ve üretkenliği artırmak için yapay zeka kullanan yüzlerce şirkete katılın",
-      btn1: "Hemen Başlayın",
-      btn2: "Daha Fazla Bilgi"
+      title: "Gerçekten İşe Yarayan AI ile Konuşmaları Otomatikleştirmeye Hazır mısınız?",
+      subtitle: "Destek maliyetlerini azaltmak ve müşteri memnuniyetini artırmak için yapay zeka kullanan yüzlerce şirkete katılın",
+      btn1: "Demo Talep Et",
+      btn2: "Ücretsiz Görüşme"
     },
     contact: {
-      getIn: "İletişime",
-      title: "GEÇİN",
+      title: "Bir AI Otomasyon Uzmanıyla Konuşun",
+      subtitle: "AI'nın müşteri konuşmalarınızı nasıl dönüştürebileceğini tartışalım",
       name: "Adınız",
       email: "E-posta Adresiniz",
-      message: "İş ihtiyaçlarınız hakkında bize bilgi verin",
-      submit: "Mesaj Gönder",
+      message: "Kullanım durumunuz, zorluklarınız veya hedefleriniz hakkında bize bilgi verin",
+      submit: "Ücretsiz Danışmanlık Talep Et",
       sending: "Gönderiliyor...",
-      success: "✓ Mesaj başarıyla gönderildi! En kısa sürede size geri döneceğiz.",
-      error: "✗ Mesaj gönderilemedi. Lütfen tekrar deneyin veya WhatsApp üzerinden bize ulaşın."
+      success: "✓ Mesaj başarıyla gönderildi! 24 saat içinde size geri döneceğiz.",
+      error: "✗ Mesaj gönderilemedi. Lütfen tekrar deneyin veya WhatsApp üzerinden bize ulaşın.",
+      trust: "Taahhüt yok · 24 saat içinde yanıt · Kurumsal hazır"
     },
     footer: {
-      copyright: "© 2025 KLEXAI STUDIO. Tüm Hakları Saklıdır."
+      copyright: "© 2025 KLEXAI STUDIO. Tüm Hakları Saklıdır.",
+      privacy: "Gizlilik Politikası",
+      terms: "Hizmet Şartları",
+      contact: "hello@klexai.com"
     }
   }
 };
