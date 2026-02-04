@@ -4,7 +4,7 @@ export const translations = {
   en: {
     nav: {
       about: "About",
-      services: "Services",
+      services: "How It Works",
       contact: "Contact",
     },
     hero: {
@@ -234,16 +234,17 @@ export const translations = {
       trust: "No commitment · We reply within 24 hours · Enterprise-ready"
     },
     footer: {
-      copyright: "© 2025 KLEXAI STUDIO. All Rights Reserved.",
+      kvkk: "KVKK",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
-      contact: "hello@klexai.com"
+      contact: "hello@klexai.com",
+      copyright: "© 2025 KLEXAI STUDIO. All Rights Reserved."
     }
   },
   tr: {
     nav: {
       about: "Hakkımızda",
-      services: "Hizmetler",
+      services: "Nasıl Çalışır",
       contact: "İletişim",
     },
     hero: {
@@ -473,10 +474,11 @@ export const translations = {
       trust: "Taahhüt yok · 24 saat içinde yanıt · Kurumsal hazır"
     },
     footer: {
-      copyright: "© 2025 KLEXAI STUDIO. Tüm Hakları Saklıdır.",
+      kvkk: "KVKK",
       privacy: "Gizlilik Politikası",
       terms: "Hizmet Şartları",
-      contact: "hello@klexai.com"
+      contact: "hello@klexai.com",
+      copyright: "© 2025 KLEXAI STUDIO. Tüm Hakları Saklıdır."
     }
   }
 };

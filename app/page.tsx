@@ -875,6 +875,8 @@ export default function Home() {
           
           {/* Footer Links */}
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-gray-400">
+            <a href="#" className="hover:text-white transition-colors">{t.footer.kvkk}</a>
+            <span className="text-gray-600">·</span>
             <a href="#" className="hover:text-white transition-colors">{t.footer.privacy}</a>
             <span className="text-gray-600">·</span>
             <a href="#" className="hover:text-white transition-colors">{t.footer.terms}</a>
