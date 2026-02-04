@@ -8,24 +8,25 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      title: "AI Assistant That Speaks Your Brand's Tone and Automates Your Work",
-      subtitle: "Chatbot, Voice Assistant, and Smart Automation for Businesses",
+      title: "AI Assistant Trained for Your Brand",
+      subtitle: "A personal AI assistant that understands your tone, knowledge, and business context",
+      microLine: "Designed for controlled, brand-safe AI communication",
       cta1: "Request Demo",
-      cta2: "Free Consultation",
-      topBadge: "AI-Powered Solutions",
+      cta2: "See How It Works",
+      topBadge: "Enterprise AI Solutions",
       badge1: {
-        title: "Fast Response",
-        desc: "< 2 seconds"
+        title: "Context-Aware",
+        desc: "Understands intent"
       },
       badge2: {
-        title: "AI Powered",
-        desc: "Learns your tone"
+        title: "Brand-Trained",
+        desc: "Speaks your voice"
       },
       stats: {
-        clients: "Active Clients",
-        support: "Support",
-        satisfaction: "Satisfaction"
-      }
+        clients: "Designed for Enterprise Use",
+        support: "Trained on Your Brand Knowledge"
+      },
+      trustNote: ""
     },
     about: {
       why: "Business Problems",
@@ -246,24 +247,25 @@ export const translations = {
       contact: "İletişim",
     },
     hero: {
-      title: "Markanızın Tonuyla Konuşan ve İşlerinizi Otomatikleştiren AI Asistanı",
-      subtitle: "İşletmeler için hızlı, akıllı ve ölçeklenebilir AI çözümleri",
+      title: "Markanıza Özel Akıllı AI Asistan",
+      subtitle: "Tonunuzu, bilginizi ve iş bağlamınızı anlayan kişisel bir yapay zeka asistanı",
+      microLine: "Kontrollü ve marka güvenli AI iletişimi için tasarlandı",
       cta1: "Demo Talep Et",
-      cta2: "Ücretsiz Görüşme",
-      topBadge: "Yapay Zekâ Destekli Çözümler",
+      cta2: "Nasıl Çalıştığını Görün",
+      topBadge: "Kurumsal AI Çözümleri",
       badge1: {
-        title: "Hızlı Yanıt",
-        desc: "< 2 saniye"
+        title: "Bağlam Anlama",
+        desc: "Niyeti kavrar"
       },
       badge2: {
-        title: "AI Destekli",
-        desc: "Tonunuzu öğrenir"
+        title: "Marka Eğitimli",
+        desc: "Sesinizle konuşur"
       },
       stats: {
-        clients: "Aktif Müşteri",
-        support: "Destek",
-        satisfaction: "Memnuniyet"
-      }
+        clients: "Kurumsal Kullanım İçin Tasarlandı",
+        support: "Marka Bilginiz Üzerinde Eğitildi"
+      },
+      trustNote: ""
     },
     about: {
       why: "İş Sorunları",
