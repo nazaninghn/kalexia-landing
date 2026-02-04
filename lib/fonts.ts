@@ -1,26 +1,15 @@
-import { Roboto, Poppins, Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 
-// Clean, readable font for body text - excellent Turkish support
-export const roboto = Roboto({
+// Inter - Perfect for Turkish, modern, professional, excellent readability
+// Best choice for SaaS/B2B landing pages targeting Turkish market
+export const inter = Inter({
   subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "700", "900"],
-  variable: "--font-roboto",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
   display: "swap",
 });
 
-// Modern, professional font for headings - perfect Turkish support
-export const poppins = Poppins({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  variable: "--font-poppins",
-  display: "swap",
-});
-
-// Alternative elegant font for special sections
-export const montserrat = Montserrat({
-  subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-montserrat",
-  display: "swap",
-});
+// Using Inter for everything - consistent, clean, Turkish-optimized
+export const roboto = inter; // Backward compatibility
+export const poppins = inter; // Backward compatibility  
+export const montserrat = inter; // Backward compatibility

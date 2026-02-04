@@ -131,8 +131,8 @@ export const translations = {
       title: "WHY TEAMS CHOOSE US",
       subtitle: "What makes us different",
       card1: {
-        title: "Persian Language Support",
-        desc: "Native Persian understanding and response"
+        title: "Turkish Language Mastery",
+        desc: "Native Turkish understanding and natural responses"
       },
       card2: {
         title: "Tone Adaptation",
@@ -186,7 +186,7 @@ export const translations = {
         role: "CEO, TechStart Inc"
       },
       card2: {
-        quote: "The Persian tone adaptation is incredible. Customers love the natural conversations.",
+        quote: "KLEXAI's natural Turkish conversation flow is incredible. Our customers love the authentic interactions.",
         author: "Michael Chen",
         role: "CTO, DataFlow Solutions"
       },
@@ -201,7 +201,7 @@ export const translations = {
       q1: "How long does it take to set up?",
       a1: "Most teams go live in 1-2 weeks, including training, integrations, and testing — without disrupting existing workflows.",
       q2: "What languages does the chatbot support?",
-      a2: "Our AI chatbots support 50+ languages including English, Turkish, Persian, Arabic, Spanish, and more — with native understanding of tone and context in each language.",
+      a2: "Our AI chatbots support 50+ languages including Turkish, English, Arabic, Spanish, German, and more — with native understanding of tone and context in each language.",
       q3: "Can the chatbot integrate with my existing systems?",
       a3: "Yes! Our chatbots integrate seamlessly with popular CRMs, messaging platforms (WhatsApp, Telegram, Instagram), and custom APIs — no technical expertise required.",
       q4: "How does the RAG system work?",
@@ -369,8 +369,8 @@ export const translations = {
       title: "NEDEN BİZ?",
       subtitle: "Bizi farklı kılan nedir",
       card1: {
-        title: "Farsça Dil Desteği",
-        desc: "Yerel Farsça anlama ve yanıt"
+        title: "Türkçe Dil Uzmanlığı",
+        desc: "Doğal Türkçe anlama ve yanıt"
       },
       card2: {
         title: "Ton Uyarlama",
@@ -424,7 +424,7 @@ export const translations = {
         role: "CEO, TechStart Inc"
       },
       card2: {
-        quote: "Farsça ton uyarlaması inanılmaz. Müşteriler doğal konuşmaları seviyor.",
+        quote: "KLEXAI'nin doğal Türkçe konuşma akışı inanılmaz. Müşterilerimiz otantik etkileşimleri çok seviyor.",
         author: "Michael Chen",
         role: "CTO, DataFlow Solutions"
       },
@@ -439,7 +439,7 @@ export const translations = {
       q1: "Kurulum ne kadar sürer?",
       a1: "Çoğu ekip, eğitim, entegrasyonlar ve testler dahil 1-2 hafta içinde yayına geçer — mevcut iş akışlarını aksatmadan.",
       q2: "Chatbot hangi dilleri destekliyor?",
-      a2: "Yapay zeka chatbotlarımız İngilizce, Türkçe, Farsça, Arapça, İspanyolca ve daha fazlası dahil olmak üzere 50'den fazla dili destekler — her dilde ton ve bağlamın yerel anlayışıyla.",
+      a2: "Yapay zeka chatbotlarımız Türkçe, İngilizce, Arapça, İspanyolca, Almanca ve daha fazlası dahil olmak üzere 50'den fazla dili destekler — her dilde ton ve bağlamın yerel anlayışıyla.",
       q3: "Chatbot mevcut sistemlerimle entegre olabilir mi?",
       a3: "Evet! Chatbotlarımız popüler CRM'ler, mesajlaşma platformları (WhatsApp, Telegram, Instagram) ve özel API'lerle sorunsuz entegre olur — teknik uzmanlık gerekmez.",
       q4: "RAG sistemi nasıl çalışır?",
