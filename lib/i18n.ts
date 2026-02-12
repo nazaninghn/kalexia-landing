@@ -29,25 +29,25 @@ export const translations = {
       trustNote: ""
     },
     about: {
-      why: "Business Problems",
-      title: "AI WAS BUILT TO FIX",
+      why: "What We Deliver",
+      title: "INTELLIGENT AUTOMATION FOR YOUR BUSINESS",
       problem1: {
-        title: "Time Waste",
-        desc: "Your team spends hours on repetitive conversations"
+        title: "24/7 Availability",
+        desc: "Your AI assistant works around the clock, ensuring no customer is left waiting"
       },
       problem2: {
-        title: "Slow Response",
-        desc: "Customers expect instant replies — humans can't scale"
+        title: "Instant Response",
+        desc: "Deliver immediate answers at scale — AI handles thousands of conversations simultaneously"
       },
       problem3: {
-        title: "High Costs",
-        desc: "Support costs increase faster than revenue"
+        title: "Cost Efficiency",
+        desc: "Reduce operational costs while improving service quality and customer satisfaction"
       },
       problem4: {
-        title: "Poor UX",
-        desc: "Different agents, different answers — customers notice"
+        title: "Consistent Quality",
+        desc: "Every customer receives the same high-quality, accurate responses — every time"
       },
-      solution: "We don't build chatbots. We build AI systems that work.",
+      solution: "We build AI systems that work for your business.",
       cta: "See How It Works",
     },
     howWeSolve: {
@@ -269,25 +269,25 @@ export const translations = {
       trustNote: ""
     },
     about: {
-      why: "İş Sorunları",
-      title: "AI ÇÖZMEK İÇİN TASARLANDI",
+      why: "Neler Sunuyoruz",
+      title: "İŞLETMENİZ İÇİN AKILLI OTOMASYON",
       problem1: {
-        title: "Zaman Kaybı",
-        desc: "Ekibiniz tekrarlayan konuşmalara saatler harcıyor"
+        title: "7/24 Erişilebilirlik",
+        desc: "AI asistanınız kesintisiz çalışır, hiçbir müşteri beklemede kalmaz"
       },
       problem2: {
-        title: "Yavaş Yanıt",
-        desc: "Müşteriler anında yanıt bekliyor — insanlar ölçeklenemiyor"
+        title: "Anında Yanıt",
+        desc: "Ölçekte anında cevaplar sunun — AI binlerce konuşmayı aynı anda yönetir"
       },
       problem3: {
-        title: "Yüksek Maliyetler",
-        desc: "Destek maliyetleri gelirden daha hızlı artıyor"
+        title: "Maliyet Verimliliği",
+        desc: "Hizmet kalitesini ve müşteri memnuniyetini artırırken operasyonel maliyetleri düşürün"
       },
       problem4: {
-        title: "Zayıf Deneyim",
-        desc: "Farklı temsilciler, farklı cevaplar — müşteriler fark ediyor"
+        title: "Tutarlı Kalite",
+        desc: "Her müşteri aynı yüksek kaliteli, doğru yanıtları alır — her seferinde"
       },
-      solution: "Chatbot yapmıyoruz. Çalışan AI sistemleri kuruyoruz.",
+      solution: "İşletmeniz için çalışan AI sistemleri kuruyoruz.",
       cta: "Nasıl Çalıştığını Görün",
     },
     howWeSolve: {
