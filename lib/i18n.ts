@@ -249,22 +249,22 @@ export const translations = {
     },
     hero: {
       title: "Markanıza Özel Akıllı AI Asistan",
-      subtitle: "Tonunuzu, bilginizi ve iş bağlamınızı anlayan kişisel bir yapay zeka asistanı",
+      subtitle: "Tonunuzu, bilginizi ve iş süreçlerinizi anlayan yapay zeka asistanı",
       microLine: "Kontrollü ve marka güvenli AI iletişimi için tasarlandı",
       cta1: "Demo Talep Et",
       cta2: "Nasıl Çalıştığını Görün",
       topBadge: "Kurumsal AI Çözümleri",
       badge1: {
-        title: "Bağlam Anlama",
-        desc: "Niyeti kavrar"
+        title: "Bağlam Farkındalığı",
+        desc: "Amacı anlar"
       },
       badge2: {
-        title: "Marka Eğitimli",
-        desc: "Sesinizle konuşur"
+        title: "Marka Odaklı",
+        desc: "Markanızın diliyle konuşur"
       },
       stats: {
         clients: "Kurumsal Kullanım İçin Tasarlandı",
-        support: "Marka Bilginiz Üzerinde Eğitildi"
+        support: "Marka Bilginizle Eğitildi"
       },
       trustNote: ""
     },
@@ -273,62 +273,62 @@ export const translations = {
       title: "İŞLETMENİZ İÇİN AKILLI OTOMASYON",
       problem1: {
         title: "7/24 Erişilebilirlik",
-        desc: "AI asistanınız kesintisiz çalışır, hiçbir müşteri beklemede kalmaz"
+        desc: "AI asistanınız kesintisiz çalışır, müşterileriniz hiç beklemez"
       },
       problem2: {
         title: "Anında Yanıt",
-        desc: "Ölçekte anında cevaplar sunun — AI binlerce konuşmayı aynı anda yönetir"
+        desc: "Binlerce konuşmayı aynı anda yönetin — AI ölçekte anında yanıt verir"
       },
       problem3: {
         title: "Maliyet Verimliliği",
-        desc: "Hizmet kalitesini ve müşteri memnuniyetini artırırken operasyonel maliyetleri düşürün"
+        desc: "Hizmet kalitesini artırırken operasyonel maliyetleri düşürün"
       },
       problem4: {
         title: "Tutarlı Kalite",
-        desc: "Her müşteri aynı yüksek kaliteli, doğru yanıtları alır — her seferinde"
+        desc: "Her müşteriye aynı yüksek kaliteli ve doğru yanıtlar — her seferinde"
       },
-      solution: "İşletmeniz için çalışan AI sistemleri kuruyoruz.",
+      solution: "İşletmeniz için çalışan AI sistemleri geliştiriyoruz.",
       cta: "Nasıl Çalıştığını Görün",
     },
     howWeSolve: {
-      title: "Bunu Nasıl Çözüyoruz",
-      subtitle: "Ölçekte zeka, sadece otomasyon değil",
+      title: "Nasıl Çalışır",
+      subtitle: "Sadece otomasyon değil, ölçekte zeka",
       listen: {
         title: "Dinle",
-        desc: "Marka tonunuzu ve müşteri niyetini öğrenir"
+        desc: "Marka tonunuzu ve müşteri amacını öğrenir"
       },
       learn: {
         title: "Öğren",
-        desc: "Doğru, tutarlı yanıtlar vermek için verilerinizden öğrenir"
+        desc: "Verilerinizden öğrenerek doğru ve tutarlı yanıtlar verir"
       },
       act: {
-        title: "Hareket Et",
-        desc: "Kanallar ve iş akışları boyunca anında harekete geçer"
+        title: "Harekete Geç",
+        desc: "Tüm kanallar ve iş akışlarında anında devreye girer"
       },
-      bridge: "Aşağıdaki sistem tarafından desteklenmektedir"
+      bridge: "Aşağıdaki sistem tarafından desteklenir"
     },
     expertise: {
       our: "Bizim",
       title: "Çözümümüz",
-      subtitle: "Konuşmaları akıllıca otomatikleştirmek için ihtiyacınız olan her şey",
+      subtitle: "Konuşmaları akıllıca otomatikleştirmek için gereken her şey",
       card1: {
-        title: "Ton ve Duygu Anlama",
-        desc: "Kullanıcı tonunu ve duygularını anlayan AI",
+        title: "Ton ve Duygu Analizi",
+        desc: "Kullanıcının tonunu ve duygularını anlayan AI",
         icon: "brain"
       },
       card2: {
-        title: "Doğal Metin ve Ses Yanıtı",
-        desc: "Metin ve seste doğal yanıtlar",
+        title: "Doğal Metin ve Ses",
+        desc: "Hem metin hem seste doğal yanıtlar",
         icon: "message"
       },
       card3: {
-        title: "İşletme Kişiselleştirme",
-        desc: "Her işletme için özelleştirilmiş",
+        title: "İşletmeye Özel",
+        desc: "Her işletme için özelleştirilmiş çözüm",
         icon: "settings"
       },
       card4: {
-        title: "Süreç Otomasyonu",
-        desc: "İş akışlarını akıllıca otomatikleştir",
+        title: "Akıllı Otomasyon",
+        desc: "İş akışlarınızı otomatikleştirin",
         icon: "zap"
       }
     },
@@ -337,7 +337,7 @@ export const translations = {
       coreLabel: "Ana Hizmet",
       card1: {
         title: "Akıllı Kişisel Asistan",
-        desc: "Niyet, ton ve bağlamı anlayan AI asistanı",
+        desc: "Amaç, ton ve bağlamı anlayan AI asistanı",
         features: ["Ses'ten Metin'e", "Metin'den Ses'e", "Ton uyarlama"]
       },
       card2: {
@@ -347,7 +347,7 @@ export const translations = {
       },
       card3: {
         title: "API ve Entegrasyon",
-        desc: "Mevcut sistemlerinizle bağlantı kurun",
+        desc: "Mevcut sistemlerinizle entegre olun",
         features: ["REST API", "Webhook'lar", "Özel entegrasyon"]
       },
       cta: "Bunların birlikte nasıl çalıştığını görün →"
@@ -357,35 +357,35 @@ export const translations = {
       subtitle: "3 basit adımda başlayın",
       step1: {
         title: "Verilerinizi Paylaşın",
-        desc: "Belgelerinizi, SSS'lerinizi yükleyin veya bilgi tabanınızı bağlayın. Yapay zekayı özel iş bilgileriniz üzerinde eğiteceğiz."
+        desc: "Belgelerinizi, SSS'lerinizi yükleyin veya bilgi tabanınızı bağlayın. AI'ı işletmenize özel bilgilerle eğitiriz."
       },
       step2: {
         title: "Özelleştirin ve Eğitin",
-        desc: "Chatbotunuzun kişiliğini, tonunu ve yanıtlarını kişiselleştirin. Yapay zekamız marka sesinizden ve müşteri etkileşimlerinden öğrenir."
+        desc: "AI asistanınızın kişiliğini, tonunu ve yanıtlarını özelleştirin. Marka sesinizden ve müşteri etkileşimlerinizden öğrenir."
       },
       step3: {
-        title: "Dağıtın ve Ölçeklendirin",
-        desc: "Chatbotunuzu birden fazla kanalda başlatın. Performansı izleyin ve yapay zekanın aynı anda binlerce konuşmayı yönetmesine izin verin."
+        title: "Devreye Alın ve Ölçeklendirin",
+        desc: "AI asistanınızı birden fazla kanalda başlatın. Performansı izleyin, binlerce konuşmayı aynı anda yönetin."
       }
     },
     whyUs: {
       title: "NEDEN BİZ?",
-      subtitle: "Bizi farklı kılan nedir",
+      subtitle: "Bizi farklı kılan özellikler",
       card1: {
         title: "Türkçe Dil Uzmanlığı",
-        desc: "Doğal Türkçe anlama ve yanıt"
+        desc: "Doğal Türkçe anlama ve yanıt verme"
       },
       card2: {
         title: "Ton Uyarlama",
-        desc: "AI kullanıcının iletişim tarzına uyum sağlar"
+        desc: "Kullanıcının iletişim tarzına uyum sağlar"
       },
       card3: {
         title: "Veri Güvenliği",
-        desc: "Verileriniz özel ve güvende kalır"
+        desc: "Verileriniz güvende ve özel kalır"
       },
       card4: {
-        title: "Hızlı Dağıtım",
-        desc: "Aylar değil, günler içinde başlayın"
+        title: "Hızlı Kurulum",
+        desc: "Aylar değil, günler içinde devreye alın"
       },
       card5: {
         title: "Ölçeklenebilir",
@@ -395,44 +395,44 @@ export const translations = {
     results: {
       title: "Gerçek Sonuçlar",
       subtitle: "Sonuç odaklı metrikler",
-      note: "Gerçek müşteri projeleri üzerinden ölçülmüştür",
+      note: "Gerçek müşteri projelerinden ölçülmüştür",
       metric1: {
         value: "70%",
-        label: "Maliyet Azaltma",
-        desc: "Daha düşük destek maliyetleri"
+        label: "Maliyet Tasarrufu",
+        desc: "Daha düşük operasyonel maliyet"
       },
       metric2: {
         value: "5x",
-        label: "Daha Hızlı Yanıt",
-        desc: "7/24 anında cevaplar"
+        label: "Daha Hızlı",
+        desc: "7/24 anında yanıt"
       },
       metric3: {
         value: "95%",
         label: "Memnuniyet",
-        desc: "Daha yüksek müşteri mutluluğu"
+        desc: "Yüksek müşteri memnuniyeti"
       },
       metric4: {
         value: "100%",
-        label: "Ekip Odağı",
-        desc: "Önemli işlere odaklanın"
+        label: "Ekip Verimliliği",
+        desc: "Stratejik işlere odaklanma"
       }
     },
     testimonials: {
       proven: "Kanıtlanmış",
       title: "BAŞARI HİKAYELERİ",
-      subtitle: "Gerçek ekipler. Gerçek kurulumlar. Gerçek etki.",
+      subtitle: "Gerçek ekipler. Gerçek sonuçlar. Gerçek etki.",
       card1: {
         quote: "KLEXAI destek maliyetlerimizi %70 azalttı ve yanıt kalitesini artırdı.",
         author: "Sarah Johnson",
         role: "CEO, TechStart Inc"
       },
       card2: {
-        quote: "KLEXAI'nin doğal Türkçe konuşma akışı inanılmaz. Müşterilerimiz otantik etkileşimleri çok seviyor.",
+        quote: "KLEXAI'nin doğal Türkçe konuşma akışı harika. Müşterilerimiz otantik etkileşimleri çok beğeniyor.",
         author: "Michael Chen",
         role: "CTO, DataFlow Solutions"
       },
       card3: {
-        quote: "Ekibimiz artık stratejik işlere odaklanıyor. AI tekrarlayan görevleri mükemmel hallediyor.",
+        quote: "Ekibimiz artık stratejik işlere odaklanıyor. AI rutin görevleri mükemmel yönetiyor.",
         author: "Emma Rodriguez",
         role: "Operasyon Müdürü, GrowthCo"
       }
@@ -441,37 +441,37 @@ export const translations = {
       title: "Ekiplerin Başlamadan Önce Sorduğu Sorular",
       q1: "Kurulum ne kadar sürer?",
       a1: "Çoğu ekip, eğitim, entegrasyonlar ve testler dahil 1-2 hafta içinde yayına geçer — mevcut iş akışlarını aksatmadan.",
-      q2: "Chatbot hangi dilleri destekliyor?",
-      a2: "Yapay zeka chatbotlarımız Türkçe, İngilizce, Arapça, İspanyolca, Almanca ve daha fazlası dahil olmak üzere 50'den fazla dili destekler — her dilde ton ve bağlamın yerel anlayışıyla.",
-      q3: "Chatbot mevcut sistemlerimle entegre olabilir mi?",
-      a3: "Evet! Chatbotlarımız popüler CRM'ler, mesajlaşma platformları (WhatsApp, Telegram, Instagram) ve özel API'lerle sorunsuz entegre olur — teknik uzmanlık gerekmez.",
+      q2: "AI asistan hangi dilleri destekliyor?",
+      a2: "Yapay zeka asistanlarımız Türkçe, İngilizce, Arapça, İspanyolca, Almanca ve daha fazlası dahil olmak üzere 50'den fazla dili destekler — her dilde ton ve bağlamın yerel anlayışıyla.",
+      q3: "AI asistan mevcut sistemlerimle entegre olabilir mi?",
+      a3: "Evet! AI asistanlarımız popüler CRM'ler, mesajlaşma platformları (WhatsApp, Telegram, Instagram) ve özel API'lerle sorunsuz entegre olur — teknik uzmanlık gerekmez.",
       q4: "RAG sistemi nasıl çalışır?",
       a4: "RAG (Retrieval-Augmented Generation), gerçek verilerinize dayalı doğru, bağlama duyarlı yanıtlar sağlamak için belgelerinizi ve bilgi tabanınızı gerçek zamanlı olarak arar — yanıtların otomatik olarak güncel kalmasını sağlar.",
-      q5: "Chatbot bir soruyu yanıtlayamazsa ne olur?",
-      a5: "Chatbot, konuşmayı sorunsuz bir şekilde insan temsilciye aktarır veya takip için iletişim bilgilerini toplar — hiçbir müşteri yardım almadan bırakılmaz."
+      q5: "AI asistan bir soruyu yanıtlayamazsa ne olur?",
+      a5: "AI asistan, konuşmayı sorunsuz bir şekilde insan temsilciye aktarır veya takip için iletişim bilgilerini toplar — hiçbir müşteri yardım almadan bırakılmaz."
     },
     cta: {
       title: "Gerçekten İşe Yarayan AI ile Konuşmaları Otomatikleştirmeye Hazır mısınız?",
-      subtitle: "Destek maliyetlerini azaltmak ve müşteri memnuniyetini artırmak için yapay zeka kullanan yüzlerce şirkete katılın",
+      subtitle: "Destek maliyetlerini azaltıp müşteri memnuniyetini artıran yüzlerce şirkete katılın",
       btn1: "Demo Talep Et",
       btn2: "Ücretsiz Görüşme",
       trust: {
         commitment: "Taahhüt Yok",
-        security: "Kurumsal Düzey Güvenlik",
-        speed: "Günler İçinde Yayında"
+        security: "Kurumsal Güvenlik",
+        speed: "Günler İçinde Devrede"
       }
     },
     contact: {
-      title: "Bir AI Otomasyon Uzmanıyla Konuşun",
-      subtitle: "AI'nın müşteri konuşmalarınızı nasıl dönüştürebileceğini tartışalım",
+      title: "AI Otomasyon Uzmanıyla Görüşün",
+      subtitle: "AI'nın müşteri konuşmalarınızı nasıl dönüştürebileceğini birlikte keşfedelim",
       name: "Adınız",
       email: "E-posta Adresiniz",
-      message: "Kullanım durumunuz, zorluklarınız veya hedefleriniz hakkında bize bilgi verin",
+      message: "İhtiyaçlarınız, zorluklarınız veya hedefleriniz hakkında bize bilgi verin",
       submit: "Ücretsiz Danışmanlık Talep Et",
       sending: "Gönderiliyor...",
-      success: "✓ Mesaj başarıyla gönderildi! 24 saat içinde size geri döneceğiz.",
+      success: "✓ Mesajınız başarıyla gönderildi! 24 saat içinde size dönüş yapacağız.",
       error: "✗ Mesaj gönderilemedi. Lütfen tekrar deneyin veya WhatsApp üzerinden bize ulaşın.",
-      trust: "Taahhüt yok · 24 saat içinde yanıt · Kurumsal hazır"
+      trust: "Taahhüt yok · 24 saat içinde yanıt · Kurumsal çözüm"
     },
     footer: {
       kvkk: "KVKK",
