@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: "Markanızın tonuyla konuşan, saniyeler içinde yanıt veren AI asistan. WhatsApp, Instagram ve web siteniz için akıllı müşteri destek otomasyonu.",
   keywords: ["AI chatbot", "müşteri desteği", "yapay zeka asistan", "WhatsApp bot", "Türkiye", "KVKK uyumlu"],
   authors: [{ name: "KLEXAI" }],
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: "KLEXAI - AI Müşteri Destek Asistanı",
     description: "Markanızın tonuyla konuşan AI asistan ile müşteri desteğinizi otomatikleştirin",

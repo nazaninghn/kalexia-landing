@@ -13,73 +13,42 @@ export async function POST(request: Request) {
       );
     }
 
-    // Option 1: Send to Telegram Bot
-    const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-    const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+    // Send via Web3Forms
+    const WEB3FORMS_ACCESS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
 
-    if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID) {
-      const telegramMessage = `
-🔔 New Contact Form Submission
-
-👤 Name: ${name}
-📧 Email: ${email}
-💬 Message:
-${message}
-
----
-Sent from KLEXAI Landing Page
-      `.trim();
-
-      const telegramResponse = await fetch(
-        `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            chat_id: TELEGRAM_CHAT_ID,
-            text: telegramMessage,
-            parse_mode: 'HTML',
-          }),
-        }
+    if (!WEB3FORMS_ACCESS_KEY) {
+      console.error('Web3Forms Access Key not configured');
+      return NextResponse.json(
+        { error: 'Email service not configured' },
+        { status: 500 }
       );
-
-      if (!telegramResponse.ok) {
-        console.error('Telegram API error:', await telegramResponse.text());
-      }
     }
 
-    // Option 2: Send via Resend (if configured)
-    // Uncomment and configure if you want to use Resend
-    /*
-    const RESEND_API_KEY = process.env.RESEND_API_KEY;
-    const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL;
+    const web3formsResponse = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        name: name,
+        email: email,
+        message: message,
+        subject: `New Contact from KLEXAI Landing - ${name}`,
+        from_name: 'KLEXAI Landing Page',
+      }),
+    });
 
-    if (RESEND_API_KEY && RECIPIENT_EMAIL) {
-      const resendResponse = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${RESEND_API_KEY}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          from: 'KLEXAI <noreply@yourdomain.com>',
-          to: [RECIPIENT_EMAIL],
-          subject: `New Contact: ${name}`,
-          html: `
-            <h2>New Contact Form Submission</h2>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Message:</strong></p>
-            <p>${message.replace(/\n/g, '<br>')}</p>
-          `,
-        }),
-      });
+    const result = await web3formsResponse.json();
 
-      if (!resendResponse.ok) {
-        console.error('Resend API error:', await resendResponse.text());
-      }
+    if (!web3formsResponse.ok || !result.success) {
+      console.error('Web3Forms API error:', result);
+      return NextResponse.json(
+        { error: 'Failed to send message. Please try again.' },
+        { status: 500 }
+      );
     }
-    */
 
     return NextResponse.json(
       { success: true, message: 'Message sent successfully!' },
