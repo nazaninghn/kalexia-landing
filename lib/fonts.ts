@@ -2,11 +2,13 @@ import { Inter } from "next/font/google";
 
 // Inter - Perfect for Turkish, modern, professional, excellent readability
 // Best choice for SaaS/B2B landing pages targeting Turkish market
+// Only load weights we actually use to improve performance
 export const inter = Inter({
   subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "600", "700", "800"],
   variable: "--font-inter",
   display: "swap",
+  preload: true,
 });
 
 // Using Inter for everything - consistent, clean, Turkish-optimized

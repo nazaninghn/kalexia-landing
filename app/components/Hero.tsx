@@ -112,7 +112,7 @@ export default function Hero() {
               fill
               className="object-contain group-hover:scale-105 transition-transform duration-700"
               priority
-              quality={100}
+              quality={85}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
             />
 
