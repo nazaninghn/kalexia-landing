@@ -24,23 +24,41 @@ export async function POST(request: Request) {
       );
     }
 
+    console.log('Sending to Web3Forms with key:', WEB3FORMS_ACCESS_KEY);
+
+    const formData = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      name: name,
+      email: email,
+      message: message,
+      subject: `New Contact from KLEXAI Landing - ${name}`,
+    };
+
+    console.log('Form data:', formData);
+
     const web3formsResponse = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
       },
-      body: JSON.stringify({
-        access_key: WEB3FORMS_ACCESS_KEY,
-        name: name,
-        email: email,
-        message: message,
-        subject: `New Contact from KLEXAI Landing - ${name}`,
-        from_name: 'KLEXAI Landing Page',
-      }),
+      body: JSON.stringify(formData),
     });
 
-    const result = await web3formsResponse.json();
+    console.log('Web3Forms response status:', web3formsResponse.status);
+    const responseText = await web3formsResponse.text();
+    console.log('Web3Forms response:', responseText);
+
+    let result;
+    try {
+      result = JSON.parse(responseText);
+    } catch (e) {
+      console.error('Failed to parse Web3Forms response:', responseText);
+      return NextResponse.json(
+        { error: 'Email service error. Please try again.' },
+        { status: 500 }
+      );
+    }
 
     if (!web3formsResponse.ok || !result.success) {
       console.error('Web3Forms API error:', result);

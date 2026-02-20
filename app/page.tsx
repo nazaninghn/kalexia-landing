@@ -17,13 +17,25 @@ export default function Home() {
     setFormStatus("loading");
 
     try {
-      const response = await fetch("/api/contact", {
+      // Send directly to Web3Forms (client-side)
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        headers: { 
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          access_key: "7b47a866-cea3-4652-9561-d94b5b98b684",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `New Contact from KLEXAI Landing - ${formData.name}`,
+        }),
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (response.ok && result.success) {
         setFormStatus("success");
         setFormData({ name: "", email: "", message: "" });
         setTimeout(() => setFormStatus("idle"), 5000);
