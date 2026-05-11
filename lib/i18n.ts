@@ -4,23 +4,28 @@ export const translations = {
   en: {
     nav: {
       about: "About",
-      services: "How It Works",
+      services: "Services",
       contact: "Contact",
     },
     hero: {
-      title: "AI Assistant Trained for Your Brand",
-      subtitle: "A personal AI assistant that understands your tone, knowledge, and business context",
-      microLine: "Designed for controlled, brand-safe AI communication",
+      titleLine1: "AI Assistant",
+      titleLine2: "Trained On",
+      titleLine3: "Your Data",
+      titleHighlight1: "AI",
+      titleHighlight2: "Your Data",
+      title: "AI Assistant Trained On Your Data",
+      subtitle: "We build private AI assistants trained exclusively on your company data — no data sharing, no generic answers, complete enterprise control.",
+      microLine: "Your data never leaves your infrastructure",
       cta1: "Request Demo",
       cta2: "See How It Works",
-      topBadge: "Enterprise AI Solutions",
+      topBadge: "Enterprise AI Platform",
       badge1: {
-        title: "Context-Aware",
-        desc: "Understands intent"
+        title: "On Your Infrastructure",
+        desc: "Your data never leaves your servers"
       },
       badge2: {
-        title: "Brand-Trained",
-        desc: "Speaks your voice"
+        title: "5x Faster",
+        desc: "Response time improvement"
       },
       stats: {
         clients: "Designed for Enterprise Use",
@@ -28,87 +33,110 @@ export const translations = {
       },
       trustNote: ""
     },
-    about: {
-      why: "What We Deliver",
-      title: "INTELLIGENT AUTOMATION FOR YOUR BUSINESS",
-      problem1: {
-        title: "24/7 Availability",
-        desc: "Your AI assistant works around the clock, ensuring no customer is left waiting"
+    problem: {
+      tag: "The Problem",
+      title: "Generic AI Wasn't Built for Your Business",
+      subtitle: "Off-the-shelf AI tools expose your sensitive data, deliver generic responses, and give you zero control over what AI says on your behalf.",
+      pain1: {
+        title: "Your Data Gets Exposed",
+        desc: "Shared AI platforms use your documents to train models that competitors can access"
       },
-      problem2: {
-        title: "Instant Response",
-        desc: "Deliver immediate answers at scale — AI handles thousands of conversations simultaneously"
+      pain2: {
+        title: "Generic, Off-Brand Answers",
+        desc: "AI doesn't know your products, terminology, or brand voice — and it shows"
       },
-      problem3: {
-        title: "Cost Efficiency",
-        desc: "Reduce operational costs while improving service quality and customer satisfaction"
+      pain3: {
+        title: "Zero Control Over AI Behavior",
+        desc: "You can't govern what the AI says, what it avoids, or how it represents your company"
       },
-      problem4: {
-        title: "Consistent Quality",
-        desc: "Every customer receives the same high-quality, accurate responses — every time"
-      },
-      solution: "We build AI systems that work for your business.",
-      cta: "See How It Works",
+      bridge: "There's a better way"
     },
     howWeSolve: {
-      title: "How We Solve This",
-      subtitle: "Intelligence at scale, not just automation",
+      tag: "How It Works",
+      title: "Your Data. Your AI. Your Control.",
+      subtitle: "We build, deploy, and maintain a private AI assistant that runs on your infrastructure — trained exclusively on your data.",
       listen: {
-        title: "Listen",
-        desc: "Learns your brand tone and customer intent"
+        title: "Connect Your Data",
+        desc: "We securely connect to your company data — documents, CRM, knowledge base — without moving it off your servers. On-premise or private cloud."
       },
       learn: {
-        title: "Learn",
-        desc: "Learns from your data to give accurate, consistent answers"
+        title: "Train the AI",
+        desc: "Your AI assistant learns your brand tone, products, and workflows using MCP protocol. Zero data leakage. Stays 100% private to your organization."
       },
       act: {
-        title: "Act",
-        desc: "Takes action instantly across channels and workflows"
+        title: "Deploy & Scale",
+        desc: "Goes live on your channels in days — WhatsApp, Slack, web, custom API. Fully private, fully controlled, fully yours."
       },
       bridge: "Powered by the system below"
+    },
+    technology: {
+      tag: "Technology",
+      title: "Built on Advanced Architecture",
+      subtitle: "Enterprise-grade technology stack designed for security, privacy, and scale",
+      t1: {
+        tag: "RAG",
+        title: "Retrieval-Augmented Generation",
+        desc: "Real-time retrieval from your knowledge base. Every answer is grounded in your actual data — never hallucinated, always accurate and current."
+      },
+      t2: {
+        tag: "MCP",
+        title: "Model Context Protocol",
+        desc: "A secure bridge between your data and the AI model. Zero data leakage guaranteed. Your information never trains external shared models."
+      },
+      t3: {
+        tag: "On-Premise",
+        title: "Private Infrastructure",
+        desc: "Deploy entirely within your own servers. Full data sovereignty with GDPR, KVKK, and enterprise security standards compliance."
+      },
+      t4: {
+        tag: "Frontier AI",
+        title: "Latest Language Models",
+        desc: "Powered by the most advanced AI models available — fine-tuned on your data for your specific industry, tone, and use case."
+      }
     },
     expertise: {
       our: "Our",
       title: "Solution",
-      subtitle: "Everything you need to automate conversations intelligently",
+      subtitle: "AI assistants built on your data, with enterprise-grade privacy",
       card1: {
-        title: "Tone & Emotion Understanding",
-        desc: "AI that understands user tone and emotions",
+        title: "Custom AI Assistant",
+        desc: "Trained exclusively on your company data — understands your brand, products, and workflows",
         icon: "brain"
       },
       card2: {
-        title: "Natural Text & Voice Response",
-        desc: "Natural responses in text and voice",
+        title: "Privacy-First Architecture",
+        desc: "Your data never leaves your infrastructure. Full compliance with GDPR, KVKK, and enterprise security standards",
         icon: "message"
       },
       card3: {
-        title: "Business Personalization",
-        desc: "Customized for every business",
+        title: "MCP Protocol Security",
+        desc: "Built on Model Context Protocol for secure, controlled AI interactions with zero data leakage",
         icon: "settings"
       },
       card4: {
-        title: "Process Automation",
-        desc: "Automate workflows intelligently",
+        title: "Seamless Integration",
+        desc: "Connects to your existing tools — CRM, WhatsApp, Slack, and custom APIs in days, not months",
         icon: "zap"
       }
     },
     services: {
       title: "Services",
+      heading: "What You Get",
       coreLabel: "Core Service",
       card1: {
-        title: "Smart Personal Assistant",
-        desc: "AI assistant that understands intent, tone, and context",
-        features: ["Voice to Text", "Text to Voice", "Tone adaptation"]
+        title: "Private Knowledge AI",
+        desc: "An internal AI assistant trained on your docs, policies, and manuals — answers employee questions instantly",
+        features: ["Trained on your documents", "Brand-voice responses", "Multi-language support"]
       },
       card2: {
-        title: "Process Automation",
-        desc: "Automate your business workflows",
-        features: ["Workflow automation", "Task scheduling", "Smart triggers"]
+        title: "Customer Support AI",
+        desc: "Deploy an AI that handles customer queries 24/7 — on-brand, always accurate, seamlessly hands off to humans",
+        features: ["24/7 availability", "Seamless human handoff", "WhatsApp, web & custom channels"]
       },
       card3: {
-        title: "API & Integration",
-        desc: "Connect with your existing systems",
-        features: ["REST API", "Webhooks", "Custom integration"]
+        title: "Workflow Automation",
+        desc: "Automate repetitive business processes and connect your AI to the tools your team already uses",
+        features: ["Process automation", "CRM & API integration", "Smart triggers & scheduling"]
       },
       cta: "See how these work together →"
     },
@@ -121,19 +149,19 @@ export const translations = {
       },
       step2: {
         title: "Customize & Train",
-        desc: "Personalize your chatbot's personality, tone, and responses. Our AI learns from your brand voice and customer interactions."
+        desc: "Personalize your assistant's personality, tone, and responses. Our AI learns from your brand voice and customer interactions."
       },
       step3: {
         title: "Deploy & Scale",
-        desc: "Launch your chatbot across multiple channels. Monitor performance and let AI handle thousands of conversations simultaneously."
+        desc: "Launch your AI assistant across multiple channels. Monitor performance and let AI handle thousands of conversations simultaneously."
       }
     },
     whyUs: {
       title: "WHY TEAMS CHOOSE US",
       subtitle: "What makes us different",
       card1: {
-        title: "Turkish Language Mastery",
-        desc: "Native Turkish understanding and natural responses"
+        title: "Multilingual AI",
+        desc: "Native understanding in 50+ languages including Turkish, English, Arabic"
       },
       card2: {
         title: "Tone Adaptation",
@@ -153,28 +181,28 @@ export const translations = {
       }
     },
     results: {
-      title: "REAL RESULTS",
-      subtitle: "Outcome-based metrics",
+      title: "Real Results",
+      subtitle: "Outcome-based metrics measured across real client deployments",
       note: "Measured across real client deployments",
       metric1: {
         value: "70%",
         label: "Cost Reduction",
-        desc: "Lower support costs"
+        desc: "Lower support & operational costs"
       },
       metric2: {
         value: "5x",
         label: "Faster Response",
-        desc: "Instant answers 24/7"
+        desc: "Instant answers around the clock"
       },
       metric3: {
         value: "95%",
         label: "Satisfaction",
-        desc: "Higher customer happiness"
+        desc: "Higher customer happiness scores"
       },
       metric4: {
         value: "100%",
-        label: "Team Focus",
-        desc: "Focus on important work"
+        label: "Data Privacy",
+        desc: "Zero data leaves your infrastructure"
       }
     },
     testimonials: {
@@ -198,21 +226,21 @@ export const translations = {
       }
     },
     faq: {
-      title: "Questions Teams Ask Before Getting Started",
-      q1: "How long does it take to set up?",
-      a1: "Most teams go live in 1-2 weeks, including training, integrations, and testing — without disrupting existing workflows.",
-      q2: "What languages does the chatbot support?",
-      a2: "Our AI chatbots support 50+ languages including Turkish, English, Arabic, Spanish, German, and more — with native understanding of tone and context in each language.",
-      q3: "Can the chatbot integrate with my existing systems?",
-      a3: "Yes! Our chatbots integrate seamlessly with popular CRMs, messaging platforms (WhatsApp, Telegram, Instagram), and custom APIs — no technical expertise required.",
-      q4: "How does the RAG system work?",
-      a4: "RAG (Retrieval-Augmented Generation) searches your documents and knowledge base in real-time to provide accurate, context-aware answers based on your actual data — ensuring responses stay up-to-date automatically.",
-      q5: "What happens if the chatbot can't answer a question?",
-      a5: "The chatbot seamlessly transfers the conversation to a human agent or collects contact information for follow-up — ensuring no customer is left without help."
+      title: "Frequently Asked Questions",
+      q1: "Why can't we just use ChatGPT or other public AI models?",
+      a1: "Public AI models don't know your business — they give generic answers, can't access your internal data, and every conversation is stored on their servers. Your company data, customer info, and trade secrets become their training data. KLEXAI builds a private AI on YOUR infrastructure, trained only on YOUR data, with zero data leakage. It answers exactly what your team or customers need — not generic internet knowledge.",
+      q2: "How is our company data protected?",
+      a2: "Your data never leaves your infrastructure. We use MCP (Model Context Protocol) to create a secure bridge between the AI and your data — the AI reads and understands your documents, but nothing is sent to external servers. Full GDPR and KVKK compliance, end-to-end encryption, and you maintain complete ownership at all times. Unlike ChatGPT or Gemini, your data is never used to train anyone else's model.",
+      q3: "What does the pricing look like?",
+      a3: "Every project is different — pricing depends on your data volume, number of channels, and complexity of workflows. We offer flexible monthly plans that scale with your needs. Book a free consultation and we'll give you a clear quote based on your specific use case. No hidden fees, no long-term lock-in.",
+      q4: "How long does setup take and what do we need to provide?",
+      a4: "Most teams go live in 5-10 business days. You provide access to your documents, knowledge base, or CRM — we handle everything else. No complex technical setup required on your end. We connect, train the AI on your brand tone and workflows, test thoroughly, and deploy across your channels.",
+      q5: "What if the AI gives a wrong answer or can't handle a question?",
+      a5: "The AI knows its limits. When it encounters something outside its training data or a complex situation requiring human judgment, it seamlessly escalates to your team with full conversation context. No customer is ever left hanging. Plus, every interaction improves the system — it learns from corrections and gets more accurate over time."
     },
     cta: {
-      title: "Ready to Automate Conversations with AI That Actually Works?",
-      subtitle: "Join hundreds of companies using AI to reduce support costs and boost customer satisfaction",
+      title: "Ready to Give Your Company Its Own AI?",
+      subtitle: "Book a free consultation — we'll show you exactly what a private AI assistant looks like for your specific use case.",
       btn1: "Request a Demo",
       btn2: "Free Consultation",
       trust: {
@@ -222,45 +250,50 @@ export const translations = {
       }
     },
     contact: {
-      title: "Talk to an AI Automation Expert",
-      subtitle: "Let's discuss how AI can transform your customer conversations",
+      title: "Talk to an AI Expert",
+      subtitle: "Tell us about your use case and we'll show you exactly how a private AI assistant can work for your team.",
       name: "Your Name",
       email: "Your Email",
-      message: "Tell us about your use case, challenges, or goals",
+      message: "Describe your use case, team size, or the challenge you want to solve",
       submit: "Request Free Consultation",
       sending: "Sending...",
-      success: "✓ Message sent successfully! We'll get back to you within 24 hours.",
-      error: "✗ Failed to send message. Please try again or contact us via WhatsApp.",
+      success: "✓ Message sent! We'll get back to you within 24 hours.",
+      error: "✗ Failed to send. Please try again or reach out on LinkedIn.",
       trust: "No commitment · We reply within 24 hours · Enterprise-ready"
     },
     footer: {
       kvkk: "KVKK",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
-      contact: "hello@klexai.com",
+      contact: "korhan.kucuk@academiadanismanlik.com",
       copyright: "© 2025 KLEXAI STUDIO. All Rights Reserved."
     }
   },
   tr: {
     nav: {
       about: "Hakkımızda",
-      services: "Nasıl Çalışır",
+      services: "Hizmetler",
       contact: "İletişim",
     },
     hero: {
-      title: "Markanıza Özel Akıllı AI Asistan",
-      subtitle: "Tonunuzu, bilginizi ve iş süreçlerinizi anlayan yapay zeka asistanı",
-      microLine: "Kontrollü ve marka güvenli AI iletişimi için tasarlandı",
-      cta1: "Demo Talep Et",
-      cta2: "Nasıl Çalıştığını Görün",
-      topBadge: "Kurumsal AI Çözümleri",
+      titleLine1: "Şirketinize Özel",
+      titleLine2: "Güvenli AI",
+      titleLine3: "Asistanı",
+      titleHighlight1: "AI",
+      titleHighlight2: "Asistanı",
+      title: "Şirketinize Özel Güvenli AI Asistanı",
+      subtitle: "Kurumsal verilerinizle eğitilmiş, altyapınızdan çıkmayan, tam kontrol sizde olan özel AI çözümleri geliştiriyoruz.",
+      microLine: "Verileriniz asla üçüncü taraflarla paylaşılmaz",
+      cta1: "Ücretsiz Keşif Görüşmesi",
+      cta2: "Nasıl Çalışır?",
+      topBadge: "Kurumsal AI Platformu",
       badge1: {
-        title: "Bağlam Farkındalığı",
-        desc: "Amacı anlar"
+        title: "Tam Veri Güvenliği",
+        desc: "MCP protokolü ile sıfır veri sızıntısı"
       },
       badge2: {
-        title: "Marka Odaklı",
-        desc: "Markanızın diliyle konuşur"
+        title: "5-10 Günde Devrede",
+        desc: "Hızlı kurulum, kesintisiz entegrasyon"
       },
       stats: {
         clients: "Kurumsal Kullanım İçin Tasarlandı",
@@ -268,89 +301,112 @@ export const translations = {
       },
       trustNote: ""
     },
-    about: {
-      why: "Neler Sunuyoruz",
-      title: "İŞLETMENİZ İÇİN AKILLI OTOMASYON",
-      problem1: {
-        title: "7/24 Erişilebilirlik",
-        desc: "AI asistanınız kesintisiz çalışır, müşterileriniz hiç beklemez"
+    problem: {
+      tag: "Problem",
+      title: "Genel AI İşletmeniz İçin Tasarlanmadı",
+      subtitle: "Hazır AI araçları hassas verilerinizi ifşa eder, genel yanıtlar üretir ve adınıza ne söylediği üzerinde size sıfır kontrol bırakır.",
+      pain1: {
+        title: "Verileriniz İfşa Oluyor",
+        desc: "Paylaşımlı AI platformları belgelerinizi rakiplerin erişebildiği modelleri eğitmek için kullanıyor"
       },
-      problem2: {
-        title: "Anında Yanıt",
-        desc: "Binlerce konuşmayı aynı anda yönetin — AI ölçekte anında yanıt verir"
+      pain2: {
+        title: "Genel, Marka Dışı Yanıtlar",
+        desc: "AI ürünlerinizi, terminolojinizi veya marka sesinizi bilmiyor — ve bu belli oluyor"
       },
-      problem3: {
-        title: "Maliyet Verimliliği",
-        desc: "Hizmet kalitesini artırırken operasyonel maliyetleri düşürün"
+      pain3: {
+        title: "AI Davranışı Üzerinde Kontrol Yok",
+        desc: "AI'ın ne söyleyeceğini, nelerden kaçınacağını veya şirketinizi nasıl temsil edeceğini yönetemiyorsunuz"
       },
-      problem4: {
-        title: "Tutarlı Kalite",
-        desc: "Her müşteriye aynı yüksek kaliteli ve doğru yanıtlar — her seferinde"
-      },
-      solution: "İşletmeniz için çalışan AI sistemleri geliştiriyoruz.",
-      cta: "Nasıl Çalıştığını Görün",
+      bridge: "Daha iyi bir yol var"
     },
     howWeSolve: {
-      title: "Nasıl Çalışır",
-      subtitle: "Sadece otomasyon değil, ölçekte zeka",
+      tag: "Nasıl Çalışır",
+      title: "Süreç Nasıl İşliyor?",
+      subtitle: "Verileriniz sizde kalır. AI'nız yalnızca sizin bilginizle çalışır.",
       listen: {
-        title: "Dinle",
-        desc: "Marka tonunuzu ve müşteri amacını öğrenir"
+        title: "Veri Entegrasyonu",
+        desc: "Mevcut sistemlerinize güvenli şekilde bağlanırız — CRM, belgeler, bilgi tabanı. Verileriniz sunucularınızdan çıkmaz, on-premise veya özel bulut altyapısında kalır."
       },
       learn: {
-        title: "Öğren",
-        desc: "Verilerinizden öğrenerek doğru ve tutarlı yanıtlar verir"
+        title: "Özel Eğitim",
+        desc: "AI asistanınız şirketinizin dilini, ürünlerini ve iş süreçlerini öğrenir. MCP protokolü sayesinde eğitim sırasında bile veri güvenliği tam olarak korunur."
       },
       act: {
-        title: "Harekete Geç",
-        desc: "Tüm kanallar ve iş akışlarında anında devreye girer"
+        title: "Devreye Alma",
+        desc: "5-10 iş günü içinde tüm kanallarınızda aktif olur — WhatsApp, web, Slack, özel API. Tam kontrol sizde, ölçeklendirme sınırsız."
       },
       bridge: "Aşağıdaki sistem tarafından desteklenir"
+    },
+    technology: {
+      tag: "Teknoloji",
+      title: "İleri Mimari Üzerine İnşa",
+      subtitle: "Güvenlik, gizlilik ve ölçek için tasarlanmış kurumsal düzey teknoloji yığını",
+      t1: {
+        tag: "RAG",
+        title: "Retrieval-Augmented Generation",
+        desc: "Bilgi tabanınızdan gerçek zamanlı erişim. Her yanıt gerçek verilerinize dayalı — asla halüsinasyon yok, her zaman doğru ve güncel."
+      },
+      t2: {
+        tag: "MCP",
+        title: "Model Context Protocol",
+        desc: "Verileriniz ile AI modeli arasında güvenli bir köprü. Sıfır veri sızıntısı garantisi. Bilgileriniz harici paylaşımlı modelleri asla eğitmez."
+      },
+      t3: {
+        tag: "On-Premise",
+        title: "Özel Altyapı",
+        desc: "Tamamen kendi sunucularınızda deploy edin. GDPR, KVKK ve kurumsal güvenlik standartları uyumluluğuyla tam veri egemenliği."
+      },
+      t4: {
+        tag: "Frontier AI",
+        title: "En Son Dil Modelleri",
+        desc: "Mevcut en gelişmiş AI modelleriyle güçlendirilmiş — verilerinizle sektörünüze ve kullanım durumunuza özel ince ayar yapılmış."
+      }
     },
     expertise: {
       our: "Bizim",
       title: "Çözümümüz",
-      subtitle: "Konuşmaları akıllıca otomatikleştirmek için gereken her şey",
+      subtitle: "Şirket verilerinize dayalı, kurumsal düzeyde gizlilikle AI asistanlar",
       card1: {
-        title: "Ton ve Duygu Analizi",
-        desc: "Kullanıcının tonunu ve duygularını anlayan AI",
+        title: "Özel AI Asistanı",
+        desc: "Yalnızca şirket verilerinizle eğitilir — markanızı, ürünlerinizi ve iş akışlarınızı anlar",
         icon: "brain"
       },
       card2: {
-        title: "Doğal Metin ve Ses",
-        desc: "Hem metin hem seste doğal yanıtlar",
+        title: "Gizlilik Öncelikli Mimari",
+        desc: "Verileriniz altyapınızdan asla çıkmaz. GDPR, KVKK ve kurumsal güvenlik standartlarına tam uyum",
         icon: "message"
       },
       card3: {
-        title: "İşletmeye Özel",
-        desc: "Her işletme için özelleştirilmiş çözüm",
+        title: "MCP Protokol Güvenliği",
+        desc: "Sıfır veri sızıntısıyla güvenli, kontrollü AI etkileşimleri için Model Context Protocol üzerine inşa edildi",
         icon: "settings"
       },
       card4: {
-        title: "Akıllı Otomasyon",
-        desc: "İş akışlarınızı otomatikleştirin",
+        title: "Sorunsuz Entegrasyon",
+        desc: "Mevcut araçlarınıza bağlanır — CRM, WhatsApp, Slack ve özel API'ler, aylar değil günler içinde",
         icon: "zap"
       }
     },
     services: {
       title: "Hizmetlerimiz",
-      coreLabel: "Ana Hizmet",
+      heading: "Ne Elde Edersiniz",
+      coreLabel: "En Çok Tercih Edilen",
       card1: {
-        title: "Akıllı Kişisel Asistan",
-        desc: "Amaç, ton ve bağlamı anlayan AI asistanı",
-        features: ["Ses'ten Metin'e", "Metin'den Ses'e", "Ton uyarlama"]
+        title: "Kurumsal Bilgi Asistanı",
+        desc: "Şirket içi belgeler, politikalar ve prosedürlerle eğitilmiş AI — ekibinizin sorularına saniyeler içinde doğru yanıt verir",
+        features: ["Şirket verilerinizle eğitilmiş", "Marka dilinizle yanıt verir", "50+ dil desteği"]
       },
       card2: {
-        title: "Süreç Otomasyonu",
-        desc: "İş akışlarınızı otomatikleştirin",
-        features: ["İş akışı otomasyonu", "Görev planlama", "Akıllı tetikleyiciler"]
+        title: "Müşteri İletişim AI'ı",
+        desc: "7/24 müşteri sorularını markanızın tonuyla yanıtlar — doğru, tutarlı ve gerektiğinde insan temsilciye sorunsuz aktarım",
+        features: ["Kesintisiz 7/24 hizmet", "Akıllı insan aktarımı", "WhatsApp, web, özel kanallar"]
       },
       card3: {
-        title: "API ve Entegrasyon",
-        desc: "Mevcut sistemlerinizle entegre olun",
-        features: ["REST API", "Webhook'lar", "Özel entegrasyon"]
+        title: "Süreç Otomasyonu",
+        desc: "Tekrarlayan iş akışlarını otomatikleştirin — CRM güncellemeleri, raporlama, bildirimler ve ekip koordinasyonu",
+        features: ["İş akışı otomasyonu", "CRM ve API entegrasyonu", "Akıllı tetikleyiciler"]
       },
-      cta: "Bunların birlikte nasıl çalıştığını görün →"
+      cta: "Detaylı bilgi için görüşme talep edin →"
     },
     howItWorks: {
       title: "NASIL ÇALIŞIR",
@@ -372,8 +428,8 @@ export const translations = {
       title: "NEDEN BİZ?",
       subtitle: "Bizi farklı kılan özellikler",
       card1: {
-        title: "Türkçe Dil Uzmanlığı",
-        desc: "Doğal Türkçe anlama ve yanıt verme"
+        title: "Çok Dilli AI",
+        desc: "Türkçe, İngilizce, Arapça dahil 50+ dilde doğal anlama"
       },
       card2: {
         title: "Ton Uyarlama",
@@ -394,12 +450,12 @@ export const translations = {
     },
     results: {
       title: "Gerçek Sonuçlar",
-      subtitle: "Sonuç odaklı metrikler",
+      subtitle: "Gerçek müşteri projelerinden ölçülen sonuç odaklı metrikler",
       note: "Gerçek müşteri projelerinden ölçülmüştür",
       metric1: {
         value: "70%",
         label: "Maliyet Tasarrufu",
-        desc: "Daha düşük operasyonel maliyet"
+        desc: "Daha düşük destek ve operasyonel maliyet"
       },
       metric2: {
         value: "5x",
@@ -409,12 +465,12 @@ export const translations = {
       metric3: {
         value: "95%",
         label: "Memnuniyet",
-        desc: "Yüksek müşteri memnuniyeti"
+        desc: "Yüksek müşteri memnuniyeti puanları"
       },
       metric4: {
         value: "100%",
-        label: "Ekip Verimliliği",
-        desc: "Stratejik işlere odaklanma"
+        label: "Veri Gizliliği",
+        desc: "Altyapınızdan sıfır veri çıkışı"
       }
     },
     testimonials: {
@@ -438,21 +494,21 @@ export const translations = {
       }
     },
     faq: {
-      title: "Ekiplerin Başlamadan Önce Sorduğu Sorular",
-      q1: "Kurulum ne kadar sürer?",
-      a1: "Çoğu ekip, eğitim, entegrasyonlar ve testler dahil 1-2 hafta içinde yayına geçer — mevcut iş akışlarını aksatmadan.",
-      q2: "AI asistan hangi dilleri destekliyor?",
-      a2: "Yapay zeka asistanlarımız Türkçe, İngilizce, Arapça, İspanyolca, Almanca ve daha fazlası dahil olmak üzere 50'den fazla dili destekler — her dilde ton ve bağlamın yerel anlayışıyla.",
-      q3: "AI asistan mevcut sistemlerimle entegre olabilir mi?",
-      a3: "Evet! AI asistanlarımız popüler CRM'ler, mesajlaşma platformları (WhatsApp, Telegram, Instagram) ve özel API'lerle sorunsuz entegre olur — teknik uzmanlık gerekmez.",
-      q4: "RAG sistemi nasıl çalışır?",
-      a4: "RAG (Retrieval-Augmented Generation), gerçek verilerinize dayalı doğru, bağlama duyarlı yanıtlar sağlamak için belgelerinizi ve bilgi tabanınızı gerçek zamanlı olarak arar — yanıtların otomatik olarak güncel kalmasını sağlar.",
-      q5: "AI asistan bir soruyu yanıtlayamazsa ne olur?",
-      a5: "AI asistan, konuşmayı sorunsuz bir şekilde insan temsilciye aktarır veya takip için iletişim bilgilerini toplar — hiçbir müşteri yardım almadan bırakılmaz."
+      title: "Sıkça Sorulan Sorular",
+      q1: "Neden ChatGPT veya diğer halka açık AI modellerini kullanamıyoruz?",
+      a1: "Halka açık AI modelleri işletmenizi tanımaz — genel yanıtlar verir, dahili verilerinize erişemez ve her konuşma sunucularında saklanır. Şirket verileriniz, müşteri bilgileriniz ve ticari sırlarınız onların eğitim verisi olur. KLEXAI, SİZİN altyapınızda, yalnızca SİZİN verilerinizle eğitilmiş, sıfır veri sızıntısıyla özel bir AI oluşturur.",
+      q2: "Şirket verilerimiz nasıl korunuyor?",
+      a2: "Verileriniz altyapınızdan asla çıkmaz. MCP (Model Context Protocol) kullanarak AI ile verileriniz arasında güvenli bir köprü oluştururuz — AI belgelerinizi okur ve anlar, ancak hiçbir şey harici sunuculara gönderilmez. Tam GDPR ve KVKK uyumu, uçtan uca şifreleme. ChatGPT veya Gemini'den farklı olarak verileriniz başka hiçbir modeli eğitmek için kullanılmaz.",
+      q3: "Fiyatlandırma nasıl çalışıyor?",
+      a3: "Her proje farklıdır — fiyatlandırma veri hacminize, kanal sayınıza ve iş akışlarınızın karmaşıklığına bağlıdır. İhtiyaçlarınızla birlikte ölçeklenen esnek aylık planlar sunuyoruz. Ücretsiz danışmanlık randevusu alın, kullanım durumunuza özel net bir teklif sunalım. Gizli ücret yok, uzun vadeli bağlayıcılık yok.",
+      q4: "Kurulum ne kadar sürer ve bizden ne gerekiyor?",
+      a4: "Çoğu ekip 5-10 iş günü içinde yayına geçer. Belgelerinize, bilgi tabanınıza veya CRM'inize erişim sağlarsınız — gerisini biz hallederiz. Sizin tarafınızda karmaşık teknik kurulum gerekmez. Bağlanır, AI'ı marka tonunuz ve iş akışlarınızla eğitir, kapsamlı test eder ve kanallarınızda devreye alırız.",
+      q5: "AI yanlış yanıt verirse veya bir soruyu cevaplayamazsa ne olur?",
+      a5: "AI sınırlarını bilir. Eğitim verilerinin dışında bir şeyle karşılaştığında veya insan muhakemesi gerektiren karmaşık bir durumda, tam konuşma bağlamıyla ekibinize sorunsuz şekilde yönlendirir. Hiçbir müşteri asla cevapsız bırakılmaz. Ayrıca her etkileşim sistemi geliştirir — düzeltmelerden öğrenir ve zamanla daha doğru hale gelir."
     },
     cta: {
-      title: "Gerçekten İşe Yarayan AI ile Konuşmaları Otomatikleştirmeye Hazır mısınız?",
-      subtitle: "Destek maliyetlerini azaltıp müşteri memnuniyetini artıran yüzlerce şirkete katılın",
+      title: "Şirketinize Özel AI'a Hazır mısınız?",
+      subtitle: "Ücretsiz danışmanlık için randevu alın — özel kullanım durumunuz için özel AI asistanın nasıl görüneceğini size gösterelim.",
       btn1: "Demo Talep Et",
       btn2: "Ücretsiz Görüşme",
       trust: {
@@ -462,22 +518,22 @@ export const translations = {
       }
     },
     contact: {
-      title: "AI Otomasyon Uzmanıyla Görüşün",
-      subtitle: "AI'nın müşteri konuşmalarınızı nasıl dönüştürebileceğini birlikte keşfedelim",
-      name: "Adınız",
-      email: "E-posta Adresiniz",
-      message: "İhtiyaçlarınız, zorluklarınız veya hedefleriniz hakkında bize bilgi verin",
-      submit: "Ücretsiz Danışmanlık Talep Et",
+      title: "Projenizi Konuşalım",
+      subtitle: "İhtiyacınızı anlatalım, şirketinize özel AI çözümünün nasıl çalışacağını birlikte planlayalım.",
+      name: "Ad Soyad",
+      email: "Kurumsal E-posta",
+      message: "Hangi süreçleri otomatikleştirmek istiyorsunuz? Ekip büyüklüğünüz ve sektörünüz nedir?",
+      submit: "Ücretsiz Keşif Görüşmesi Talep Et",
       sending: "Gönderiliyor...",
-      success: "✓ Mesajınız başarıyla gönderildi! 24 saat içinde size dönüş yapacağız.",
-      error: "✗ Mesaj gönderilemedi. Lütfen tekrar deneyin veya WhatsApp üzerinden bize ulaşın.",
-      trust: "Taahhüt yok · 24 saat içinde yanıt · Kurumsal çözüm"
+      success: "✓ Talebiniz alındı! 24 saat içinde size dönüş yapacağız.",
+      error: "✗ Gönderilemedi. Lütfen tekrar deneyin veya LinkedIn üzerinden ulaşın.",
+      trust: "Taahhüt yok · 24 saat içinde yanıt · KVKK uyumlu"
     },
     footer: {
       kvkk: "KVKK",
       privacy: "Gizlilik Politikası",
       terms: "Hizmet Şartları",
-      contact: "hello@klexai.com",
+      contact: "korhan.kucuk@academiadanismanlik.com",
       copyright: "© 2025 KLEXAI STUDIO. Tüm Hakları Saklıdır."
     }
   }

@@ -1,181 +1,122 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
-import { poppins } from "@/lib/fonts";
 
 export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 relative overflow-hidden">
-      {/* Advanced Animated Background */}
-      <div className="absolute inset-0 -z-10">
-        {/* Gradient Orbs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-[#00C4EF] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-96 h-96 bg-[#FF5722] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
-        
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,196,239,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,87,34,0.03)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_110%)]"></div>
-      </div>
+    <section className="h-screen relative bg-white overflow-hidden pt-28">
+      <div className="container mx-auto max-w-7xl px-8 relative h-full flex flex-col justify-between py-6">
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-        {/* Left Content */}
-        <div className="space-y-3 md:space-y-5 relative order-2 md:order-1">
-          {/* Floating Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r from-[#00C4EF]/10 to-[#FF5722]/10 border border-[#00C4EF]/20 rounded-full backdrop-blur-sm animate-fade-in">
-            <span className="relative flex h-2.5 w-2.5 md:h-3 md:w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00C4EF] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 md:h-3 md:w-3 bg-[#00C4EF]"></span>
-            </span>
-            <span className="text-xs md:text-sm font-semibold bg-gradient-to-r from-[#00C4EF] to-[#FF5722] bg-clip-text text-transparent">
-              {t.hero.topBadge}
-            </span>
+        {/* Top Area */}
+        <div className="flex justify-between items-start relative z-20">
+          {/* Left - Big Title */}
+          <div>
+            <h1 className="text-[28px] md:text-[40px] lg:text-[52px] font-black leading-[1.15] tracking-tight text-[#0D212C] uppercase">
+              <span className="text-[#00C4EF]">{t.hero.titleHighlight1}</span>{' '}
+              {t.hero.titleLine1.replace(t.hero.titleHighlight1, '').trim()}
+              <span className="block mt-2">{t.hero.titleLine2}</span>
+              <span className="block mt-2 italic">
+                {t.hero.titleLine3.replace(t.hero.titleHighlight2, '').trim()}{' '}
+                <span className="text-[#00C4EF]">{t.hero.titleHighlight2}</span>
+              </span>
+            </h1>
           </div>
 
-          {/* Main Title with Gradient */}
-          <h1 className={`${poppins.className} text-4xl md:text-6xl font-extrabold leading-tight py-2`}
-              style={{
-                WebkitFontSmoothing: 'antialiased',
-                MozOsxFontSmoothing: 'grayscale',
-                textRendering: 'geometricPrecision'
-              }}>
-            <span className="bg-gradient-to-r from-gray-900 via-[#00C4EF] to-gray-900 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
-              {t.hero.title}
-            </span>
-          </h1>
+          {/* Right Top - Stat */}
+          <div className="hidden md:block text-right max-w-[220px]">
+            <h3 className="text-lg md:text-xl lg:text-2xl font-black text-[#0D212C] uppercase tracking-tight leading-tight">
+              {t.hero.badge1.title}
+            </h3>
+            <p className="text-xs md:text-sm text-[#051A24]/60 mt-2 leading-relaxed">
+              {t.hero.badge1.desc}
+            </p>
+          </div>
+        </div>
 
-          {/* Subtitle */}
-          <p className="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed max-w-xl font-normal">
+        {/* Middle Left - Subtitle + Button */}
+        <div className="relative z-20 max-w-[320px]">
+          <p className="text-sm md:text-base text-[#051A24]/70 leading-relaxed">
             {t.hero.subtitle}
           </p>
-
-          {/* Micro-line - Subtle visual anchor */}
-          <div className="flex items-center gap-3 pt-1">
-            <div className="h-px w-12 bg-gradient-to-r from-[#00C4EF]/40 to-transparent"></div>
-            <span className="text-xs text-gray-400 uppercase tracking-wider font-normal">{t.hero.microLine}</span>
-          </div>
-
-          {/* CTA Buttons - tighter spacing */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-1">
+          <div className="mt-4">
             <a
               href="#contact"
-              className="group relative px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-[#00C4EF] to-[#0099CC] text-white font-semibold uppercase tracking-wider rounded-xl overflow-hidden transition-all duration-300 text-center hover:scale-105 text-sm md:text-base"
+              className="inline-flex items-center gap-2 bg-[#051A24] text-white rounded-full px-5 py-2.5 font-medium text-sm hover:scale-105 hover:shadow-lg transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0099CC] to-[#00C4EF] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <span className="relative flex items-center justify-center gap-2">
-                {t.hero.cta1}
-                <svg className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </span>
-            </a>
-            <a
-              href="#services"
-              className="group px-6 md:px-8 py-3 md:py-4 border-2 border-gray-900 text-gray-900 font-semibold uppercase tracking-wider rounded-xl hover:bg-gray-900 hover:text-white transition-all duration-300 text-center flex items-center justify-center gap-2 hover:scale-105 text-sm md:text-base"
-            >
-              <svg className="w-4 h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              {t.hero.cta1}
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-              {t.hero.cta2}
             </a>
           </div>
+        </div>
 
-          {/* Stats - tighter spacing */}
-          <div className="pt-5 md:pt-7 mt-3 md:mt-5 border-t border-gray-200/60">
-            <div className="flex flex-wrap gap-6 md:gap-8 lg:gap-12">
-              <div className="flex-1 min-w-[200px]">
-                <div className="text-xs md:text-sm text-gray-500 uppercase tracking-wider mb-1.5">Enterprise</div>
-                <div className="text-sm md:text-base text-gray-900 font-medium leading-relaxed">{t.hero.stats.clients}</div>
-              </div>
-              <div className="flex-1 min-w-[200px]">
-                <div className="text-xs md:text-sm text-gray-500 uppercase tracking-wider mb-1.5">Intelligence</div>
-                <div className="text-sm md:text-base text-gray-900 font-medium leading-relaxed">{t.hero.stats.support}</div>
-              </div>
+        {/* Bottom Area */}
+        <div className="flex justify-between items-end relative z-20">
+          {/* Left Bottom - Description + Social */}
+          <div className="max-w-[280px]">
+            <p className="text-xs md:text-sm text-[#051A24]/60 leading-relaxed italic mb-4">
+              {t.hero.microLine}
+            </p>
+            {/* Social Icon */}
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.linkedin.com/company/klexai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-full border border-[#051A24]/20 flex items-center justify-center text-[#051A24]/60 hover:text-[#051A24] hover:border-[#051A24]/40 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
             </div>
+          </div>
+
+          {/* Right Bottom - Stat */}
+          <div className="hidden md:block text-right max-w-[220px]">
+            <h3 className="text-lg md:text-xl lg:text-2xl font-black text-[#0D212C] uppercase tracking-tight leading-tight">
+              {t.hero.badge2.title}
+            </h3>
+            <p className="text-xs md:text-sm text-[#051A24]/60 mt-2 leading-relaxed">
+              {t.hero.badge2.desc}
+            </p>
           </div>
         </div>
 
-        {/* Right Image - 3D Card Effect with subtle depth */}
-        <div className="relative perspective-1000 order-1 md:order-2">
-          <div className="relative w-full aspect-[3/4] md:aspect-[4/5] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl group">
-            
-            {/* Subtle noise texture overlay for depth */}
-            <div className="absolute inset-0 z-[5] opacity-[0.015] pointer-events-none mix-blend-overlay" 
-                 style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 400 400\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\'/%3E%3C/svg%3E")'}}></div>
-            
-            {/* Image */}
-            <Image
-              src="/hero-image.jpg"
-              alt="AI Chatbot Interface"
-              fill
-              className="object-contain group-hover:scale-105 transition-transform duration-700"
-              priority
-              quality={85}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-            />
-
-            {/* Glassmorphism Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#00C4EF]/5 via-transparent to-[#FF5722]/5 z-10 pointer-events-none group-hover:opacity-0 transition-opacity duration-500"></div>
-
-            {/* Floating Elements - Optimized positioning */}
-            {/* Desktop: Top-right badge - not too close to edge */}
-            <div className="absolute top-[12%] right-[10%] z-20 bg-white/85 backdrop-blur-lg px-4 py-3 md:px-5 md:py-3.5 rounded-xl shadow-lg opacity-0 animate-[floatIn_600ms_ease_120ms_forwards] hidden md:block">
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 bg-gradient-to-br from-[#00C4EF] to-[#0099CC] rounded-lg flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-[13px] font-bold text-gray-900">{t.hero.badge1.title}</div>
-                  <div className="text-[11px] text-gray-600 mt-0.5">{t.hero.badge1.desc}</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Desktop: Bottom-left badge - creates bridge to text */}
-            <div className="absolute bottom-[12%] left-[6%] z-20 bg-white/85 backdrop-blur-lg px-4 py-3 md:px-5 md:py-3.5 rounded-xl shadow-lg opacity-0 animate-[floatIn_600ms_ease_260ms_forwards] hidden md:block">
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 bg-gradient-to-br from-[#FF5722] to-[#FF7043] rounded-lg flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-[13px] font-bold text-gray-900">{t.hero.badge2.title}</div>
-                  <div className="text-[11px] text-gray-600 mt-0.5">{t.hero.badge2.desc}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile badges - under image, clean layout */}
-          <div className="flex gap-3 mt-4 md:hidden">
-            <div className="flex-1 bg-white/75 backdrop-blur-lg px-3 py-3 rounded-xl border border-gray-100">
-              <div className="text-[13px] font-bold text-gray-900">{t.hero.badge1.title}</div>
-              <div className="text-[11px] text-gray-600 mt-0.5">{t.hero.badge1.desc}</div>
-            </div>
-            <div className="flex-1 bg-white/75 backdrop-blur-lg px-3 py-3 rounded-xl border border-gray-100">
-              <div className="text-[13px] font-bold text-gray-900">{t.hero.badge2.title}</div>
-              <div className="text-[11px] text-gray-600 mt-0.5">{t.hero.badge2.desc}</div>
-            </div>
-          </div>
-
-          {/* Decorative Elements - soft gradient shadows */}
-          <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-[#00C4EF] to-[#0099CC] rounded-full opacity-15 blur-3xl"></div>
-          <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-gradient-to-br from-[#FF5722] to-[#FF7043] rounded-full opacity-15 blur-3xl"></div>
-          
-          {/* Subtle bottom shadow for depth */}
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[90%] h-8 bg-gradient-to-b from-transparent to-black/5 blur-xl rounded-full"></div>
+        {/* Center Robot Image - Behind text (z-10), shifted right, top */}
+        <div className="absolute -top-16 bottom-0 left-0 right-0 flex items-start justify-center z-10 md:pl-[15%]">
+          <img
+            src="/hero-image.png"
+            alt="AI Assistant"
+            className="h-full max-h-[850px] object-contain animate-float hover:scale-105 transition-transform duration-500 cursor-pointer"
+          />
         </div>
-      </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-[#00C4EF] text-xs uppercase tracking-widest font-semibold">Scroll</span>
-        <div className="w-0.5 h-8 bg-gradient-to-b from-[#00C4EF] to-transparent"></div>
+        {/* Bottom Center - Fixed Nav Pill - just below robot */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-5 bg-white/95 backdrop-blur-md rounded-full px-8 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)] hover:scale-105 transition-all duration-300">
+          <img src="/logo.png" alt="KLEXAI" className="h-10" />
+          <a
+            href="#services"
+            className="bg-[#051A24] text-white rounded-full px-10 py-4 text-base font-semibold hover:bg-[#0D212C] transition-colors"
+          >
+            {t.hero.cta2}
+          </a>
+        </div>
+
+        {/* Mobile Stats */}
+        <div className="flex md:hidden justify-between mt-4">
+          <div>
+            <h3 className="text-base font-black text-[#0D212C] uppercase tracking-tight">{t.hero.badge1.title}</h3>
+            <p className="text-xs text-[#051A24]/60 mt-1">{t.hero.badge1.desc}</p>
+          </div>
+          <div className="text-right">
+            <h3 className="text-base font-black text-[#0D212C] uppercase tracking-tight">{t.hero.badge2.title}</h3>
+            <p className="text-xs text-[#051A24]/60 mt-1">{t.hero.badge2.desc}</p>
+          </div>
+        </div>
       </div>
     </section>
   );
