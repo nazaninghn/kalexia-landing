@@ -98,7 +98,7 @@ export default function Hero() {
         </div>
 
         {/* Center Robot Image */}
-        <div className="absolute -top-16 bottom-0 left-0 right-0 flex items-start justify-center z-10 md:pl-[15%]">
+        <div className="absolute -top-16 md:-top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 md:pl-[15%]">
           <img
             src="/hero-image.png"
             alt="AI Assistant"
@@ -106,12 +106,12 @@ export default function Hero() {
           />
         </div>
 
-        {/* Bottom Nav Pill - wider, overlapping robot bottom */}
-        <div className="absolute bottom-6 md:bottom-4 left-1/2 md:left-[60%] -translate-x-1/2 z-30 flex items-center gap-4 md:gap-6 bg-white/95 backdrop-blur-md rounded-full px-6 md:px-10 py-3 md:py-4 shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.18)] hover:scale-105 transition-all duration-300 w-[85%] sm:w-auto justify-center sm:justify-start">
-          <img src="/logo.png" alt="KLEXAI" className="h-8 md:h-10" />
+        {/* Bottom Nav Pill - centered, wider but not bigger */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-6 bg-white/95 backdrop-blur-md rounded-full px-10 md:px-14 py-3.5 shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.18)] hover:scale-105 transition-all duration-300">
+          <img src="/logo.png" alt="KLEXAI" className="h-8" />
           <a
             href="#services"
-            className="bg-[#051A24] text-white rounded-full px-6 md:px-10 py-3 md:py-4 text-sm md:text-base font-semibold hover:bg-[#0D212C] transition-colors whitespace-nowrap"
+            className="bg-[#051A24] text-white rounded-full px-8 md:px-12 py-3 text-sm font-semibold hover:bg-[#0D212C] transition-colors whitespace-nowrap"
           >
             {t.hero.cta2}
           </a>
