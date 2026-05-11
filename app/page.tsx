@@ -36,6 +36,47 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white overflow-x-hidden">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "KLEXAI",
+            "url": "https://klexai.com",
+            "logo": "https://klexai.com/logo.png",
+            "description": "Custom AI assistants trained on your company data with enterprise-grade privacy. Zero data leakage guaranteed.",
+            "sameAs": ["https://www.linkedin.com/company/klexai/"],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "sales",
+              "email": "korhan.kucuk@academiadanismanlik.com"
+            },
+            "offers": {
+              "@type": "Offer",
+              "description": "Custom AI Assistant Development",
+              "category": "AI Solutions"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "KLEXAI",
+            "url": "https://klexai.com",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://klexai.com/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })
+        }}
+      />
       <Header />
       <Hero />
 

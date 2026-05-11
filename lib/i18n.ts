@@ -265,7 +265,7 @@ export const translations = {
       kvkk: "KVKK",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
-      contact: "korhan.kucuk@academiadanismanlik.com",
+      contact: "hello@klexai.com",
       copyright: "© 2025 KLEXAI STUDIO. All Rights Reserved."
     }
   },
@@ -533,7 +533,7 @@ export const translations = {
       kvkk: "KVKK",
       privacy: "Gizlilik Politikası",
       terms: "Hizmet Şartları",
-      contact: "korhan.kucuk@academiadanismanlik.com",
+      contact: "hello@klexai.com",
       copyright: "© 2025 KLEXAI STUDIO. Tüm Hakları Saklıdır."
     }
   }

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   creator: "KLEXAI",
   publisher: "KLEXAI Studio",
   icons: {
-    icon: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: '/logo.png',
+    apple: '/logo.png',
   },
   metadataBase: new URL('https://klexai.com'),
   alternates: {
@@ -26,12 +26,21 @@ export const metadata: Metadata = {
     alternateLocale: ["en_US"],
     siteName: "KLEXAI",
     url: "https://klexai.com",
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'KLEXAI - Şirketinize Özel Güvenli AI Asistanı',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "KLEXAI | Şirketinize Özel Güvenli AI Asistanı",
     description: "Kurumsal verilerinizle eğitilmiş özel AI asistanlar. MCP protokolü ile sıfır veri sızıntısı.",
     creator: "@klexai",
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
