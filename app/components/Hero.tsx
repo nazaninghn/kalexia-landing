@@ -34,9 +34,17 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Robot Image - Mobile - big, fills space, touches pill */}
+        {/* Robot Video - Mobile - like a GIF, no controls */}
         <div className="relative w-full flex-1 flex justify-center items-end overflow-visible">
-          <img src="/hero-image.png" alt="AI Assistant" className="w-[90%] max-w-[380px] object-contain animate-float hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer" />
+          <video
+            src="/hero-video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            disablePictureInPicture
+            className="w-full max-w-[500px] object-contain hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer"
+          />
         </div>
 
         {/* Nav Pill - Mobile (right after robot) */}
@@ -106,9 +114,17 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Robot Image - Desktop */}
+        {/* Robot Video - Desktop - like a GIF */}
         <div className="absolute -top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 pl-[15%]">
-          <img src="/hero-image.png" alt="AI Assistant" className="h-full max-h-[850px] object-contain animate-float hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer" />
+          <video
+            src="/hero-video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            disablePictureInPicture
+            className="h-full max-h-[850px] object-contain hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer"
+          />
         </div>
 
         {/* Nav Pill - Desktop */}
