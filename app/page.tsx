@@ -48,10 +48,24 @@ export default function Home() {
             "logo": "https://klexai.com/logo.png",
             "description": "Custom AI assistants trained on your company data with enterprise-grade privacy. Zero data leakage guaranteed.",
             "sameAs": ["https://www.linkedin.com/company/klexai/"],
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Academia Danışmanlık",
+              "url": "https://www.academiadanismanlik.com/"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Bilişim Vadisi - İstinye Üniversitesi, Ayazağa Mah. Kemerburgaz Cad. Vadi İstanbul Park 7A Blok No:7 B",
+              "addressLocality": "Sarıyer",
+              "addressRegion": "İstanbul",
+              "addressCountry": "TR"
+            },
+            "telephone": "+90-212-613-58-80",
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "sales",
-              "email": "korhan.kucuk@academiadanismanlik.com"
+              "email": "hello@klexai.com",
+              "telephone": "+90-212-613-58-80"
             },
             "offers": {
               "@type": "Offer",

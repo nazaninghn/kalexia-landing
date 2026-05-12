@@ -54,27 +54,26 @@ export default function Footer() {
                     </ul>
                   </div>
 
-                  {/* Column 2 — Services */}
+                  {/* Column 2 — Contact Info */}
                   <div>
                     <h4 className="text-sm font-bold uppercase tracking-widest text-gray-900 mb-3">
-                      {t.services.title}
+                      Contact
                     </h4>
                     <ul className="space-y-2">
-                      <li><a href="#services" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.services.card1.title}</a></li>
-                      <li><a href="#services" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.services.card2.title}</a></li>
-                      <li><a href="#services" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.services.card3.title}</a></li>
+                      <li><span className="text-gray-500 font-medium text-xs">Tel: 212-613 58 80</span></li>
+                      <li><a href="mailto:hello@klexai.com" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors text-xs">hello@klexai.com</a></li>
+                      <li><a href="https://www.academiadanismanlik.com/" target="_blank" rel="noopener noreferrer" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors text-xs">Academia Danışmanlık</a></li>
                     </ul>
                   </div>
 
-                  {/* Column 3 — Legal (no KVKK) */}
-                  <div>
+                  {/* Column 3 — Address */}
+                  <div className="max-w-[200px]">
                     <h4 className="text-sm font-bold uppercase tracking-widest text-gray-900 mb-3">
-                      Legal
+                      Address
                     </h4>
-                    <ul className="space-y-2">
-                      <li><a href="#" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.footer.privacy}</a></li>
-                      <li><a href="#" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.footer.terms}</a></li>
-                    </ul>
+                    <p className="text-gray-500 font-medium text-xs leading-5">
+                      Bilişim Vadisi - İstinye Üniversitesi, Ayazağa Mah. Kemerburgaz Cad. Vadi İstanbul Park 7A Blok No:7 B, Sarıyer / İstanbul
+                    </p>
                   </div>
                 </div>
               </div>
