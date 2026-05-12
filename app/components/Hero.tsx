@@ -27,24 +27,16 @@ export default function Hero() {
         </p>
 
         {/* CTA */}
-        <div className="mt-4">
+        <div className="mt-4 relative z-30">
           <a href="#contact" className="inline-flex items-center gap-2 bg-[#051A24] text-white rounded-full px-5 py-2.5 font-medium text-sm hover:scale-105 transition-all duration-300">
             {t.hero.cta1}
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
           </a>
         </div>
 
-        {/* Robot GIF-style video - Mobile */}
-        <div className="relative w-full flex-1 flex justify-center items-center overflow-visible -mt-4">
-          <video
-            src="/hero.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            disablePictureInPicture
-            className="w-full max-w-[500px] h-auto hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer"
-          />
+        {/* Robot GIF - Mobile - cropped to remove black bars */}
+        <div className="relative w-screen overflow-hidden mt-2 -ml-6" style={{ clipPath: 'inset(4% 8% 4% 8%)' }}>
+          <img src="/hero.gif" alt="AI Assistant" className="w-full h-auto hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer" />
         </div>
 
         {/* Nav Pill - Mobile (right after robot) */}
@@ -116,15 +108,7 @@ export default function Hero() {
 
         {/* Robot GIF - Desktop */}
         <div className="absolute -top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 pl-[15%] overflow-hidden">
-          <video
-            src="/hero.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            disablePictureInPicture
-            className="h-full max-h-[850px] w-auto object-cover hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer"
-          />
+          <img src="/hero.gif" alt="AI Assistant" className="h-full max-h-[850px] w-auto object-cover hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer" />
         </div>
 
         {/* Nav Pill - Desktop */}
