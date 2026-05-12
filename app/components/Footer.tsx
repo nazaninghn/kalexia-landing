@@ -102,12 +102,12 @@ export default function Footer() {
         {/* Parallax Robot Layer */}
         <motion.div
           style={{ y }}
-          className="absolute inset-x-0 bottom-0 h-full pointer-events-none z-20"
+          className="absolute inset-x-0 bottom-0 h-full z-20"
         >
           <img
             src="/hero-image.png"
             alt="AI Robot"
-            className="w-full h-full object-contain object-bottom origin-bottom scale-[1.5] sm:scale-110 md:scale-[2.0] lg:scale-105"
+            className="w-full h-full object-contain object-bottom origin-bottom scale-[1.5] sm:scale-110 md:scale-[2.0] lg:scale-105 hover:scale-[1.6] sm:hover:scale-[1.15] md:hover:scale-[2.1] lg:hover:scale-110 transition-transform duration-500 cursor-pointer"
           />
         </motion.div>
       </section>
