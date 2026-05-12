@@ -107,7 +107,7 @@ export default function Footer() {
           <img
             src="/hero-image.png"
             alt="AI Robot"
-            className="w-full h-full object-contain object-bottom origin-bottom scale-[1.5] sm:scale-110 md:scale-[2.0] lg:scale-105 hover:scale-[1.6] sm:hover:scale-[1.15] md:hover:scale-[2.1] lg:hover:scale-110 transition-transform duration-500 cursor-pointer"
+            className="w-full h-full object-contain object-bottom origin-bottom scale-[1.5] sm:scale-110 md:scale-[2.0] lg:scale-105 hover:scale-[1.7] sm:hover:scale-[1.2] md:hover:scale-[2.2] lg:hover:scale-115 active:scale-[1.8] sm:active:scale-[1.25] md:active:scale-[2.3] lg:active:scale-120 hover:rotate-1 active:rotate-2 transition-all duration-300 cursor-pointer animate-float"
           />
         </motion.div>
       </section>
