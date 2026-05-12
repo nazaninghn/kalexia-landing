@@ -34,17 +34,16 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Robot Video - Mobile - like a GIF, no controls */}
+        {/* Robot GIF-style video - Mobile */}
         <div className="relative w-full flex-1 flex justify-center items-center overflow-visible -mt-4">
           <video
-            src="/hero-video.mp4"
+            src="/hero.mp4"
             autoPlay
             loop
             muted
             playsInline
-            preload="metadata"
             disablePictureInPicture
-            className="w-full max-w-[500px] object-contain hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer"
+            className="w-full max-w-[500px] h-auto hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer"
           />
         </div>
 
@@ -115,17 +114,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Robot Video - Desktop - like a GIF */}
-        <div className="absolute -top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 pl-[15%]">
+        {/* Robot GIF - Desktop */}
+        <div className="absolute -top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 pl-[15%] overflow-hidden">
           <video
-            src="/hero-video.mp4"
+            src="/hero.mp4"
             autoPlay
             loop
             muted
             playsInline
-            preload="metadata"
             disablePictureInPicture
-            className="h-full max-h-[850px] object-contain hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer"
+            className="h-full max-h-[850px] w-auto object-cover hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer"
           />
         </div>
 
