@@ -6,10 +6,10 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative bg-white overflow-hidden pt-20 md:pt-28 md:h-screen">
+    <section className="relative bg-white overflow-visible md:overflow-hidden pt-20 md:pt-28 md:h-screen">
       
       {/* ─── MOBILE LAYOUT ─── */}
-      <div className="md:hidden px-6 pb-8">
+      <div className="md:hidden flex flex-col min-h-[calc(100vh-80px)] px-6 pb-6">
         {/* Title */}
         <h1 className="text-[28px] sm:text-[32px] font-black leading-[1.1] tracking-tight text-[#0D212C] uppercase mt-4">
           <span className="text-[#00C4EF]">{t.hero.titleHighlight1}</span>{' '}
@@ -34,13 +34,13 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Robot Image - Mobile */}
-        <div className="relative w-full h-[300px] mt-4 flex justify-center">
-          <img src="/hero-image.png" alt="AI Assistant" className="h-full object-contain animate-float hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer" />
+        {/* Robot Image - Mobile - big, fills space, touches pill */}
+        <div className="relative w-full flex-1 flex justify-center items-end overflow-visible">
+          <img src="/hero-image.png" alt="AI Assistant" className="w-[90%] max-w-[380px] object-contain animate-float hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer" />
         </div>
 
         {/* Nav Pill - Mobile (right after robot) */}
-        <div className="flex items-center justify-center gap-4 bg-white/95 rounded-full px-6 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-20 mx-auto w-fit relative z-20">
+        <div className="flex items-center justify-center gap-4 bg-white/95 rounded-full px-6 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-8 mx-auto w-fit relative z-20">
           <img src="/logo.png" alt="KLEXAI" className="h-7" />
           <a href="#services" className="bg-[#051A24] text-white rounded-full px-6 py-2.5 text-sm font-semibold">{t.hero.cta2}</a>
         </div>
