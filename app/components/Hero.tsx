@@ -34,9 +34,13 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Robot GIF - Mobile - cropped to remove black bars */}
-        <div className="relative w-screen overflow-hidden mt-2 -ml-6" style={{ clipPath: 'inset(4% 8% 4% 8%)' }}>
-          <img src="/hero.gif" alt="AI Assistant" className="w-full h-auto hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer" />
+        {/* Robot Image - Mobile */}
+        <div className="relative w-full flex-1 flex justify-center items-center overflow-hidden mt-2">
+          <img src="/hero.png" alt="AI Assistant" className="w-full max-w-[500px] h-auto object-contain hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer" />
+          {/* Fade top */}
+          <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
+          {/* Fade bottom */}
+          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
         </div>
 
         {/* Nav Pill - Mobile (right after robot) */}
@@ -108,7 +112,9 @@ export default function Hero() {
 
         {/* Robot GIF - Desktop */}
         <div className="absolute -top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 pl-[15%] overflow-hidden">
-          <img src="/hero.gif" alt="AI Assistant" className="h-full max-h-[850px] w-auto object-cover hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer" />
+          <img src="/hero.png" alt="AI Assistant" className="h-full max-h-[850px] w-auto object-contain hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer animate-float" />
+          {/* Fade out bottom */}
+          <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white via-white/90 via-60% to-transparent pointer-events-none z-20"></div>
         </div>
 
         {/* Nav Pill - Desktop */}
