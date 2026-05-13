@@ -6,7 +6,7 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative bg-white overflow-visible md:overflow-hidden pt-20 md:pt-28 md:h-screen">
+    <section className="relative bg-white overflow-visible md:overflow-hidden pt-16 md:pt-20 md:h-screen">
       
       {/* ─── MOBILE LAYOUT ─── */}
       <div className="md:hidden flex flex-col min-h-[calc(100vh-80px)] px-6 pb-6">
@@ -111,8 +111,10 @@ export default function Hero() {
         </div>
 
         {/* Robot GIF - Desktop */}
-        <div className="absolute -top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 pl-[15%] overflow-hidden">
+        <div className="absolute -top-28 md:-top-52 lg:-top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 pl-[15%] overflow-hidden">
           <img src="/hero.png" alt="AI Assistant" className="h-full max-h-[850px] w-auto object-contain hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer animate-float" />
+          {/* Fade out top */}
+          <div className="absolute top-0 left-0 right-0 h-48 bg-gradient-to-b from-white via-white/90 via-60% to-transparent pointer-events-none z-20"></div>
           {/* Fade out bottom */}
           <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white via-white/90 via-60% to-transparent pointer-events-none z-20"></div>
         </div>
