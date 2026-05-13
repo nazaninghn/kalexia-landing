@@ -325,17 +325,17 @@ export const translations = {
       subtitle: "Verileriniz sizde kalır. AI'nız yalnızca sizin bilginizle çalışır.",
       listen: {
         title: "Veri Entegrasyonu",
-        desc: "Mevcut sistemlerinize güvenli şekilde bağlanırız — CRM, belgeler, bilgi tabanı. Verileriniz sunucularınızdan çıkmaz, on-premise veya özel bulut altyapısında kalır."
+        desc: "Mevcut sistemlerinize güvenli şekilde bağlanırız — CRM, belgeler, bilgi tabanı. Verileriniz sunucularınızdan çıkmaz; on-premise veya özel bulut altyapısında kalır."
       },
       learn: {
         title: "Özel Eğitim",
-        desc: "AI asistanınız şirketinizin dilini, ürünlerini ve iş süreçlerini öğrenir. MCP protokolü sayesinde eğitim sırasında bile veri güvenliği tam olarak korunur."
+        desc: "AI asistanınız şirketinizin dilini, ürünlerini ve iş süreçlerini öğrenir. MCP protokolü sayesinde eğitim sürecinde bile veri güvenliği tam olarak korunur."
       },
       act: {
         title: "Devreye Alma",
-        desc: "5-10 iş günü içinde tüm kanallarınızda aktif olur — WhatsApp, web, Slack, özel API. Tam kontrol sizde, ölçeklendirme sınırsız."
+        desc: "5–10 iş günü içinde tüm kanallarınızda aktif olur — WhatsApp, web, Slack, özel API. Tam kontrol sizde, ölçeklendirme sınırsız."
       },
-      bridge: "Aşağıdaki sistem tarafından desteklenir"
+      bridge: "Aşağıdaki sistem tarafından desteklenmektedir"
     },
     technology: {
       tag: "Teknoloji",
@@ -507,9 +507,9 @@ export const translations = {
       a5: "AI sınırlarını bilir. Eğitim verilerinin dışında bir şeyle karşılaştığında veya insan muhakemesi gerektiren karmaşık bir durumda, tam konuşma bağlamıyla ekibinize sorunsuz şekilde yönlendirir. Hiçbir müşteri asla cevapsız bırakılmaz. Ayrıca her etkileşim sistemi geliştirir — düzeltmelerden öğrenir ve zamanla daha doğru hale gelir."
     },
     cta: {
-      title: "Şirketinize Özel AI'a Hazır mısınız?",
-      subtitle: "Ücretsiz danışmanlık için randevu alın — özel kullanım durumunuz için özel AI asistanın nasıl görüneceğini size gösterelim.",
-      btn1: "Demo Talep Et",
+      title: "Şirketinize Özel AI Asistana Hazır mısınız?",
+      subtitle: "Ücretsiz keşif görüşmesi için randevu alın — kullanım senaryonuza özel AI çözümünü birlikte tasarlayalım.",
+      btn1: "Demo Talep Edin",
       btn2: "Ücretsiz Görüşme",
       trust: {
         commitment: "Taahhüt Yok",
@@ -519,14 +519,14 @@ export const translations = {
     },
     contact: {
       title: "Projenizi Konuşalım",
-      subtitle: "İhtiyacınızı anlatalım, şirketinize özel AI çözümünün nasıl çalışacağını birlikte planlayalım.",
-      name: "Ad Soyad",
-      email: "Kurumsal E-posta",
+      subtitle: "İhtiyacınızı anlayalım, şirketinize özel AI çözümünün nasıl çalışacağını birlikte planlayalım.",
+      name: "Adınız Soyadınız",
+      email: "Kurumsal E-posta Adresiniz",
       message: "Hangi süreçleri otomatikleştirmek istiyorsunuz? Ekip büyüklüğünüz ve sektörünüz nedir?",
-      submit: "Ücretsiz Keşif Görüşmesi Talep Et",
+      submit: "Ücretsiz Keşif Görüşmesi Talep Edin",
       sending: "Gönderiliyor...",
       success: "✓ Talebiniz alındı! 24 saat içinde size dönüş yapacağız.",
-      error: "✗ Gönderilemedi. Lütfen tekrar deneyin veya LinkedIn üzerinden ulaşın.",
+      error: "✗ Gönderilemedi. Lütfen tekrar deneyin veya LinkedIn üzerinden bize ulaşın.",
       trust: "Taahhüt yok · 24 saat içinde yanıt · KVKK uyumlu"
     },
     footer: {
