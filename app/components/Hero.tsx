@@ -39,9 +39,9 @@ export default function Hero() {
         <div className="relative w-full flex-1 flex justify-center items-center overflow-hidden mt-2">
           <Image src="/hero.png" alt="AI Assistant" width={500} height={600} loading="eager" priority className="w-full max-w-[500px] h-auto object-contain hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer" />
           {/* Fade top */}
-          <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
+          <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
           {/* Fade bottom */}
-          <div className="absolute bottom-0 left-0 right-0 h-44 bg-gradient-to-t from-white via-white/80 via-50% to-transparent pointer-events-none z-10"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
         </div>
 
         {/* Nav Pill - Mobile (right after robot) */}
