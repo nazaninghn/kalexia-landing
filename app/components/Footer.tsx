@@ -42,14 +42,11 @@ export default function Footer() {
 
                 {/* Links Area */}
                 <div className="flex flex-wrap gap-8 md:gap-12 lg:gap-16">
-                  {/* Column 1 — Navigation */}
                   <div>
-                    <h4 className="text-sm font-bold uppercase tracking-widest text-gray-900 mb-3">
-                      {t.nav.about}
-                    </h4>
+                    <h4 className="text-sm font-bold uppercase tracking-widest text-gray-900 mb-3">{t.nav.about}</h4>
                     <ul className="space-y-2">
-                      <li><a href="#expertise" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.expertise.title}</a></li>
-                      <li><a href="#services" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.services.title}</a></li>
+                      <li><a href="#services" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.nav.about}</a></li>
+                      <li><a href="#industries" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.nav.services}</a></li>
                       <li><a href="#contact" className="text-gray-500 font-medium hover:text-[#00C4EF] transition-colors">{t.nav.contact}</a></li>
                     </ul>
                   </div>

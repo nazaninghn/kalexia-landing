@@ -69,7 +69,7 @@ export default function Hero() {
         {/* Top Area */}
         <div className="flex justify-between items-start relative z-20">
           <div>
-            <h1 className="text-[40px] lg:text-[52px] font-black leading-[1.15] tracking-tight text-[#0D212C] uppercase">
+            <h1 className="text-[28px] lg:text-[38px] font-black leading-[1.15] tracking-tight text-[#0D212C] uppercase">
               <span className="text-[#00C4EF]">{t.hero.titleHighlight1}</span>{' '}
               {t.hero.titleLine1.replace(t.hero.titleHighlight1, '').trim()}
               <span className="block mt-2">{t.hero.titleLine2}</span>

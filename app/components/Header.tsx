@@ -38,11 +38,11 @@ export default function Header() {
 
           {/* Nav Links - Center */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="#about" className="text-sm text-[#051A24]/70 hover:text-[#051A24] transition-colors">
-              {t.nav.about}
-            </Link>
             <Link href="#services" className="text-sm text-[#051A24]/70 hover:text-[#051A24] transition-colors">
               {t.nav.services}
+            </Link>
+            <Link href="#industries" className="text-sm text-[#051A24]/70 hover:text-[#051A24] transition-colors">
+              {t.nav.industries}
             </Link>
             <Link href="#contact" className="text-sm text-[#051A24]/70 hover:text-[#051A24] transition-colors">
               {t.nav.contact}
