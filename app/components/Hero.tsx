@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Hero() {
@@ -36,7 +37,7 @@ export default function Hero() {
 
         {/* Robot Image - Mobile */}
         <div className="relative w-full flex-1 flex justify-center items-center overflow-hidden mt-2">
-          <img src="/hero.png" alt="AI Assistant" className="w-full max-w-[500px] h-auto object-contain hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer" />
+          <Image src="/hero.png" alt="AI Assistant" width={500} height={600} loading="eager" priority className="w-full max-w-[500px] h-auto object-contain hover:scale-110 active:scale-125 transition-transform duration-300 cursor-pointer" />
           {/* Fade top */}
           <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
           {/* Fade bottom */}
@@ -44,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Nav Pill - Mobile (right after robot) */}
-        <div className="flex items-center justify-center gap-4 bg-white/95 rounded-full px-6 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-8 mx-auto w-fit relative z-20">
+        <div className="flex items-center justify-center gap-4 bg-white/95 rounded-full px-6 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-12 mx-auto w-fit relative z-20">
           <img src="/logo.png" alt="KLEXAI" className="h-7" />
           <a href="#services" className="bg-[#051A24] text-white rounded-full px-6 py-2.5 text-sm font-semibold">{t.hero.cta2}</a>
         </div>
@@ -112,7 +113,7 @@ export default function Hero() {
 
         {/* Robot GIF - Desktop */}
         <div className="absolute -top-28 md:-top-52 lg:-top-20 bottom-0 left-0 right-0 flex items-start justify-center z-10 pl-[15%] overflow-hidden">
-          <img src="/hero.png" alt="AI Assistant" className="h-full max-h-[850px] w-auto object-contain hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer animate-float" />
+          <Image src="/hero.png" alt="AI Assistant" width={800} height={850} priority className="h-full max-h-[850px] w-auto object-contain hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer animate-float" />
           {/* Fade out top */}
           <div className="absolute top-0 left-0 right-0 h-48 bg-gradient-to-b from-white via-white/90 via-60% to-transparent pointer-events-none z-20"></div>
           {/* Fade out bottom */}
