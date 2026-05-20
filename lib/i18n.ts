@@ -2,7 +2,7 @@ export type Language = 'en' | 'tr';
 
 export const translations = {
   en: {
-    nav: { about: "Services", services: "Industries", contact: "Contact" },
+    nav: { about: "Services", services: "Industries", industries: "Industries", contact: "Contact" },
     hero: {
       titleLine1: "Automate Repetitive",
       titleLine2: "Business Workflows",
@@ -82,7 +82,7 @@ export const translations = {
     }
   },
   tr: {
-    nav: { about: "Hizmetler", services: "Sektörler", contact: "İletişim" },
+    nav: { about: "Hizmetler", services: "Sektörler", industries: "Sektörler", contact: "İletişim" },
     hero: {
       titleLine1: "Tekrarlayan İş",
       titleLine2: "Süreçlerinizi",

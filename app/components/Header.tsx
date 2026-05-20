@@ -41,9 +41,6 @@ export default function Header() {
             <Link href="#services" className="text-sm text-[#051A24]/70 hover:text-[#051A24] transition-colors">
               {t.nav.services}
             </Link>
-            <Link href="#industries" className="text-sm text-[#051A24]/70 hover:text-[#051A24] transition-colors">
-              {t.nav.industries}
-            </Link>
             <Link href="#contact" className="text-sm text-[#051A24]/70 hover:text-[#051A24] transition-colors">
               {t.nav.contact}
             </Link>
