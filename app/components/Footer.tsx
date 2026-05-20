@@ -104,7 +104,7 @@ export default function Footer() {
           className="absolute inset-x-0 bottom-0 h-full z-20"
         >
           <img
-            src="/hero-image.png"
+            src="/footer-robot.png"
             alt="AI Robot"
             className="w-full h-full object-contain object-bottom origin-bottom scale-[1.5] sm:scale-110 md:scale-[2.0] lg:scale-105 hover:scale-[1.7] sm:hover:scale-[1.2] md:hover:scale-[2.2] lg:hover:scale-115 active:scale-[1.8] sm:active:scale-[1.25] md:active:scale-[2.3] lg:active:scale-120 hover:rotate-1 active:rotate-2 transition-all duration-300 cursor-pointer animate-float"
           />
