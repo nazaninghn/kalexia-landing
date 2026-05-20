@@ -41,12 +41,12 @@ export default function Hero() {
           {/* Fade top */}
           <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
           {/* Fade bottom */}
-          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-44 bg-gradient-to-t from-white via-white/80 via-50% to-transparent pointer-events-none z-10"></div>
         </div>
 
         {/* Nav Pill - Mobile (right after robot) */}
         <div className="flex items-center justify-center gap-4 bg-white/95 rounded-full px-6 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-12 mx-auto w-fit relative z-20">
-          <img src="/logo.png" alt="KLEXAI" className="h-7" />
+          <img src="/logo.png" alt="KLEXAI" width={56} height={28} className="h-7 w-auto" />
           <a href="#services" className="bg-[#051A24] text-white rounded-full px-6 py-2.5 text-sm font-semibold">{t.hero.cta2}</a>
         </div>
 
@@ -122,7 +122,7 @@ export default function Hero() {
 
         {/* Nav Pill - Desktop */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-6 bg-white/95 backdrop-blur-md rounded-full px-10 md:px-14 py-3.5 shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.18)] hover:scale-105 transition-all duration-300">
-          <img src="/logo.png" alt="KLEXAI" className="h-8" />
+          <img src="/logo.png" alt="KLEXAI" width={64} height={32} className="h-8 w-auto" />
           <a href="#services" className="bg-[#051A24] text-white rounded-full px-8 md:px-12 py-3 text-sm font-semibold hover:bg-[#0D212C] transition-colors whitespace-nowrap">{t.hero.cta2}</a>
         </div>
       </div>

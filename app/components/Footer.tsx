@@ -37,7 +37,7 @@ export default function Footer() {
               <div className="flex flex-col md:flex-row justify-between gap-8">
                 {/* Logo Area */}
                 <div className="flex items-center gap-3">
-                  <img src="/logo.png" alt="KLEXAI" className="h-12 md:h-14" />
+                  <img src="/logo.png" alt="KLEXAI" width={112} height={56} className="h-12 md:h-14 w-auto" />
                 </div>
 
                 {/* Links Area */}

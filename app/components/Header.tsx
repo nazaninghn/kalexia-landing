@@ -33,7 +33,7 @@ export default function Header() {
         <div className="container mx-auto px-6 flex justify-between items-center max-w-7xl">
           {/* Logo - Left */}
           <Link href="/" className="hover:opacity-80 transition-opacity">
-            <img src="/logo.png" alt="KLEXAI" className="h-16 md:h-20" />
+            <img src="/logo.png" alt="KLEXAI" width={160} height={80} className="h-16 md:h-20 w-auto" />
           </Link>
 
           {/* Nav Links - Center */}
